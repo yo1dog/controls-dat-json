@@ -1,0 +1,23 @@
+{
+  "name": "controls-dat-json",
+  "version": "0.1.0",
+  "description": "Converts the http://controls.arcadecontrols.com controls.dat project's XML into JSON and adds a new easy-to-use data structure.",
+  "main": "lib/controlsDATXMLToJSON.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yo1dog/controls-dat-json.git"
+  },
+  "author": "Michael Moore (yo1dog)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yo1dog/controls-dat-json/issues"
+  },
+  "homepage": "https://github.com/yo1dog/controls-dat-json#readme",
+  "dependencies": {
+    "clone": "^1.0.2",
+    "xmldoc": "^0.4.0"
+  }
+}

@@ -1,0 +1,1912 @@
+{
+  "joy-2way-horizontal": {
+    "type": "joy-2way-horizontal",
+    "name": "2-way Joystick (Horizontal)",
+    "description": "A joystick with 2 switches that can only move left and right. http://wiki.arcadecontrols.com/wiki/Joysticks#Conventional_Digital_Joysticks:_8-way.2C_4-way_.26_2-way",
+    "outputs": {
+      "left": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_LEFT",
+        "defaultLabel": "Left"
+      },
+      "right": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_RIGHT",
+        "defaultLabel": "Right"
+      }
+    },
+    "descriptors": [
+      "dual-left",
+      "dual-right"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "joy-4way",
+        "level": "good"
+      },
+      {
+        "controlType": "joy-8way",
+        "level": "good"
+      },
+      {
+        "controlType": "joy-8way-topfire",
+        "level": "good"
+      },
+      {
+        "controlType": "joy-8way-rotary-optical",
+        "level": "good"
+      },
+      {
+        "controlType": "joy-8way-rotary-mechanical",
+        "level": "good"
+      },
+      {
+        "controlType": "joy-49way",
+        "level": "good",
+        "outputMapping": {
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "joy-analog",
+        "level": "good",
+        "outputMapping": {
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "directionalbuttons-2way-horizontal",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-2way-horizontal-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-4way-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-8way-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-analog-flightstick",
+        "level": "bad",
+        "outputMapping": {
+          "left" : "x-",
+          "right": "x+"
+        }
+      }
+    ]
+  },
+  
+  "joy-2way-vertical": {
+    "type": "joy-2way-vertical",
+    "name": "2-way Joystick (Vertical)",
+    "description": "A mechanical joystick with 2 switches that can only move up and down. http://wiki.arcadecontrols.com/wiki/Joysticks#Conventional_Digital_Joysticks:_8-way.2C_4-way_.26_2-way",
+    "outputs": {
+      "up": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_UP",
+        "defaultLabel": "Up"
+      },
+      "down": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_DOWN",
+        "defaultLabel": "Down"
+      }
+    },
+    "descriptors": [
+      "dual-left",
+      "dual-right"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "joy-4way",
+        "level": "good"
+      },
+      {
+        "controlType": "joy-8way",
+        "level": "good"
+      },
+      {
+        "controlType": "joy-8way-topfire",
+        "level": "good"
+      },
+      {
+        "controlType": "joy-8way-rotary-optical",
+        "level": "good"
+      },
+      {
+        "controlType": "joy-8way-rotary-mechanical",
+        "level": "good"
+      },
+      {
+        "controlType": "joy-49way",
+        "level": "good",
+        "outputMapping": {
+          "up"  : "y-",
+          "down": "y+"
+        }
+      },
+      {
+        "controlType": "joy-analog",
+        "level": "good",
+        "outputMapping": {
+          "up"  : "y-",
+          "down": "y+"
+        }
+      },
+      {
+        "controlType": "directionalbuttons-2way-vertical",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-2way-vertical-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-4way-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-8way-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-analog-flightstick",
+        "level": "bad",
+        "outputMapping": {
+          "up"  : "y-",
+          "down": "y+"
+        }
+      }
+    ]
+  },
+  
+  "joy-2way-vertical-trigger": {
+    "type": "joy-2way-vertical-trigger",
+    "name": "2-way Triggerstick (Vertical)",
+    "description": "A shaped mechanical joystick with 2 switches that can only move up and down. Has a trigger button and possibly other buttons. http://wiki.arcadecontrols.com/wiki/TRON_joystick",
+    "outputs": {
+      "up": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_UP",
+        "defaultLabel": "Up"
+      },
+      "down": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_DOWN",
+        "defaultLabel": "Down"
+      }
+    },
+    "descriptors": [
+      "dual-left",
+      "dual-right"
+    ],
+    "buttonDescriptors": [
+      "trigger",
+      "top-left",
+      "top-center",
+      "top-right"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "joy-4way-trigger",
+        "level": "good"
+      },
+      {
+        "controlType": "joy-8way-trigger",
+        "level": "good"
+      },
+      {
+        "controlType": "joy-analog-flightstick",
+        "level": "ok",
+        "outputMapping": {
+          "up"  : "y-",
+          "down": "y+"
+        }
+      },
+      {
+        "controlType": "joy-8way-topfire",
+        "level": "bad",
+        "buttonTypeMapping": {
+          "trigger": "topfire"
+        }
+      },
+      {
+        "controlType": "joy-2way-vertical",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-4way",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-8way",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-8way-rotary-optical",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-8way-rotary-mechanical",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-49way",
+        "level": "bad",
+        "outputMapping": {
+          "up"  : "y-",
+          "down": "y+"
+        }
+      },
+      {
+        "controlType": "joy-analog",
+        "level": "bad",
+        "outputMapping": {
+          "up"  : "y-",
+          "down": "y+"
+        }
+      },
+      {
+        "controlType": "directionalbuttons-2way-vertical",
+        "level": "bad"
+      }
+    ]
+  },
+  
+  "joy-4way": {
+    "type": "joy-4way",
+    "name": "4-way Joystick",
+    "description": "A mechanical joystick with 4 switches that is restricted so only 1 switch (direction) can be pressed at a time. http://wiki.arcadecontrols.com/wiki/Joysticks#Conventional_Digital_Joysticks:_8-way.2C_4-way_.26_2-way",
+    "outputs": {
+      "up": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_UP",
+        "defaultLabel": "Up"
+      },
+      "down": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_DOWN",
+        "defaultLabel": "Down"
+      },
+      "left": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_LEFT",
+        "defaultLabel": "Left"
+      },
+      "right": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_RIGHT",
+        "defaultLabel": "Right"
+      }
+    },
+    "descriptors": [
+      "dual-left",
+      "dual-right"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "joy-8way",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way-topfire",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way-rotary-optical",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way-rotary-mechanical",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-49way",
+        "level": "ok",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "joy-analog",
+        "level": "ok",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "directionalbuttons-4way",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-4way-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-8way-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-analog-flightstick",
+        "level": "bad",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      }
+    ]
+  },
+  
+  "joy-4way-diagonal": {
+    "type": "joy-4way-diagonal",
+    "name": "4-way Joystick (Diagonal)",
+    "description": "A mechanical joystick with 4 switches that is restricted so only 1 switch (direction) can be pressed at a time. The joystick is angled at 45deg. http://wiki.arcadecontrols.com/wiki/Joysticks#Conventional_Digital_Joysticks:_8-way.2C_4-way_.26_2-way",
+    "outputs": {
+      "upRight": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_UP",
+        "defaultLabel": "Up-Right"
+      },
+      "downLeft": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_DOWN",
+        "defaultLabel": "Down-Left"
+      },
+      "upLeft": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_LEFT",
+        "defaultLabel": "Up-Left"
+      },
+      "downRight": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_RIGHT",
+        "defaultLabel": "Down-Right"
+      }
+    },
+    "descriptors": [
+      "dual-left",
+      "dual-right"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "joy-8way",
+        "level": "ok",
+        "outputMapping": {
+          "upRight"  : ["up"  , "right"],
+          "downLeft" : ["down", "left"],
+          "upLeft"   : ["up"  , "left"],
+          "downRight": ["down", "right"]
+        }
+      },
+      {
+        "controlType": "joy-8way-topfire",
+        "level": "ok",
+        "outputMapping": {
+          "upRight"  : ["up"  , "right"],
+          "downLeft" : ["down", "left"],
+          "upLeft"   : ["up"  , "left"],
+          "downRight": ["down", "right"]
+        }
+      },
+      {
+        "controlType": "joy-8way-rotary-optical",
+        "level": "ok",
+        "outputMapping": {
+          "upRight"  : ["up"  , "right"],
+          "downLeft" : ["down", "left"],
+          "upLeft"   : ["up"  , "left"],
+          "downRight": ["down", "right"]
+        }
+      },
+      {
+        "controlType": "joy-8way-rotary-mechanical",
+        "level": "ok",
+        "outputMapping": {
+          "upRight"  : ["up"  , "right"],
+          "downLeft" : ["down", "left"],
+          "upLeft"   : ["up"  , "left"],
+          "downRight": ["down", "right"]
+        }
+      },
+      {
+        "controlType": "joy-49way",
+        "level": "ok",
+        "outputMapping": {
+          "upRight"  : ["y-", "x+"],
+          "downLeft" : ["y+", "x-"],
+          "upLeft"   : ["y-", "x-"],
+          "downRight": ["y+", "x+"]
+        }
+      },
+      {
+        "controlType": "joy-analog",
+        "level": "ok",
+        "outputMapping": {
+          "upRight"  : ["y-", "x+"],
+          "downLeft" : ["y+", "x-"],
+          "upLeft"   : ["y-", "x-"],
+          "downRight": ["y+", "x+"]
+        }
+      },
+      {
+        "controlType": "joy-8way-trigger",
+        "level": "bad",
+        "outputMapping": {
+          "upRight"  : ["up"  , "right"],
+          "downLeft" : ["down", "left"],
+          "upLeft"   : ["up"  , "left"],
+          "downRight": ["down", "right"]
+        }
+      },
+      {
+        "controlType": "joy-analog-flightstick",
+        "level": "bad",
+        "outputMapping": {
+          "upRight"  : ["y-", "x+"],
+          "downLeft" : ["y+", "x-"],
+          "upLeft"   : ["y-", "x-"],
+          "downRight": ["y+", "x+"]
+        }
+      }
+    ]
+  },
+  
+  "joy-4way-trigger": {
+    "type": "joy-4way-trigger",
+    "name": "4-way Triggerstick",
+    "description": "A mechanical joystick with 4 switches that is restricted so only 1 switch (direction) can be pressed at a time. Has a trigger button and possibly other buttons. http://wiki.arcadecontrols.com/wiki/TRON_joystick",
+    "outputs": {
+      "up": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_UP",
+        "defaultLabel": "Up"
+      },
+      "down": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_DOWN",
+        "defaultLabel": "Down"
+      },
+      "left": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_LEFT",
+        "defaultLabel": "Left"
+      },
+      "right": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_RIGHT",
+        "defaultLabel": "Right"
+      }
+    },
+    "descriptors": [
+      "dual-left",
+      "dual-right"
+    ],
+    "buttonDescriptors": [
+      "trigger",
+      "top-left",
+      "top-center",
+      "top-right"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "joy-8way-trigger",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-analog-flightstick",
+        "level": "ok",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "joy-8way-topfire",
+        "level": "bad",
+        "buttonTypeMapping": {
+          "trigger": "topfire"
+        }
+      },
+      {
+        "controlType": "joy-4way",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-8way",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-8way-rotary-optical",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-8way-rotary-mechanical",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-49way",
+        "level": "bad",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "joy-analog",
+        "level": "bad",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "directionalbuttons-4way",
+        "level": "bad"
+      }
+    ]
+  },
+  
+  "joy-8way": {
+    "type": "joy-8way",
+    "name": "8-way Joystick",
+    "description": "A mechanical joystick with 4 switches. http://wiki.arcadecontrols.com/wiki/Joysticks#Conventional_Digital_Joysticks:_8-way.2C_4-way_.26_2-way",
+    "outputs": {
+      "up": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_UP",
+        "defaultLabel": "Up"
+      },
+      "down": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_DOWN",
+        "defaultLabel": "Down"
+      },
+      "left": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_LEFT",
+        "defaultLabel": "Left"
+      },
+      "right": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_RIGHT",
+        "defaultLabel": "Right"
+      }
+    },
+    "descriptors": [
+      "dual-left",
+      "dual-right"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "joy-8way-topfire",
+        "level": "good"
+      },
+      {
+        "controlType": "joy-8way-rotary-optical",
+        "level": "good"
+      },
+      {
+        "controlType": "joy-8way-rotary-mechanical",
+        "level": "good"
+      },
+      {
+        "controlType": "joy-49way",
+        "level": "ok",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "joy-analog",
+        "level": "ok",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "joy-8way-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-analog-flightstick",
+        "level": "bad",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      }
+    ]
+  },
+  
+  "joy-8way-trigger": {
+    "type": "joy-8way-trigger",
+    "name": "8-way Triggerstick",
+    "description": "A shaped mechanical joystick with 4 switches. Has a trigger button and possibly other buttons. http://wiki.arcadecontrols.com/wiki/TRON_joystick",
+    "outputs": {
+      "up": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_UP",
+        "defaultLabel": "Up"
+      },
+      "down": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_DOWN",
+        "defaultLabel": "Down"
+      },
+      "left": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_LEFT",
+        "defaultLabel": "Left"
+      },
+      "right": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_RIGHT",
+        "defaultLabel": "Right"
+      }
+    },
+    "descriptors": [
+      "dual-left",
+      "dual-right"
+    ],
+    "buttonDescriptors": [
+      "trigger",
+      "top-left",
+      "top-center",
+      "top-right"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "joy-analog-flightstick",
+        "level": "ok",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "joy-8way-topfire",
+        "level": "bad",
+        "buttonTypeMapping": {
+          "trigger": "topfire"
+        }
+      },
+      {
+        "controlType": "joy-8way",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-8way-rotary-optical",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-8way-rotary-mechanical",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-49way",
+        "level": "bad",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "joy-analog",
+        "level": "bad",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      }
+    ]
+  },
+  
+  "joy-8way-topfire": {
+    "type": "joy-8way-topfire",
+    "name": "8-way Top-Fire Joystick",
+    "description": "A shaped mechanical joystick with 4 switches. Has one button on the top. https://na.suzohapp.com/products/joysticks&FNAME=JOYSTICK_TYPE&FVAL=Top%20Fire%20Joystick&FUOM=",
+    "outputs": {
+      "up": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_UP",
+        "defaultLabel": "Up"
+      },
+      "down": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_DOWN",
+        "defaultLabel": "Down"
+      },
+      "left": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_LEFT",
+        "defaultLabel": "Left"
+      },
+      "right": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_RIGHT",
+        "defaultLabel": "Right"
+      }
+    },
+    "descriptors": [
+      "dual-left",
+      "dual-right"
+    ],
+    "buttonDescriptors": [
+      "topfire"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "joy-8way",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way-rotary-optical",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way-rotary-mechanical",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-49way",
+        "level": "ok",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "joy-analog",
+        "level": "ok",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "joy-8way-trigger",
+        "level": "bad",
+        "buttonTypeMapping": {
+          "topfire": "trigger"
+        }
+      },
+      {
+        "controlType": "joy-analog-flightstick",
+        "level": "bad",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        },
+        "buttonTypeMapping": {
+          "topfire": "trigger"
+        }
+      }
+    ]
+  },
+  
+  "joy-8way-rotary-optical": {
+    "type": "joy-8way-rotary-optical",
+    "name": "8-way Rotary Joystick (Optical)",
+    "description": "A mechanical joystick with 4 switches. The shaft of the joystick can be rotated. http://wiki.arcadecontrols.com/wiki/Joysticks#Rotary_Joysticks",
+    "outputs": {
+      "up": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_UP",
+        "defaultLabel": "Up"
+      },
+      "down": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_DOWN",
+        "defaultLabel": "Down"
+      },
+      "left": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_LEFT",
+        "defaultLabel": "Left"
+      },
+      "right": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_RIGHT",
+        "defaultLabel": "Right"
+      },
+      "clockwiseTurn": {
+        "defaultMAMEInputPortSuffix": "DIAL",
+        "defaultLabel": "Left"
+      },
+      "counterClockwiseTurn": {
+        "defaultMAMEInputPortSuffix": "DIAL_EXT",
+        "defaultLabel": "Right"
+      }
+    },
+    "fallbacks": [
+      {
+        "controlType": "joy-8way-rotary-mechanical",
+        "level": "ok"
+      }
+    ]
+  },
+  
+  "joy-8way-rotary-mechanical": {
+    "type": "joy-8way-rotary-mechanical",
+    "name": "8-way Rotary Joystick (Mechanical)",
+    "description": "A mechanical joystick with 4 switches. The shaft of the joystick can be rotated. http://wiki.arcadecontrols.com/wiki/Joysticks#Rotary_Joysticks",
+    "outputs": {
+      "up": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_UP",
+        "defaultLabel": "Up"
+      },
+      "down": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_DOWN",
+        "defaultLabel": "Down"
+      },
+      "left": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_LEFT",
+        "defaultLabel": "Left"
+      },
+      "right": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_RIGHT",
+        "defaultLabel": "Right"
+      },
+      "clockwiseTurn": {
+        "defaultMAMEInputPortSuffix": "DIAL",
+        "defaultLabel": "Left"
+      },
+      "counterClockwiseTurn": {
+        "defaultMAMEInputPortSuffix": "DIAL_EXT",
+        "defaultLabel": "Right"
+      }
+    },
+    "fallbacks": [
+      {
+        "controlType": "joy-8way-rotary-optical",
+        "level": "ok"
+      }
+    ]
+  },
+  
+  "joy-49way": {
+    "type": "joy-49way",
+    "name": "49-way Joystick",
+    "description": "A joystick that is somewhere between analog and mechanical. http://wiki.arcadecontrols.com/wiki/Joysticks#49-Way_Joysticks",
+    "outputs": {
+      "y-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Y",
+        "defaultLabel": "Up"
+      },
+      "y+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Y_EXT",
+        "defaultLabel": "Down"
+      },
+      "x-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_X",
+        "defaultLabel": "Left"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_X_EXT",
+        "defaultLabel": "Right"
+      }
+    },
+    "fallbacks": [
+      {
+        "controlType": "joy-analog",
+        "level": "good"
+      },
+      {
+        "controlType": "joy-analog-flightstick",
+        "level": "bad"
+      }
+    ]
+  },
+  
+  "joy-analog": {
+    "type": "joy-analog",
+    "name": "Analog Joystick",
+    "description": "An along joystick. http://wiki.arcadecontrols.com/wiki/Joysticks#Analog_Joysticks",
+    "outputs": {
+      "y-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Y",
+        "defaultLabel": "Up"
+      },
+      "y+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Y_EXT",
+        "defaultLabel": "Down"
+      },
+      "x-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_X",
+        "defaultLabel": "Left"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_X_EXT",
+        "defaultLabel": "Right"
+      }
+    },
+    "fallbacks": [
+      {
+        "controlType": "joy-49way",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-analog-flightstick",
+        "level": "bad"
+      }
+    ]
+  },
+  
+  "joy-analog-flightstick": {
+    "type": "joy-analog-flightstick",
+    "name": "Flightstick (Analog)",
+    "description": "An along joystick that is shaped like a flight stick found in an aircraft's cockpit. Usually has a trigger button and other buttons.",
+    "outputs": {
+      "y-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Y",
+        "defaultLabel": "Up"
+      },
+      "y+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Y_EXT",
+        "defaultLabel": "Down"
+      },
+      "x-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_X",
+        "defaultLabel": "Left"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_X_EXT",
+        "defaultLabel": "Right"
+      }
+    },
+    "buttonDescriptors": [
+      "trigger",
+      "top-left",
+      "top-right",
+      "top-center"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "joy-analog-yoke",
+        "level": "bad",
+        "buttonTypeMapping": {
+          "trigger": "trigger-left"
+        }
+      },
+      {
+        "controlType": "joy-analog",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-49way",
+        "level": "bad"
+      }
+    ]
+  },
+  
+  "joy-analog-yoke": {
+    "type": "joy-analog-yoke",
+    "name": "Yoke",
+    "description": "A control that is shaped like a yoke found in an aircraft's cockpit. Uses an analog joystick interface. Can have buttons on it. http://wiki.arcadecontrols.com/wiki/Flight_Yoke http://wiki.arcadecontrols.com/wiki/Driving_Controls#Flight_Yokes",
+    "outputs": {
+      "y-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Y",
+        "defaultLabel": "Up"
+      },
+      "y+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Y_EXT",
+        "defaultLabel": "Down"
+      },
+      "x-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_X",
+        "defaultLabel": "Left"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_X_EXT",
+        "defaultLabel": "Right"
+      }
+    },
+    "buttonDescriptors": [
+      "trigger-left",
+      "trigger-right"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "joy-analog-flightstick",
+        "level": "bad",
+        "buttonTypeMapping": {
+          "trigger-left" : "trigger",
+          "trigger-right": ["top-center", "top-left"]
+        }
+      },
+      {
+        "controlType": "joy-analog",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-49way",
+        "level": "bad"
+      }
+    ]
+  },
+  
+  "throttle": {
+    "type": "throttle",
+    "name": "Throttle",
+    "description": "A control that is shaped like a throttle found in an aircraft's cockpit.",
+    "outputs": {
+      "z-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Z",
+        "defaultLabel": "Fast"
+      },
+      "z+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Z_EXT",
+        "defaultLabel": "Slow"
+      }
+    },
+    "buttonDescriptors": [
+      "throttle-side-left",
+      "throttle-side-right"
+    ]
+  },
+  
+  "directionalbuttons-2way-horizontal": {
+    "type": "directionalbuttons-2way-horizontal",
+    "name": "2-way Directional Buttons (Horizontal)",
+    "description": "Two buttons that provide left and right direction.",
+    "outputs": {
+      "left": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_LEFT",
+        "defaultLabel": "Left"
+      },
+      "right": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_RIGHT",
+        "defaultLabel": "Right"
+      }
+    },
+    "fallbacks": [
+      {
+        "controlType": "joy-2way",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-4way",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way-topfire",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way-rotary-optical",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way-rotary-mechanical",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-49way",
+        "level": "ok",
+        "outputMapping": {
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "joy-analog",
+        "level": "ok",
+        "outputMapping": {
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "joy-2way-horizontal-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-4way-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-8way-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-analog-flightstick",
+        "level": "bad",
+        "outputMapping": {
+          "left" : "x-",
+          "right": "x+"
+        }
+      }
+    ]
+  },
+  
+  "directionalbuttons-2way-vertical": {
+    "type": "directionalbuttons-2way-vertical",
+    "name": "2-way Directional Buttons (Vertical)",
+    "description": "Two buttons that provide up and down direction.",
+    "outputs": {
+      "up": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_UP",
+        "defaultLabel": "Up"
+      },
+      "down": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_DOWN",
+        "defaultLabel": "Down"
+      }
+    },
+    "fallbacks": [
+      {
+        "controlType": "joy-2way-vertical",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-4way",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way-topfire",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way-rotary-optical",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way-rotary-mechanical",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-49way",
+        "level": "ok",
+        "outputMapping": {
+          "up"  : "y-",
+          "down": "y+"
+        }
+      },
+      {
+        "controlType": "joy-analog",
+        "level": "ok",
+        "outputMapping": {
+          "up"  : "y-",
+          "down": "y+"
+        }
+      },
+      {
+        "controlType": "joy-2way-vertical-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-4way-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-8way-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-analog-flightstick",
+        "level": "bad",
+        "outputMapping": {
+          "up"  : "y-",
+          "down": "y+"
+        }
+      }
+    ]
+  },
+  
+  "directionalbuttons-4way": {
+    "type": "directionalbuttons-4way",
+    "name": "4-way Directional Buttons",
+    "description": "Four buttons that provide up, down, left, and right direction.",
+    "outputs": {
+      "up": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_UP",
+        "defaultLabel": "Up"
+      },
+      "down": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_DOWN",
+        "defaultLabel": "Down"
+      },
+      "left": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_LEFT",
+        "defaultLabel": "Left"
+      },
+      "right": {
+        "defaultMAMEInputPortSuffix": "JOYSTICK_RIGHT",
+        "defaultLabel": "Right"
+      }
+    },
+    "fallbacks": [
+      {
+        "controlType": "joy-4way",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way-topfire",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way-rotary-optical",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-8way-rotary-mechanical",
+        "level": "ok"
+      },
+      {
+        "controlType": "joy-49way",
+        "level": "ok",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "joy-analog",
+        "level": "ok",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      },
+      {
+        "controlType": "joy-4way-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-8way-trigger",
+        "level": "bad"
+      },
+      {
+        "controlType": "joy-analog-flightstick",
+        "level": "bad",
+        "outputMapping": {
+          "up"   : "y-",
+          "down" : "y+",
+          "left" : "x-",
+          "right": "x+"
+        }
+      }
+    ]
+  },
+  
+  
+  
+  
+  "trackball": {
+    "type": "trackball",
+    "name": "Trackball",
+    "description": "A sphere that can be spun freely. http://wiki.arcadecontrols.com/wiki/Trackballs",
+    "outputs": {
+      "y-": {
+        "defaultMAMEInputPortSuffix": "TRACKBALL_Y",
+        "defaultLabel": "Up"
+      },
+      "y+": {
+        "defaultMAMEInputPortSuffix": "TRACKBALL_Y_EXT",
+        "defaultLabel": "Down"
+      },
+      "x-": {
+        "defaultMAMEInputPortSuffix": "TRACKBALL_X",
+        "defaultLabel": "Left"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "TRACKBALL_X_EXT",
+        "defaultLabel": "Right"
+      }
+    }
+  },
+  
+  "roller-horizontal": {
+    "type": "roller-horizontal",
+    "name": "Roller (Horizontal)",
+    "description": "A cylinder that can be spun freely left and right.",
+    "outputs": {
+      "x-": {
+        "defaultMAMEInputPortSuffix": "DIAL",
+        "defaultLabel": "Left"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "DIAL_EXT",
+        "defaultLabel": "Right"
+      }
+    },
+    "fallbacks": [
+      {
+        "controlType": "trackball",
+        "level": "good"
+      }
+    ]
+  },
+  
+  "roller-vertical": {
+    "type": "roller-vertical",
+    "name": "Roller (Vertical)",
+    "description": "A cylinder that can be spun freely up and down.",
+    "outputs": {
+      "y-": {
+        "defaultMAMEInputPortSuffix": "DIAL_V",
+        "defaultLabel": "Up"
+      },
+      "y+": {
+        "defaultMAMEInputPortSuffix": "DIAL_V_EXT",
+        "defaultLabel": "Down"
+      }
+    },
+    "fallbacks": [
+      {
+        "controlType": "trackball",
+        "level": "good"
+      }
+    ]
+  },
+  
+  "spinner": {
+    "type": "spinner",
+    "name": "Spinner",
+    "description": "A knob that can be spun freely. http://wiki.arcadecontrols.com/wiki/Spinners_and_Dials",
+    "outputs": {
+      "x-": {
+        "defaultMAMEInputPortSuffix": "DIAL",
+        "defaultLabel": "Left"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "DIAL_EXT",
+        "defaultLabel": "Right"
+      }
+    },
+    "fallbacks": [
+      {
+        "controlType": "spinner-pushpull",
+        "level": "good"
+      }
+    ]
+  },
+  
+  "spinner-pushpull": {
+    "type": "spinner-pushpull",
+    "name": "Spinner",
+    "description": "A knob that can be spun freely and can be pushed into and pulled out of a depressed/normal state which acts like a button. http://wiki.arcadecontrols.com/wiki/Spinners_and_Dials#Spinner_Varieties (number 4)",
+    "outputs": {
+      "x-": {
+        "defaultMAMEInputPortSuffix": "DIAL",
+        "defaultLabel": "Left"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "DIAL_EXT",
+        "defaultLabel": "Right"
+      },
+      "depressed": {
+        "defaultMAMEInputPortSuffix": "BUTTON",
+        "defaultLabel": ""
+      }
+    },
+    "fallbacks": [
+      {
+        "controlType": "spinner",
+        "level": "ok"
+      },
+      {
+        "controlType": "paddle-horizontal",
+        "level": "bad"
+      },
+      {
+        "controlType": "paddle-vertical",
+        "level": "bad",
+        "outputMapping": {
+          "x-": "y-",
+          "x+": "y+"
+        }
+      }
+    ]
+  },
+  
+  "paddle-horizontal": {
+    "type": "paddle-horizontal",
+    "name": "Paddle (Horizontal)",
+    "description": "A knob that can be turned but not as freely as spinners. It may also be restricted to only 720deg of movement (can not turn a full rotation). http://wiki.arcadecontrols.com/wiki/Spinners_and_Dials#What_is_a_Spinner.3F (last paragraph)",
+    "outputs": {
+      "x-": {
+        "defaultMAMEInputPortSuffix": "PADDLE",
+        "defaultLabel": "Left"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "PADDLE_EXT",
+        "defaultLabel": "Right"
+      }
+    },
+    "fallbacks": [
+      {
+        "controlType": "paddle-vertical",
+        "level": "native",
+        "outputMapping": {
+          "x-": "y-",
+          "x+": "y+"
+        }
+      },
+      {
+        "controlType": "spinner",
+        "level": "good"
+      }
+    ]
+  },
+  
+  "paddle-vertical": {
+    "type": "paddle-vertical",
+    "name": "Paddle (Vertical)",
+    "description": "The same as paddle-horizontal but maps to MAME PADDLE_V input ports.",
+    "outputs": {
+      "y-": {
+        "defaultMAMEInputPortSuffix": "PADDLE_V",
+        "defaultLabel": "Left"
+      },
+      "y+": {
+        "defaultMAMEInputPortSuffix": "PADDLE_V_EXT",
+        "defaultLabel": "Right"
+      }
+    },
+    "fallbacks": [
+      {
+        "controlType": "paddle-horizontal",
+        "level": "native",
+        "outputMapping": {
+          "y-": "x-",
+          "y+": "x+"
+        }
+      },
+      {
+        "controlType": "spinner",
+        "level": "good",
+        "outputMapping": {
+          "y-": "x-",
+          "y+": "x+"
+        }
+      }
+    ]
+  },
+  
+  
+  
+  
+  "steeringwheel-360": {
+    "type": "steeringwheel-360",
+    "name": "360 Steering Wheel",
+    "description": "A steering wheel that can be turned freely. http://wiki.arcadecontrols.com/wiki/Driving_Controls#Optical_.28360_degree_wheels.29",
+    "outputs": {
+      "x-": {
+        "defaultMAMEInputPortSuffix": "DIAL",
+        "defaultLabel": "Left"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "DIAL_EXT",
+        "defaultLabel": "Right"
+      }
+    },
+    "buttonDescriptors": [
+      "steeringwheel-center"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "spinner",
+        "level": "bad"
+      },
+      {
+        "controlType": "paddle-horizontal",
+        "level": "bad"
+      },
+      {
+        "controlType": "paddle-vertical",
+        "level": "bad",
+        "outputMapping": {
+          "x-": "y-",
+          "x+": "y+"
+        }
+      }
+    ]
+  },
+  
+  "steeringwheel-270": {
+    "type": "steeringwheel-270",
+    "name": "270 Steering Wheel",
+    "description": "A steering wheel that is restricted to 270deg of movement (can not turn a full rotation). http://wiki.arcadecontrols.com/wiki/Driving_Controls#Analog_.28270_degree_wheels.29",
+    "outputs": {
+      "x-": {
+        "defaultMAMEInputPortSuffix": "PADDLE",
+        "defaultLabel": "Left"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "PADDLE_EXT",
+        "defaultLabel": "Right"
+      }
+    },
+    "buttonDescriptors": [
+      "steeringwheel-center"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "steeringwheel-360",
+        "level": "ok"
+      },
+      {
+        "controlType": "spinner",
+        "level": "bad"
+      },
+      {
+        "controlType": "paddle-horizontal",
+        "level": "bad"
+      },
+      {
+        "controlType": "paddle-vertical",
+        "level": "bad",
+        "outputMapping": {
+          "x-": "y-",
+          "x+": "y+"
+        }
+      }
+    ]
+  },
+  
+  "pedal-digital": {
+    "type": "pedal-digital",
+    "name": "Pedal (Digital)",
+    "description": "A pedal that activates a switch (only has two states: on or off). http://wiki.arcadecontrols.com/wiki/Driving_Controls#Pedals",
+    "outputs": {
+      "pushed": {
+        "defaultMAMEInputPortSuffix": "BUTTON",
+        "defaultLabel": ""
+      }
+    },
+    "fallbacks": [
+      {
+        "controlType": "pedal-analog",
+        "level": "good",
+        "outputMapping": {
+          "pushed": "x+"
+        }
+      },
+      {
+        "controlType": "button",
+        "level": "bad"
+      }
+    ]
+  },
+  
+  "pedal-analog": {
+    "type": "pedal-analog",
+    "name": "Pedal (Analog)",
+    "description": "A pedal that uses an analog interface. http://wiki.arcadecontrols.com/wiki/Driving_Controls#Pedals",
+    "outputs": {
+      "x+": {
+        "defaultMAMEInputPortSuffix": "PEDAL",
+        "defaultLabel": ""
+      }
+    },
+    "fallbacks": [
+      {
+        "controlType": "pedal-analog-2",
+        "level": "native"
+      }
+    ]
+  },
+  
+  "pedal-analog-2": {
+    "type": "pedal-analog-2",
+    "name": "Pedal 2 (Analog)",
+    "description": "Same as pedal but maps to MAME PADDLE2 input ports.",
+    "outputs": {
+      "x+": {
+        "defaultMAMEInputPortSuffix": "PEDAL2",
+        "defaultLabel": ""
+      }
+    },
+    "fallbacks": [
+      {
+        "controlType": "pedal-analog",
+        "level": "native"
+      }
+    ]
+  },
+  
+  "shifter-highlow": {
+    "type": "shifter-highlow",
+    "name": "High-Low Shifter",
+    "description": "A shifter control that can change between a high or low state and maintains that state. Sometimes the control has two buttons (one for high and one for low) and sometimes the control has only one button. http://wiki.arcadecontrols.com/wiki/Driving_Controls#Shifters",
+    "outputs": {
+      "high": {
+        "defaultMAMEInputPortSuffix": "BUTTON",
+        "defaultLabel": "High"
+      },
+      "low": {
+        "defaultMAMEInputPortSuffix": "BUTTON",
+        "defaultLabel": "Low"
+      }
+    },
+    "buttonDescriptors": [
+      "shifter-side-left",
+      "shifter-side-right"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "shifter-4gear",
+        "outputMapping": {
+          "high": "gear2",
+          "low" : "gear1"
+        },
+        "level": "bad"
+      }
+    ]
+  },
+  
+  "shifter-updown": {
+    "type": "shifter-updown",
+    "name": "Up-Down Shifter",
+    "description": "A shifter control that can be pushed up or pulled down but returns to the center. http://wiki.arcadecontrols.com/wiki/Driving_Controls#Shifters",
+    "outputs": {
+      "up": {
+        "defaultMAMEInputPortSuffix": "BUTTON",
+        "defaultLabel": "Up"
+      },
+      "down": {
+        "defaultMAMEInputPortSuffix": "BUTTON",
+        "defaultLabel": "Down"
+      }
+    },
+    "buttonDescriptors": [
+      "shifter-side-left",
+      "shifter-side-right"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "buttons",
+        "level": "bad"
+      }
+    ]
+  },
+  
+  "shifter-4gear": {
+    "type": "shifter-4gear",
+    "name": "4-Gear Shifter",
+    "description": "A shifter control that allows you to choose between 4 states and maintains that state. http://wiki.arcadecontrols.com/wiki/Driving_Controls#Shifters",
+    "outputs": {
+      "gear1": {
+        "defaultMAMEInputPortSuffix": "BUTTON",
+        "defaultLabel": "1st Gear"
+      },
+      "gear2": {
+        "defaultMAMEInputPortSuffix": "BUTTON",
+        "defaultLabel": "2nd Gear"
+      },
+      "gear3": {
+        "defaultMAMEInputPortSuffix": "BUTTON",
+        "defaultLabel": "3rd Gear"
+      },
+      "gear4": {
+        "defaultMAMEInputPortSuffix": "BUTTON",
+        "defaultLabel": "4th Gear"
+      }
+    },
+    "buttonDescriptors": [
+      "shifter-top"
+    ]
+  },
+  
+  
+  
+  
+  "lightgun": {
+    "type": "lightgun",
+    "name": "Lightgun",
+    "description": "A lightgun. http://wiki.arcadecontrols.com/wiki/Light_Guns",
+    "outputs": {
+      "y-": {
+        "defaultMAMEInputPortSuffix": "LIGHTGUN_Y",
+        "defaultLabel": "Up"
+      },
+      "y+": {
+        "defaultMAMEInputPortSuffix": "LIGHTGUN_Y_EXT",
+        "defaultLabel": "Down"
+      },
+      "x-": {
+        "defaultMAMEInputPortSuffix": "LIGHTGUN_X",
+        "defaultLabel": "Left"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "LIGHTGUN_X_EXT",
+        "defaultLabel": "Right"
+      }
+    },
+    "buttonDescriptors": [
+      "trigger"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "lightgun-analog",
+        "level": "bad"
+      }
+    ]
+  },
+  
+  "lightgun-analog": {
+    "type": "lightgun-analog",
+    "name": "Analog Gun",
+    "description": "An analog joystick that is shaped like a gun. It is used to play light-gun style shooting games but instead of a light gun the gun is mounted and uses an along joystick interface.",
+    "outputs": {
+      "y-": {
+        "defaultMAMEInputPortSuffix": "LIGHTGUN_Y",
+        "defaultLabel": "Up"
+      },
+      "y+": {
+        "defaultMAMEInputPortSuffix": "LIGHTGUN_Y_EXT",
+        "defaultLabel": "Down"
+      },
+      "x-": {
+        "defaultMAMEInputPortSuffix": "LIGHTGUN_X",
+        "defaultLabel": "Left"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "LIGHTGUN_X_EXT",
+        "defaultLabel": "Right"
+      }
+    },
+    "buttonDescriptors": [
+      "trigger"
+    ],
+    "fallbacks": [
+      {
+        "controlType": "lightgun",
+        "level": "bad"
+      }
+    ]
+  },
+  
+  
+  
+  
+  "handlebars": {
+    "type": "handlebars",
+    "name": "Handlebars",
+    "description": "A control that is shaped like bicycle handlebars.",
+    "outputs": {
+      "y-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Y",
+        "defaultLabel": "Accelerate"
+      },
+      "y+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Y_EXT",
+        "defaultLabel": "Break"
+      },
+      "x-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_X",
+        "defaultLabel": "Left"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_X_EXT",
+        "defaultLabel": "Right"
+      }
+    }
+  },
+  "turntable": {
+    "type": "turntable",
+    "name": "Turntable",
+    "description": "A turntable control.",
+    "outputs": {
+      "x-": {
+        "defaultMAMEInputPortSuffix": "DIAL",
+        "defaultLabel": "Scratch"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "DIAL_EXT",
+        "defaultLabel": "Scratch"
+      }
+    }
+  },
+  "baseballpitcher": {
+    "type": "baseballpitcher",
+    "name": "Baseball Pitcher",
+    "description": "A control for emulating a baseball pitch.",
+    "outputs": {
+      "y-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Y",
+        "defaultLabel": "Pitch"
+      },
+      "y+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Y_EXT",
+        "defaultLabel": "Windup"
+      },
+      "x-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_X",
+        "defaultLabel": "Left"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_X_EXT",
+        "defaultLabel": "Right"
+      }
+    }
+  },
+  "battercontrol": {
+    "type": "battercontrol",
+    "name": "Batter Control",
+    "description": "A control for emulating a bat swing.",
+    "outputs": {
+      "y-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Y",
+        "defaultLabel": "Up"
+      },
+      "y+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Y_EXT",
+        "defaultLabel": "Down"
+      },
+      "x-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_X",
+        "defaultLabel": "Swing"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_X_EXT",
+        "defaultLabel": "Swing"
+      }
+    }
+  },
+  "footballkicker": {
+    "type": "footballkicker",
+    "name": "Football Kicker",
+    "description": "A control for emulating a football (American) kick.",
+    "outputs": {
+      "y-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Y",
+        "defaultLabel": "Short"
+      },
+      "y+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_Y_EXT",
+        "defaultLabel": "Long"
+      },
+      "x-": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_X",
+        "defaultLabel": "Aim Left"
+      },
+      "x+": {
+        "defaultMAMEInputPortSuffix": "AD_STICK_X_EXT",
+        "defaultLabel": "Aim Right"
+      }
+    }
+  },
+  "triviabuttons": {
+    "type": "triviabuttons",
+    "name": "Trivia Buttons",
+    "description": "Specialty buttons for trivia games.",
+    "outputs": {}
+  },
+  "mahjongcp": {
+    "type": "mahjongcp",
+    "name": "Mahjong control panel.",
+    "description": "Mahjong control panel.",
+    "outputs": {}
+  },
+  "misc": {
+    "type": "misc",
+    "name": "Misc",
+    "description": "Miscellaneous.",
+    "outputs": {}
+  }
+}
