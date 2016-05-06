@@ -1,0 +1,148 @@
+{
+  "type": "object",
+  "additionalProperties": {
+    "$ref": "#/definitions/controlDef"
+  },
+  "minProperties": 1,
+  
+  
+  "definitions": {
+    "controlDef": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "[a-z0-9\\-]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "outputMap": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/output"
+          }
+        },
+        "descriptors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z0-9\\-]+$"
+          },
+          "uniqueItems": true
+        },
+        "buttonDescriptors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z0-9\\-]+$"
+          },
+          "uniqueItems": true
+        },
+        "fallbacks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/fallback"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": ["type", "name", "description", "outputMap"]
+    },
+    
+    
+    
+    "output": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-z0-9\\-]+$"
+        },
+        "isAnalog": {
+          "type": "boolean"
+        },
+        "defaultMAMEInputPortSuffix": {
+          "type": "string",
+          "minLength": 1
+        },
+        "defaultLabel": {
+          "type": "string"
+        },
+        "negDefaultLabel": {
+          "type": "string"
+        },
+        "posDefaultLabel": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": ["defaultMAMEInputPortSuffix"]
+    },
+    
+    
+    
+    "fallback": {
+      "type": "object",
+      "properties": {
+        "controlType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "level": {
+          "type": "string",
+          "enum": ["good", "ok", "bad"]
+        },
+        "outputMapping": {
+          "type": "object",
+          "additionalProperties": {
+            "oneOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1
+              }
+            ]
+          }
+        },
+        "buttonDescriptorMapping": {
+          "type": "object",
+          "additionalProperties": {
+            "oneOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1
+              }
+            ]
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": ["controlType", "level"]
+    }
+  }
+}

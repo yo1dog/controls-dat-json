@@ -1,0 +1,4895 @@
+{
+  "P1_JOYSTICK_UP": {
+    "type": "P1_JOYSTICK_UP",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Up"
+  },
+  "P1_JOYSTICK_DOWN": {
+    "type": "P1_JOYSTICK_DOWN",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Down"
+  },
+  "P1_JOYSTICK_LEFT": {
+    "type": "P1_JOYSTICK_LEFT",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Left"
+  },
+  "P1_JOYSTICK_RIGHT": {
+    "type": "P1_JOYSTICK_RIGHT",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Right"
+  },
+  "P1_JOYSTICKRIGHT_UP": {
+    "type": "P1_JOYSTICKRIGHT_UP",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Right/Up"
+  },
+  "P1_JOYSTICKRIGHT_DOWN": {
+    "type": "P1_JOYSTICKRIGHT_DOWN",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Right/Down"
+  },
+  "P1_JOYSTICKRIGHT_LEFT": {
+    "type": "P1_JOYSTICKRIGHT_LEFT",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Right/Left"
+  },
+  "P1_JOYSTICKRIGHT_RIGHT": {
+    "type": "P1_JOYSTICKRIGHT_RIGHT",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Right/Right"
+  },
+  "P1_JOYSTICKLEFT_UP": {
+    "type": "P1_JOYSTICKLEFT_UP",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Left/Up"
+  },
+  "P1_JOYSTICKLEFT_DOWN": {
+    "type": "P1_JOYSTICKLEFT_DOWN",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Left/Down"
+  },
+  "P1_JOYSTICKLEFT_LEFT": {
+    "type": "P1_JOYSTICKLEFT_LEFT",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Left/Left"
+  },
+  "P1_JOYSTICKLEFT_RIGHT": {
+    "type": "P1_JOYSTICKLEFT_RIGHT",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Left/Right"
+  },
+  "P1_BUTTON1": {
+    "type": "P1_BUTTON1",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Button 1"
+  },
+  "P1_BUTTON2": {
+    "type": "P1_BUTTON2",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Button 2"
+  },
+  "P1_BUTTON3": {
+    "type": "P1_BUTTON3",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Button 3"
+  },
+  "P1_BUTTON4": {
+    "type": "P1_BUTTON4",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Button 4"
+  },
+  "P1_BUTTON5": {
+    "type": "P1_BUTTON5",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Button 5"
+  },
+  "P1_BUTTON6": {
+    "type": "P1_BUTTON6",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Button 6"
+  },
+  "P1_BUTTON7": {
+    "type": "P1_BUTTON7",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Button 7"
+  },
+  "P1_BUTTON8": {
+    "type": "P1_BUTTON8",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Button 8"
+  },
+  "P1_BUTTON9": {
+    "type": "P1_BUTTON9",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Button 9"
+  },
+  "P1_BUTTON10": {
+    "type": "P1_BUTTON10",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Button 10"
+  },
+  "P1_BUTTON11": {
+    "type": "P1_BUTTON11",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Button 11"
+  },
+  "P1_BUTTON12": {
+    "type": "P1_BUTTON12",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Button 12"
+  },
+  "P1_BUTTON13": {
+    "type": "P1_BUTTON13",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Button 13"
+  },
+  "P1_BUTTON14": {
+    "type": "P1_BUTTON14",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Button 14"
+  },
+  "P1_BUTTON15": {
+    "type": "P1_BUTTON15",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Button 15"
+  },
+  "P1_BUTTON16": {
+    "type": "P1_BUTTON16",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Button 16"
+  },
+  "P1_START": {
+    "type": "P1_START",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Start"
+  },
+  "P1_SELECT": {
+    "type": "P1_SELECT",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Select"
+  },
+  "P1_MAHJONG_A": {
+    "type": "P1_MAHJONG_A",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong A"
+  },
+  "P1_MAHJONG_B": {
+    "type": "P1_MAHJONG_B",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong B"
+  },
+  "P1_MAHJONG_C": {
+    "type": "P1_MAHJONG_C",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong C"
+  },
+  "P1_MAHJONG_D": {
+    "type": "P1_MAHJONG_D",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong D"
+  },
+  "P1_MAHJONG_E": {
+    "type": "P1_MAHJONG_E",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong E"
+  },
+  "P1_MAHJONG_F": {
+    "type": "P1_MAHJONG_F",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong F"
+  },
+  "P1_MAHJONG_G": {
+    "type": "P1_MAHJONG_G",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong G"
+  },
+  "P1_MAHJONG_H": {
+    "type": "P1_MAHJONG_H",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong H"
+  },
+  "P1_MAHJONG_I": {
+    "type": "P1_MAHJONG_I",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong I"
+  },
+  "P1_MAHJONG_J": {
+    "type": "P1_MAHJONG_J",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong J"
+  },
+  "P1_MAHJONG_K": {
+    "type": "P1_MAHJONG_K",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong K"
+  },
+  "P1_MAHJONG_L": {
+    "type": "P1_MAHJONG_L",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong L"
+  },
+  "P1_MAHJONG_M": {
+    "type": "P1_MAHJONG_M",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong M"
+  },
+  "P1_MAHJONG_N": {
+    "type": "P1_MAHJONG_N",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong N"
+  },
+  "P1_MAHJONG_O": {
+    "type": "P1_MAHJONG_O",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong O"
+  },
+  "P1_MAHJONG_P": {
+    "type": "P1_MAHJONG_P",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong P"
+  },
+  "P1_MAHJONG_Q": {
+    "type": "P1_MAHJONG_Q",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong Q"
+  },
+  "P1_MAHJONG_KAN": {
+    "type": "P1_MAHJONG_KAN",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong Kan"
+  },
+  "P1_MAHJONG_PON": {
+    "type": "P1_MAHJONG_PON",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong Pon"
+  },
+  "P1_MAHJONG_CHI": {
+    "type": "P1_MAHJONG_CHI",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong Chi"
+  },
+  "P1_MAHJONG_REACH": {
+    "type": "P1_MAHJONG_REACH",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong Reach"
+  },
+  "P1_MAHJONG_RON": {
+    "type": "P1_MAHJONG_RON",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong Ron"
+  },
+  "P1_MAHJONG_BET": {
+    "type": "P1_MAHJONG_BET",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong Bet"
+  },
+  "P1_MAHJONG_LAST_CHANCE": {
+    "type": "P1_MAHJONG_LAST_CHANCE",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong Last Chance"
+  },
+  "P1_MAHJONG_SCORE": {
+    "type": "P1_MAHJONG_SCORE",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong Score"
+  },
+  "P1_MAHJONG_DOUBLE_UP": {
+    "type": "P1_MAHJONG_DOUBLE_UP",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong Double Up"
+  },
+  "P1_MAHJONG_FLIP_FLOP": {
+    "type": "P1_MAHJONG_FLIP_FLOP",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong Flip Flop"
+  },
+  "P1_MAHJONG_BIG": {
+    "type": "P1_MAHJONG_BIG",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong Big"
+  },
+  "P1_MAHJONG_SMALL": {
+    "type": "P1_MAHJONG_SMALL",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Mahjong Small"
+  },
+  "P1_HANAFUDA_A": {
+    "type": "P1_HANAFUDA_A",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Hanafuda A/1"
+  },
+  "P1_HANAFUDA_B": {
+    "type": "P1_HANAFUDA_B",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Hanafuda B/2"
+  },
+  "P1_HANAFUDA_C": {
+    "type": "P1_HANAFUDA_C",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Hanafuda C/3"
+  },
+  "P1_HANAFUDA_D": {
+    "type": "P1_HANAFUDA_D",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Hanafuda D/4"
+  },
+  "P1_HANAFUDA_E": {
+    "type": "P1_HANAFUDA_E",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Hanafuda E/5"
+  },
+  "P1_HANAFUDA_F": {
+    "type": "P1_HANAFUDA_F",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Hanafuda F/6"
+  },
+  "P1_HANAFUDA_G": {
+    "type": "P1_HANAFUDA_G",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Hanafuda G/7"
+  },
+  "P1_HANAFUDA_H": {
+    "type": "P1_HANAFUDA_H",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Hanafuda H/8"
+  },
+  "P1_HANAFUDA_YES": {
+    "type": "P1_HANAFUDA_YES",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Hanafuda Yes"
+  },
+  "P1_HANAFUDA_NO": {
+    "type": "P1_HANAFUDA_NO",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "P1 Hanafuda No"
+  },
+  "P1_GAMBLE_HIGH": {
+    "type": "P1_GAMBLE_HIGH",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "High"
+  },
+  "P1_GAMBLE_LOW": {
+    "type": "P1_GAMBLE_LOW",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Low"
+  },
+  "P1_GAMBLE_HALF": {
+    "type": "P1_GAMBLE_HALF",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Half Gamble"
+  },
+  "P1_GAMBLE_DEAL": {
+    "type": "P1_GAMBLE_DEAL",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Deal"
+  },
+  "P1_GAMBLE_D_UP": {
+    "type": "P1_GAMBLE_D_UP",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Double Up"
+  },
+  "P1_GAMBLE_TAKE": {
+    "type": "P1_GAMBLE_TAKE",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Take"
+  },
+  "P1_GAMBLE_STAND": {
+    "type": "P1_GAMBLE_STAND",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Stand"
+  },
+  "P1_GAMBLE_BET": {
+    "type": "P1_GAMBLE_BET",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Bet"
+  },
+  "P1_GAMBLE_KEYIN": {
+    "type": "P1_GAMBLE_KEYIN",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Key In"
+  },
+  "P1_GAMBLE_KEYOUT": {
+    "type": "P1_GAMBLE_KEYOUT",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Key Out"
+  },
+  "P1_GAMBLE_PAYOUT": {
+    "type": "P1_GAMBLE_PAYOUT",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Payout"
+  },
+  "P1_GAMBLE_DOOR": {
+    "type": "P1_GAMBLE_DOOR",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Door"
+  },
+  "P1_GAMBLE_SERVICE": {
+    "type": "P1_GAMBLE_SERVICE",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Service"
+  },
+  "P1_GAMBLE_BOOK": {
+    "type": "P1_GAMBLE_BOOK",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Book-Keeping"
+  },
+  "P1_POKER_HOLD1": {
+    "type": "P1_POKER_HOLD1",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Hold 1"
+  },
+  "P1_POKER_HOLD2": {
+    "type": "P1_POKER_HOLD2",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Hold 2"
+  },
+  "P1_POKER_HOLD3": {
+    "type": "P1_POKER_HOLD3",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Hold 3"
+  },
+  "P1_POKER_HOLD4": {
+    "type": "P1_POKER_HOLD4",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Hold 4"
+  },
+  "P1_POKER_HOLD5": {
+    "type": "P1_POKER_HOLD5",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Hold 5"
+  },
+  "P1_POKER_CANCEL": {
+    "type": "P1_POKER_CANCEL",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Cancel"
+  },
+  "P1_POKER_BET": {
+    "type": "P1_POKER_BET",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Bet"
+  },
+  "P1_SLOT_STOP1": {
+    "type": "P1_SLOT_STOP1",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Stop Reel 1"
+  },
+  "P1_SLOT_STOP2": {
+    "type": "P1_SLOT_STOP2",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Stop Reel 2"
+  },
+  "P1_SLOT_STOP3": {
+    "type": "P1_SLOT_STOP3",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Stop Reel 3"
+  },
+  "P1_SLOT_STOP4": {
+    "type": "P1_SLOT_STOP4",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Stop Reel 4"
+  },
+  "P1_SLOT_STOP_ALL": {
+    "type": "P1_SLOT_STOP_ALL",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "digital",
+    "defaultLabel": "Stop All Reels"
+  },
+  "P2_JOYSTICK_UP": {
+    "type": "P2_JOYSTICK_UP",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Up"
+  },
+  "P2_JOYSTICK_DOWN": {
+    "type": "P2_JOYSTICK_DOWN",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Down"
+  },
+  "P2_JOYSTICK_LEFT": {
+    "type": "P2_JOYSTICK_LEFT",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Left"
+  },
+  "P2_JOYSTICK_RIGHT": {
+    "type": "P2_JOYSTICK_RIGHT",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Right"
+  },
+  "P2_JOYSTICKRIGHT_UP": {
+    "type": "P2_JOYSTICKRIGHT_UP",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Right/Up"
+  },
+  "P2_JOYSTICKRIGHT_DOWN": {
+    "type": "P2_JOYSTICKRIGHT_DOWN",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Right/Down"
+  },
+  "P2_JOYSTICKRIGHT_LEFT": {
+    "type": "P2_JOYSTICKRIGHT_LEFT",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Right/Left"
+  },
+  "P2_JOYSTICKRIGHT_RIGHT": {
+    "type": "P2_JOYSTICKRIGHT_RIGHT",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Right/Right"
+  },
+  "P2_JOYSTICKLEFT_UP": {
+    "type": "P2_JOYSTICKLEFT_UP",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Left/Up"
+  },
+  "P2_JOYSTICKLEFT_DOWN": {
+    "type": "P2_JOYSTICKLEFT_DOWN",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Left/Down"
+  },
+  "P2_JOYSTICKLEFT_LEFT": {
+    "type": "P2_JOYSTICKLEFT_LEFT",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Left/Left"
+  },
+  "P2_JOYSTICKLEFT_RIGHT": {
+    "type": "P2_JOYSTICKLEFT_RIGHT",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Left/Right"
+  },
+  "P2_BUTTON1": {
+    "type": "P2_BUTTON1",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Button 1"
+  },
+  "P2_BUTTON2": {
+    "type": "P2_BUTTON2",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Button 2"
+  },
+  "P2_BUTTON3": {
+    "type": "P2_BUTTON3",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Button 3"
+  },
+  "P2_BUTTON4": {
+    "type": "P2_BUTTON4",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Button 4"
+  },
+  "P2_BUTTON5": {
+    "type": "P2_BUTTON5",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Button 5"
+  },
+  "P2_BUTTON6": {
+    "type": "P2_BUTTON6",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Button 6"
+  },
+  "P2_BUTTON7": {
+    "type": "P2_BUTTON7",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Button 7"
+  },
+  "P2_BUTTON8": {
+    "type": "P2_BUTTON8",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Button 8"
+  },
+  "P2_BUTTON9": {
+    "type": "P2_BUTTON9",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Button 9"
+  },
+  "P2_BUTTON10": {
+    "type": "P2_BUTTON10",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Button 10"
+  },
+  "P2_BUTTON11": {
+    "type": "P2_BUTTON11",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Button 11"
+  },
+  "P2_BUTTON12": {
+    "type": "P2_BUTTON12",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Button 12"
+  },
+  "P2_BUTTON13": {
+    "type": "P2_BUTTON13",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Button 13"
+  },
+  "P2_BUTTON14": {
+    "type": "P2_BUTTON14",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Button 14"
+  },
+  "P2_BUTTON15": {
+    "type": "P2_BUTTON15",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Button 15"
+  },
+  "P2_BUTTON16": {
+    "type": "P2_BUTTON16",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Button 16"
+  },
+  "P2_START": {
+    "type": "P2_START",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Start"
+  },
+  "P2_SELECT": {
+    "type": "P2_SELECT",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Select"
+  },
+  "P2_MAHJONG_A": {
+    "type": "P2_MAHJONG_A",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong A"
+  },
+  "P2_MAHJONG_B": {
+    "type": "P2_MAHJONG_B",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong B"
+  },
+  "P2_MAHJONG_C": {
+    "type": "P2_MAHJONG_C",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong C"
+  },
+  "P2_MAHJONG_D": {
+    "type": "P2_MAHJONG_D",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong D"
+  },
+  "P2_MAHJONG_E": {
+    "type": "P2_MAHJONG_E",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong E"
+  },
+  "P2_MAHJONG_F": {
+    "type": "P2_MAHJONG_F",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong F"
+  },
+  "P2_MAHJONG_G": {
+    "type": "P2_MAHJONG_G",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong G"
+  },
+  "P2_MAHJONG_H": {
+    "type": "P2_MAHJONG_H",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong H"
+  },
+  "P2_MAHJONG_I": {
+    "type": "P2_MAHJONG_I",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong I"
+  },
+  "P2_MAHJONG_J": {
+    "type": "P2_MAHJONG_J",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong J"
+  },
+  "P2_MAHJONG_K": {
+    "type": "P2_MAHJONG_K",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong K"
+  },
+  "P2_MAHJONG_L": {
+    "type": "P2_MAHJONG_L",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong L"
+  },
+  "P2_MAHJONG_M": {
+    "type": "P2_MAHJONG_M",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong M"
+  },
+  "P2_MAHJONG_N": {
+    "type": "P2_MAHJONG_N",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong N"
+  },
+  "P2_MAHJONG_O": {
+    "type": "P2_MAHJONG_O",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong O"
+  },
+  "P2_MAHJONG_P": {
+    "type": "P2_MAHJONG_P",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong P"
+  },
+  "P2_MAHJONG_Q": {
+    "type": "P2_MAHJONG_Q",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong Q"
+  },
+  "P2_MAHJONG_KAN": {
+    "type": "P2_MAHJONG_KAN",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong Kan"
+  },
+  "P2_MAHJONG_PON": {
+    "type": "P2_MAHJONG_PON",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong Pon"
+  },
+  "P2_MAHJONG_CHI": {
+    "type": "P2_MAHJONG_CHI",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong Chi"
+  },
+  "P2_MAHJONG_REACH": {
+    "type": "P2_MAHJONG_REACH",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong Reach"
+  },
+  "P2_MAHJONG_RON": {
+    "type": "P2_MAHJONG_RON",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong Ron"
+  },
+  "P2_MAHJONG_BET": {
+    "type": "P2_MAHJONG_BET",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong Bet"
+  },
+  "P2_MAHJONG_LAST_CHANCE": {
+    "type": "P2_MAHJONG_LAST_CHANCE",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong Last Chance"
+  },
+  "P2_MAHJONG_SCORE": {
+    "type": "P2_MAHJONG_SCORE",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong Score"
+  },
+  "P2_MAHJONG_DOUBLE_UP": {
+    "type": "P2_MAHJONG_DOUBLE_UP",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong Double Up"
+  },
+  "P2_MAHJONG_FLIP_FLOP": {
+    "type": "P2_MAHJONG_FLIP_FLOP",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong Flip Flop"
+  },
+  "P2_MAHJONG_BIG": {
+    "type": "P2_MAHJONG_BIG",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong Big"
+  },
+  "P2_MAHJONG_SMALL": {
+    "type": "P2_MAHJONG_SMALL",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Mahjong Small"
+  },
+  "P2_HANAFUDA_A": {
+    "type": "P2_HANAFUDA_A",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Hanafuda A/1"
+  },
+  "P2_HANAFUDA_B": {
+    "type": "P2_HANAFUDA_B",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Hanafuda B/2"
+  },
+  "P2_HANAFUDA_C": {
+    "type": "P2_HANAFUDA_C",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Hanafuda C/3"
+  },
+  "P2_HANAFUDA_D": {
+    "type": "P2_HANAFUDA_D",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Hanafuda D/4"
+  },
+  "P2_HANAFUDA_E": {
+    "type": "P2_HANAFUDA_E",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Hanafuda E/5"
+  },
+  "P2_HANAFUDA_F": {
+    "type": "P2_HANAFUDA_F",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Hanafuda F/6"
+  },
+  "P2_HANAFUDA_G": {
+    "type": "P2_HANAFUDA_G",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Hanafuda G/7"
+  },
+  "P2_HANAFUDA_H": {
+    "type": "P2_HANAFUDA_H",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Hanafuda H/8"
+  },
+  "P2_HANAFUDA_YES": {
+    "type": "P2_HANAFUDA_YES",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Hanafuda Yes"
+  },
+  "P2_HANAFUDA_NO": {
+    "type": "P2_HANAFUDA_NO",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "digital",
+    "defaultLabel": "P2 Hanafuda No"
+  },
+  "P3_JOYSTICK_UP": {
+    "type": "P3_JOYSTICK_UP",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Up"
+  },
+  "P3_JOYSTICK_DOWN": {
+    "type": "P3_JOYSTICK_DOWN",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Down"
+  },
+  "P3_JOYSTICK_LEFT": {
+    "type": "P3_JOYSTICK_LEFT",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Left"
+  },
+  "P3_JOYSTICK_RIGHT": {
+    "type": "P3_JOYSTICK_RIGHT",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Right"
+  },
+  "P3_JOYSTICKRIGHT_UP": {
+    "type": "P3_JOYSTICKRIGHT_UP",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Right/Up"
+  },
+  "P3_JOYSTICKRIGHT_DOWN": {
+    "type": "P3_JOYSTICKRIGHT_DOWN",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Right/Down"
+  },
+  "P3_JOYSTICKRIGHT_LEFT": {
+    "type": "P3_JOYSTICKRIGHT_LEFT",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Right/Left"
+  },
+  "P3_JOYSTICKRIGHT_RIGHT": {
+    "type": "P3_JOYSTICKRIGHT_RIGHT",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Right/Right"
+  },
+  "P3_JOYSTICKLEFT_UP": {
+    "type": "P3_JOYSTICKLEFT_UP",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Left/Up"
+  },
+  "P3_JOYSTICKLEFT_DOWN": {
+    "type": "P3_JOYSTICKLEFT_DOWN",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Left/Down"
+  },
+  "P3_JOYSTICKLEFT_LEFT": {
+    "type": "P3_JOYSTICKLEFT_LEFT",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Left/Left"
+  },
+  "P3_JOYSTICKLEFT_RIGHT": {
+    "type": "P3_JOYSTICKLEFT_RIGHT",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Left/Right"
+  },
+  "P3_BUTTON1": {
+    "type": "P3_BUTTON1",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Button 1"
+  },
+  "P3_BUTTON2": {
+    "type": "P3_BUTTON2",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Button 2"
+  },
+  "P3_BUTTON3": {
+    "type": "P3_BUTTON3",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Button 3"
+  },
+  "P3_BUTTON4": {
+    "type": "P3_BUTTON4",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Button 4"
+  },
+  "P3_BUTTON5": {
+    "type": "P3_BUTTON5",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Button 5"
+  },
+  "P3_BUTTON6": {
+    "type": "P3_BUTTON6",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Button 6"
+  },
+  "P3_BUTTON7": {
+    "type": "P3_BUTTON7",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Button 7"
+  },
+  "P3_BUTTON8": {
+    "type": "P3_BUTTON8",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Button 8"
+  },
+  "P3_BUTTON9": {
+    "type": "P3_BUTTON9",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Button 9"
+  },
+  "P3_BUTTON10": {
+    "type": "P3_BUTTON10",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Button 10"
+  },
+  "P3_BUTTON11": {
+    "type": "P3_BUTTON11",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Button 11"
+  },
+  "P3_BUTTON12": {
+    "type": "P3_BUTTON12",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Button 12"
+  },
+  "P3_BUTTON13": {
+    "type": "P3_BUTTON13",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Button 13"
+  },
+  "P3_BUTTON14": {
+    "type": "P3_BUTTON14",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Button 14"
+  },
+  "P3_BUTTON15": {
+    "type": "P3_BUTTON15",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Button 15"
+  },
+  "P3_BUTTON16": {
+    "type": "P3_BUTTON16",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Button 16"
+  },
+  "P3_START": {
+    "type": "P3_START",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Start"
+  },
+  "P3_SELECT": {
+    "type": "P3_SELECT",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "digital",
+    "defaultLabel": "P3 Select"
+  },
+  "P4_JOYSTICK_UP": {
+    "type": "P4_JOYSTICK_UP",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Up"
+  },
+  "P4_JOYSTICK_DOWN": {
+    "type": "P4_JOYSTICK_DOWN",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Down"
+  },
+  "P4_JOYSTICK_LEFT": {
+    "type": "P4_JOYSTICK_LEFT",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Left"
+  },
+  "P4_JOYSTICK_RIGHT": {
+    "type": "P4_JOYSTICK_RIGHT",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Right"
+  },
+  "P4_JOYSTICKRIGHT_UP": {
+    "type": "P4_JOYSTICKRIGHT_UP",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Right/Up"
+  },
+  "P4_JOYSTICKRIGHT_DOWN": {
+    "type": "P4_JOYSTICKRIGHT_DOWN",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Right/Down"
+  },
+  "P4_JOYSTICKRIGHT_LEFT": {
+    "type": "P4_JOYSTICKRIGHT_LEFT",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Right/Left"
+  },
+  "P4_JOYSTICKRIGHT_RIGHT": {
+    "type": "P4_JOYSTICKRIGHT_RIGHT",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Right/Right"
+  },
+  "P4_JOYSTICKLEFT_UP": {
+    "type": "P4_JOYSTICKLEFT_UP",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Left/Up"
+  },
+  "P4_JOYSTICKLEFT_DOWN": {
+    "type": "P4_JOYSTICKLEFT_DOWN",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Left/Down"
+  },
+  "P4_JOYSTICKLEFT_LEFT": {
+    "type": "P4_JOYSTICKLEFT_LEFT",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Left/Left"
+  },
+  "P4_JOYSTICKLEFT_RIGHT": {
+    "type": "P4_JOYSTICKLEFT_RIGHT",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Left/Right"
+  },
+  "P4_BUTTON1": {
+    "type": "P4_BUTTON1",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Button 1"
+  },
+  "P4_BUTTON2": {
+    "type": "P4_BUTTON2",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Button 2"
+  },
+  "P4_BUTTON3": {
+    "type": "P4_BUTTON3",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Button 3"
+  },
+  "P4_BUTTON4": {
+    "type": "P4_BUTTON4",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Button 4"
+  },
+  "P4_BUTTON5": {
+    "type": "P4_BUTTON5",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Button 5"
+  },
+  "P4_BUTTON6": {
+    "type": "P4_BUTTON6",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Button 6"
+  },
+  "P4_BUTTON7": {
+    "type": "P4_BUTTON7",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Button 7"
+  },
+  "P4_BUTTON8": {
+    "type": "P4_BUTTON8",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Button 8"
+  },
+  "P4_BUTTON9": {
+    "type": "P4_BUTTON9",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Button 9"
+  },
+  "P4_BUTTON10": {
+    "type": "P4_BUTTON10",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Button 10"
+  },
+  "P4_BUTTON11": {
+    "type": "P4_BUTTON11",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Button 11"
+  },
+  "P4_BUTTON12": {
+    "type": "P4_BUTTON12",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Button 12"
+  },
+  "P4_BUTTON13": {
+    "type": "P4_BUTTON13",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Button 13"
+  },
+  "P4_BUTTON14": {
+    "type": "P4_BUTTON14",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Button 14"
+  },
+  "P4_BUTTON15": {
+    "type": "P4_BUTTON15",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Button 15"
+  },
+  "P4_BUTTON16": {
+    "type": "P4_BUTTON16",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Button 16"
+  },
+  "P4_START": {
+    "type": "P4_START",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Start"
+  },
+  "P4_SELECT": {
+    "type": "P4_SELECT",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "digital",
+    "defaultLabel": "P4 Select"
+  },
+  "P5_JOYSTICK_UP": {
+    "type": "P5_JOYSTICK_UP",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Up"
+  },
+  "P5_JOYSTICK_DOWN": {
+    "type": "P5_JOYSTICK_DOWN",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Down"
+  },
+  "P5_JOYSTICK_LEFT": {
+    "type": "P5_JOYSTICK_LEFT",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Left"
+  },
+  "P5_JOYSTICK_RIGHT": {
+    "type": "P5_JOYSTICK_RIGHT",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Right"
+  },
+  "P5_JOYSTICKRIGHT_UP": {
+    "type": "P5_JOYSTICKRIGHT_UP",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Right/Up"
+  },
+  "P5_JOYSTICKRIGHT_DOWN": {
+    "type": "P5_JOYSTICKRIGHT_DOWN",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Right/Down"
+  },
+  "P5_JOYSTICKRIGHT_LEFT": {
+    "type": "P5_JOYSTICKRIGHT_LEFT",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Right/Left"
+  },
+  "P5_JOYSTICKRIGHT_RIGHT": {
+    "type": "P5_JOYSTICKRIGHT_RIGHT",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Right/Right"
+  },
+  "P5_JOYSTICKLEFT_UP": {
+    "type": "P5_JOYSTICKLEFT_UP",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Left/Up"
+  },
+  "P5_JOYSTICKLEFT_DOWN": {
+    "type": "P5_JOYSTICKLEFT_DOWN",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Left/Down"
+  },
+  "P5_JOYSTICKLEFT_LEFT": {
+    "type": "P5_JOYSTICKLEFT_LEFT",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Left/Left"
+  },
+  "P5_JOYSTICKLEFT_RIGHT": {
+    "type": "P5_JOYSTICKLEFT_RIGHT",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Left/Right"
+  },
+  "P5_BUTTON1": {
+    "type": "P5_BUTTON1",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Button 1"
+  },
+  "P5_BUTTON2": {
+    "type": "P5_BUTTON2",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Button 2"
+  },
+  "P5_BUTTON3": {
+    "type": "P5_BUTTON3",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Button 3"
+  },
+  "P5_BUTTON4": {
+    "type": "P5_BUTTON4",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Button 4"
+  },
+  "P5_BUTTON5": {
+    "type": "P5_BUTTON5",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Button 5"
+  },
+  "P5_BUTTON6": {
+    "type": "P5_BUTTON6",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Button 6"
+  },
+  "P5_BUTTON7": {
+    "type": "P5_BUTTON7",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Button 7"
+  },
+  "P5_BUTTON8": {
+    "type": "P5_BUTTON8",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Button 8"
+  },
+  "P5_BUTTON9": {
+    "type": "P5_BUTTON9",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Button 9"
+  },
+  "P5_BUTTON10": {
+    "type": "P5_BUTTON10",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Button 10"
+  },
+  "P5_BUTTON11": {
+    "type": "P5_BUTTON11",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Button 11"
+  },
+  "P5_BUTTON12": {
+    "type": "P5_BUTTON12",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Button 12"
+  },
+  "P5_BUTTON13": {
+    "type": "P5_BUTTON13",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Button 13"
+  },
+  "P5_BUTTON14": {
+    "type": "P5_BUTTON14",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Button 14"
+  },
+  "P5_BUTTON15": {
+    "type": "P5_BUTTON15",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Button 15"
+  },
+  "P5_BUTTON16": {
+    "type": "P5_BUTTON16",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Button 16"
+  },
+  "P5_START": {
+    "type": "P5_START",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Start"
+  },
+  "P5_SELECT": {
+    "type": "P5_SELECT",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "digital",
+    "defaultLabel": "P5 Select"
+  },
+  "P6_JOYSTICK_UP": {
+    "type": "P6_JOYSTICK_UP",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Up"
+  },
+  "P6_JOYSTICK_DOWN": {
+    "type": "P6_JOYSTICK_DOWN",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Down"
+  },
+  "P6_JOYSTICK_LEFT": {
+    "type": "P6_JOYSTICK_LEFT",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Left"
+  },
+  "P6_JOYSTICK_RIGHT": {
+    "type": "P6_JOYSTICK_RIGHT",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Right"
+  },
+  "P6_JOYSTICKRIGHT_UP": {
+    "type": "P6_JOYSTICKRIGHT_UP",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Right/Up"
+  },
+  "P6_JOYSTICKRIGHT_DOWN": {
+    "type": "P6_JOYSTICKRIGHT_DOWN",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Right/Down"
+  },
+  "P6_JOYSTICKRIGHT_LEFT": {
+    "type": "P6_JOYSTICKRIGHT_LEFT",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Right/Left"
+  },
+  "P6_JOYSTICKRIGHT_RIGHT": {
+    "type": "P6_JOYSTICKRIGHT_RIGHT",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Right/Right"
+  },
+  "P6_JOYSTICKLEFT_UP": {
+    "type": "P6_JOYSTICKLEFT_UP",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Left/Up"
+  },
+  "P6_JOYSTICKLEFT_DOWN": {
+    "type": "P6_JOYSTICKLEFT_DOWN",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Left/Down"
+  },
+  "P6_JOYSTICKLEFT_LEFT": {
+    "type": "P6_JOYSTICKLEFT_LEFT",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Left/Left"
+  },
+  "P6_JOYSTICKLEFT_RIGHT": {
+    "type": "P6_JOYSTICKLEFT_RIGHT",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Left/Right"
+  },
+  "P6_BUTTON1": {
+    "type": "P6_BUTTON1",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Button 1"
+  },
+  "P6_BUTTON2": {
+    "type": "P6_BUTTON2",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Button 2"
+  },
+  "P6_BUTTON3": {
+    "type": "P6_BUTTON3",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Button 3"
+  },
+  "P6_BUTTON4": {
+    "type": "P6_BUTTON4",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Button 4"
+  },
+  "P6_BUTTON5": {
+    "type": "P6_BUTTON5",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Button 5"
+  },
+  "P6_BUTTON6": {
+    "type": "P6_BUTTON6",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Button 6"
+  },
+  "P6_BUTTON7": {
+    "type": "P6_BUTTON7",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Button 7"
+  },
+  "P6_BUTTON8": {
+    "type": "P6_BUTTON8",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Button 8"
+  },
+  "P6_BUTTON9": {
+    "type": "P6_BUTTON9",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Button 9"
+  },
+  "P6_BUTTON10": {
+    "type": "P6_BUTTON10",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Button 10"
+  },
+  "P6_BUTTON11": {
+    "type": "P6_BUTTON11",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Button 11"
+  },
+  "P6_BUTTON12": {
+    "type": "P6_BUTTON12",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Button 12"
+  },
+  "P6_BUTTON13": {
+    "type": "P6_BUTTON13",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Button 13"
+  },
+  "P6_BUTTON14": {
+    "type": "P6_BUTTON14",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Button 14"
+  },
+  "P6_BUTTON15": {
+    "type": "P6_BUTTON15",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Button 15"
+  },
+  "P6_BUTTON16": {
+    "type": "P6_BUTTON16",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Button 16"
+  },
+  "P6_START": {
+    "type": "P6_START",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Start"
+  },
+  "P6_SELECT": {
+    "type": "P6_SELECT",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "digital",
+    "defaultLabel": "P6 Select"
+  },
+  "P7_JOYSTICK_UP": {
+    "type": "P7_JOYSTICK_UP",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Up"
+  },
+  "P7_JOYSTICK_DOWN": {
+    "type": "P7_JOYSTICK_DOWN",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Down"
+  },
+  "P7_JOYSTICK_LEFT": {
+    "type": "P7_JOYSTICK_LEFT",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Left"
+  },
+  "P7_JOYSTICK_RIGHT": {
+    "type": "P7_JOYSTICK_RIGHT",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Right"
+  },
+  "P7_JOYSTICKRIGHT_UP": {
+    "type": "P7_JOYSTICKRIGHT_UP",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Right/Up"
+  },
+  "P7_JOYSTICKRIGHT_DOWN": {
+    "type": "P7_JOYSTICKRIGHT_DOWN",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Right/Down"
+  },
+  "P7_JOYSTICKRIGHT_LEFT": {
+    "type": "P7_JOYSTICKRIGHT_LEFT",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Right/Left"
+  },
+  "P7_JOYSTICKRIGHT_RIGHT": {
+    "type": "P7_JOYSTICKRIGHT_RIGHT",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Right/Right"
+  },
+  "P7_JOYSTICKLEFT_UP": {
+    "type": "P7_JOYSTICKLEFT_UP",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Left/Up"
+  },
+  "P7_JOYSTICKLEFT_DOWN": {
+    "type": "P7_JOYSTICKLEFT_DOWN",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Left/Down"
+  },
+  "P7_JOYSTICKLEFT_LEFT": {
+    "type": "P7_JOYSTICKLEFT_LEFT",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Left/Left"
+  },
+  "P7_JOYSTICKLEFT_RIGHT": {
+    "type": "P7_JOYSTICKLEFT_RIGHT",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Left/Right"
+  },
+  "P7_BUTTON1": {
+    "type": "P7_BUTTON1",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Button 1"
+  },
+  "P7_BUTTON2": {
+    "type": "P7_BUTTON2",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Button 2"
+  },
+  "P7_BUTTON3": {
+    "type": "P7_BUTTON3",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Button 3"
+  },
+  "P7_BUTTON4": {
+    "type": "P7_BUTTON4",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Button 4"
+  },
+  "P7_BUTTON5": {
+    "type": "P7_BUTTON5",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Button 5"
+  },
+  "P7_BUTTON6": {
+    "type": "P7_BUTTON6",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Button 6"
+  },
+  "P7_BUTTON7": {
+    "type": "P7_BUTTON7",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Button 7"
+  },
+  "P7_BUTTON8": {
+    "type": "P7_BUTTON8",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Button 8"
+  },
+  "P7_BUTTON9": {
+    "type": "P7_BUTTON9",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Button 9"
+  },
+  "P7_BUTTON10": {
+    "type": "P7_BUTTON10",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Button 10"
+  },
+  "P7_BUTTON11": {
+    "type": "P7_BUTTON11",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Button 11"
+  },
+  "P7_BUTTON12": {
+    "type": "P7_BUTTON12",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Button 12"
+  },
+  "P7_BUTTON13": {
+    "type": "P7_BUTTON13",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Button 13"
+  },
+  "P7_BUTTON14": {
+    "type": "P7_BUTTON14",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Button 14"
+  },
+  "P7_BUTTON15": {
+    "type": "P7_BUTTON15",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Button 15"
+  },
+  "P7_BUTTON16": {
+    "type": "P7_BUTTON16",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Button 16"
+  },
+  "P7_START": {
+    "type": "P7_START",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Start"
+  },
+  "P7_SELECT": {
+    "type": "P7_SELECT",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "digital",
+    "defaultLabel": "P7 Select"
+  },
+  "P8_JOYSTICK_UP": {
+    "type": "P8_JOYSTICK_UP",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Up"
+  },
+  "P8_JOYSTICK_DOWN": {
+    "type": "P8_JOYSTICK_DOWN",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Down"
+  },
+  "P8_JOYSTICK_LEFT": {
+    "type": "P8_JOYSTICK_LEFT",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Left"
+  },
+  "P8_JOYSTICK_RIGHT": {
+    "type": "P8_JOYSTICK_RIGHT",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Right"
+  },
+  "P8_JOYSTICKRIGHT_UP": {
+    "type": "P8_JOYSTICKRIGHT_UP",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Right/Up"
+  },
+  "P8_JOYSTICKRIGHT_DOWN": {
+    "type": "P8_JOYSTICKRIGHT_DOWN",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Right/Down"
+  },
+  "P8_JOYSTICKRIGHT_LEFT": {
+    "type": "P8_JOYSTICKRIGHT_LEFT",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Right/Left"
+  },
+  "P8_JOYSTICKRIGHT_RIGHT": {
+    "type": "P8_JOYSTICKRIGHT_RIGHT",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Right/Right"
+  },
+  "P8_JOYSTICKLEFT_UP": {
+    "type": "P8_JOYSTICKLEFT_UP",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Left/Up"
+  },
+  "P8_JOYSTICKLEFT_DOWN": {
+    "type": "P8_JOYSTICKLEFT_DOWN",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Left/Down"
+  },
+  "P8_JOYSTICKLEFT_LEFT": {
+    "type": "P8_JOYSTICKLEFT_LEFT",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Left/Left"
+  },
+  "P8_JOYSTICKLEFT_RIGHT": {
+    "type": "P8_JOYSTICKLEFT_RIGHT",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Left/Right"
+  },
+  "P8_BUTTON1": {
+    "type": "P8_BUTTON1",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Button 1"
+  },
+  "P8_BUTTON2": {
+    "type": "P8_BUTTON2",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Button 2"
+  },
+  "P8_BUTTON3": {
+    "type": "P8_BUTTON3",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Button 3"
+  },
+  "P8_BUTTON4": {
+    "type": "P8_BUTTON4",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Button 4"
+  },
+  "P8_BUTTON5": {
+    "type": "P8_BUTTON5",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Button 5"
+  },
+  "P8_BUTTON6": {
+    "type": "P8_BUTTON6",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Button 6"
+  },
+  "P8_BUTTON7": {
+    "type": "P8_BUTTON7",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Button 7"
+  },
+  "P8_BUTTON8": {
+    "type": "P8_BUTTON8",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Button 8"
+  },
+  "P8_BUTTON9": {
+    "type": "P8_BUTTON9",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Button 9"
+  },
+  "P8_BUTTON10": {
+    "type": "P8_BUTTON10",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Button 10"
+  },
+  "P8_BUTTON11": {
+    "type": "P8_BUTTON11",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Button 11"
+  },
+  "P8_BUTTON12": {
+    "type": "P8_BUTTON12",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Button 12"
+  },
+  "P8_BUTTON13": {
+    "type": "P8_BUTTON13",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Button 13"
+  },
+  "P8_BUTTON14": {
+    "type": "P8_BUTTON14",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Button 14"
+  },
+  "P8_BUTTON15": {
+    "type": "P8_BUTTON15",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Button 15"
+  },
+  "P8_BUTTON16": {
+    "type": "P8_BUTTON16",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Button 16"
+  },
+  "P8_START": {
+    "type": "P8_START",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Start"
+  },
+  "P8_SELECT": {
+    "type": "P8_SELECT",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "digital",
+    "defaultLabel": "P8 Select"
+  },
+  "P9_JOYSTICK_UP": {
+    "type": "P9_JOYSTICK_UP",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Up"
+  },
+  "P9_JOYSTICK_DOWN": {
+    "type": "P9_JOYSTICK_DOWN",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Down"
+  },
+  "P9_JOYSTICK_LEFT": {
+    "type": "P9_JOYSTICK_LEFT",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Left"
+  },
+  "P9_JOYSTICK_RIGHT": {
+    "type": "P9_JOYSTICK_RIGHT",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Right"
+  },
+  "P9_JOYSTICKRIGHT_UP": {
+    "type": "P9_JOYSTICKRIGHT_UP",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Right/Up"
+  },
+  "P9_JOYSTICKRIGHT_DOWN": {
+    "type": "P9_JOYSTICKRIGHT_DOWN",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Right/Down"
+  },
+  "P9_JOYSTICKRIGHT_LEFT": {
+    "type": "P9_JOYSTICKRIGHT_LEFT",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Right/Left"
+  },
+  "P9_JOYSTICKRIGHT_RIGHT": {
+    "type": "P9_JOYSTICKRIGHT_RIGHT",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Right/Right"
+  },
+  "P9_JOYSTICKLEFT_UP": {
+    "type": "P9_JOYSTICKLEFT_UP",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Left/Up"
+  },
+  "P9_JOYSTICKLEFT_DOWN": {
+    "type": "P9_JOYSTICKLEFT_DOWN",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Left/Down"
+  },
+  "P9_JOYSTICKLEFT_LEFT": {
+    "type": "P9_JOYSTICKLEFT_LEFT",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Left/Left"
+  },
+  "P9_JOYSTICKLEFT_RIGHT": {
+    "type": "P9_JOYSTICKLEFT_RIGHT",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Left/Right"
+  },
+  "P9_BUTTON1": {
+    "type": "P9_BUTTON1",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Button 1"
+  },
+  "P9_BUTTON2": {
+    "type": "P9_BUTTON2",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Button 2"
+  },
+  "P9_BUTTON3": {
+    "type": "P9_BUTTON3",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Button 3"
+  },
+  "P9_BUTTON4": {
+    "type": "P9_BUTTON4",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Button 4"
+  },
+  "P9_BUTTON5": {
+    "type": "P9_BUTTON5",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Button 5"
+  },
+  "P9_BUTTON6": {
+    "type": "P9_BUTTON6",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Button 6"
+  },
+  "P9_BUTTON7": {
+    "type": "P9_BUTTON7",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Button 7"
+  },
+  "P9_BUTTON8": {
+    "type": "P9_BUTTON8",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Button 8"
+  },
+  "P9_BUTTON9": {
+    "type": "P9_BUTTON9",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Button 9"
+  },
+  "P9_BUTTON10": {
+    "type": "P9_BUTTON10",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Button 10"
+  },
+  "P9_BUTTON11": {
+    "type": "P9_BUTTON11",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Button 11"
+  },
+  "P9_BUTTON12": {
+    "type": "P9_BUTTON12",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Button 12"
+  },
+  "P9_BUTTON13": {
+    "type": "P9_BUTTON13",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Button 13"
+  },
+  "P9_BUTTON14": {
+    "type": "P9_BUTTON14",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Button 14"
+  },
+  "P9_BUTTON15": {
+    "type": "P9_BUTTON15",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Button 15"
+  },
+  "P9_BUTTON16": {
+    "type": "P9_BUTTON16",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Button 16"
+  },
+  "P9_START": {
+    "type": "P9_START",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Start"
+  },
+  "P9_SELECT": {
+    "type": "P9_SELECT",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "digital",
+    "defaultLabel": "P9 Select"
+  },
+  "P10_JOYSTICK_UP": {
+    "type": "P10_JOYSTICK_UP",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Up"
+  },
+  "P10_JOYSTICK_DOWN": {
+    "type": "P10_JOYSTICK_DOWN",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Down"
+  },
+  "P10_JOYSTICK_LEFT": {
+    "type": "P10_JOYSTICK_LEFT",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Left"
+  },
+  "P10_JOYSTICK_RIGHT": {
+    "type": "P10_JOYSTICK_RIGHT",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Right"
+  },
+  "P10_JOYSTICKRIGHT_UP": {
+    "type": "P10_JOYSTICKRIGHT_UP",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Right/Up"
+  },
+  "P10_JOYSTICKRIGHT_DOWN": {
+    "type": "P10_JOYSTICKRIGHT_DOWN",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Right/Down"
+  },
+  "P10_JOYSTICKRIGHT_LEFT": {
+    "type": "P10_JOYSTICKRIGHT_LEFT",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Right/Left"
+  },
+  "P10_JOYSTICKRIGHT_RIGHT": {
+    "type": "P10_JOYSTICKRIGHT_RIGHT",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Right/Right"
+  },
+  "P10_JOYSTICKLEFT_UP": {
+    "type": "P10_JOYSTICKLEFT_UP",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Left/Up"
+  },
+  "P10_JOYSTICKLEFT_DOWN": {
+    "type": "P10_JOYSTICKLEFT_DOWN",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Left/Down"
+  },
+  "P10_JOYSTICKLEFT_LEFT": {
+    "type": "P10_JOYSTICKLEFT_LEFT",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Left/Left"
+  },
+  "P10_JOYSTICKLEFT_RIGHT": {
+    "type": "P10_JOYSTICKLEFT_RIGHT",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Left/Right"
+  },
+  "P10_BUTTON1": {
+    "type": "P10_BUTTON1",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Button 1"
+  },
+  "P10_BUTTON2": {
+    "type": "P10_BUTTON2",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Button 2"
+  },
+  "P10_BUTTON3": {
+    "type": "P10_BUTTON3",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Button 3"
+  },
+  "P10_BUTTON4": {
+    "type": "P10_BUTTON4",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Button 4"
+  },
+  "P10_BUTTON5": {
+    "type": "P10_BUTTON5",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Button 5"
+  },
+  "P10_BUTTON6": {
+    "type": "P10_BUTTON6",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Button 6"
+  },
+  "P10_BUTTON7": {
+    "type": "P10_BUTTON7",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Button 7"
+  },
+  "P10_BUTTON8": {
+    "type": "P10_BUTTON8",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Button 8"
+  },
+  "P10_BUTTON9": {
+    "type": "P10_BUTTON9",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Button 9"
+  },
+  "P10_BUTTON10": {
+    "type": "P10_BUTTON10",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Button 10"
+  },
+  "P10_BUTTON11": {
+    "type": "P10_BUTTON11",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Button 11"
+  },
+  "P10_BUTTON12": {
+    "type": "P10_BUTTON12",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Button 12"
+  },
+  "P10_BUTTON13": {
+    "type": "P10_BUTTON13",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Button 13"
+  },
+  "P10_BUTTON14": {
+    "type": "P10_BUTTON14",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Button 14"
+  },
+  "P10_BUTTON15": {
+    "type": "P10_BUTTON15",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Button 15"
+  },
+  "P10_BUTTON16": {
+    "type": "P10_BUTTON16",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Button 16"
+  },
+  "P10_START": {
+    "type": "P10_START",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Start"
+  },
+  "P10_SELECT": {
+    "type": "P10_SELECT",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "digital",
+    "defaultLabel": "P10 Select"
+  },
+  "START1": {
+    "type": "START1",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "1 Player Start"
+  },
+  "START2": {
+    "type": "START2",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "2 Players Start"
+  },
+  "START3": {
+    "type": "START3",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "3 Players Start"
+  },
+  "START4": {
+    "type": "START4",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "4 Players Start"
+  },
+  "START5": {
+    "type": "START5",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "5 Players Start"
+  },
+  "START6": {
+    "type": "START6",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "6 Players Start"
+  },
+  "START7": {
+    "type": "START7",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "7 Players Start"
+  },
+  "START8": {
+    "type": "START8",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "8 Players Start"
+  },
+  "COIN1": {
+    "type": "COIN1",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Coin 1"
+  },
+  "COIN2": {
+    "type": "COIN2",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Coin 2"
+  },
+  "COIN3": {
+    "type": "COIN3",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Coin 3"
+  },
+  "COIN4": {
+    "type": "COIN4",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Coin 4"
+  },
+  "COIN5": {
+    "type": "COIN5",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Coin 5"
+  },
+  "COIN6": {
+    "type": "COIN6",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Coin 6"
+  },
+  "COIN7": {
+    "type": "COIN7",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Coin 7"
+  },
+  "COIN8": {
+    "type": "COIN8",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Coin 8"
+  },
+  "COIN9": {
+    "type": "COIN9",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Coin 9"
+  },
+  "COIN10": {
+    "type": "COIN10",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Coin 10"
+  },
+  "COIN11": {
+    "type": "COIN11",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Coin 11"
+  },
+  "COIN12": {
+    "type": "COIN12",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Coin 12"
+  },
+  "BILL1": {
+    "type": "BILL1",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Bill 1"
+  },
+  "SERVICE1": {
+    "type": "SERVICE1",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Service 1"
+  },
+  "SERVICE2": {
+    "type": "SERVICE2",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Service 2"
+  },
+  "SERVICE3": {
+    "type": "SERVICE3",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Service 3"
+  },
+  "SERVICE4": {
+    "type": "SERVICE4",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Service 4"
+  },
+  "TILT1": {
+    "type": "TILT1",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Tilt 1"
+  },
+  "TILT2": {
+    "type": "TILT2",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Tilt 2"
+  },
+  "TILT3": {
+    "type": "TILT3",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Tilt 3"
+  },
+  "TILT4": {
+    "type": "TILT4",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Tilt 4"
+  },
+  "POWER_ON": {
+    "type": "POWER_ON",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Power On"
+  },
+  "POWER_OFF": {
+    "type": "POWER_OFF",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Power Off"
+  },
+  "SERVICE": {
+    "type": "SERVICE",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Service"
+  },
+  "TILT": {
+    "type": "TILT",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Tilt"
+  },
+  "INTERLOCK": {
+    "type": "INTERLOCK",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Door Interlock"
+  },
+  "VOLUME_DOWN": {
+    "type": "VOLUME_DOWN",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Volume Down"
+  },
+  "VOLUME_UP": {
+    "type": "VOLUME_UP",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Volume Up"
+  },
+  "P1_PEDAL": {
+    "type": "P1_PEDAL",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "P1 Pedal 1"
+  },
+  "P2_PEDAL": {
+    "type": "P2_PEDAL",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "P2 Pedal 1"
+  },
+  "P3_PEDAL": {
+    "type": "P3_PEDAL",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "P3 Pedal 1"
+  },
+  "P4_PEDAL": {
+    "type": "P4_PEDAL",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "P4 Pedal 1"
+  },
+  "P5_PEDAL": {
+    "type": "P5_PEDAL",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "P5 Pedal 1"
+  },
+  "P6_PEDAL": {
+    "type": "P6_PEDAL",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "P6 Pedal 1"
+  },
+  "P7_PEDAL": {
+    "type": "P7_PEDAL",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "P7 Pedal 1"
+  },
+  "P8_PEDAL": {
+    "type": "P8_PEDAL",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "P8 Pedal 1"
+  },
+  "P9_PEDAL": {
+    "type": "P9_PEDAL",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "P9 Pedal 1"
+  },
+  "P10_PEDAL": {
+    "type": "P10_PEDAL",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "P10 Pedal 1"
+  },
+  "P1_PEDAL2": {
+    "type": "P1_PEDAL2",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "P1 Pedal 2"
+  },
+  "P2_PEDAL2": {
+    "type": "P2_PEDAL2",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "P2 Pedal 2"
+  },
+  "P3_PEDAL2": {
+    "type": "P3_PEDAL2",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "P3 Pedal 2"
+  },
+  "P4_PEDAL2": {
+    "type": "P4_PEDAL2",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "P4 Pedal 2"
+  },
+  "P5_PEDAL2": {
+    "type": "P5_PEDAL2",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "P5 Pedal 2"
+  },
+  "P6_PEDAL2": {
+    "type": "P6_PEDAL2",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "P6 Pedal 2"
+  },
+  "P7_PEDAL2": {
+    "type": "P7_PEDAL2",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "P7 Pedal 2"
+  },
+  "P8_PEDAL2": {
+    "type": "P8_PEDAL2",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "P8 Pedal 2"
+  },
+  "P9_PEDAL2": {
+    "type": "P9_PEDAL2",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "P9 Pedal 2"
+  },
+  "P10_PEDAL2": {
+    "type": "P10_PEDAL2",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "P10 Pedal 2"
+  },
+  "P1_PEDAL3": {
+    "type": "P1_PEDAL3",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "P1 Pedal 3"
+  },
+  "P2_PEDAL3": {
+    "type": "P2_PEDAL3",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "P2 Pedal 3"
+  },
+  "P3_PEDAL3": {
+    "type": "P3_PEDAL3",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "P3 Pedal 3"
+  },
+  "P4_PEDAL3": {
+    "type": "P4_PEDAL3",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "P4 Pedal 3"
+  },
+  "P5_PEDAL3": {
+    "type": "P5_PEDAL3",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "P5 Pedal 3"
+  },
+  "P6_PEDAL3": {
+    "type": "P6_PEDAL3",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "P6 Pedal 3"
+  },
+  "P7_PEDAL3": {
+    "type": "P7_PEDAL3",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "P7 Pedal 3"
+  },
+  "P8_PEDAL3": {
+    "type": "P8_PEDAL3",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "P8 Pedal 3"
+  },
+  "P9_PEDAL3": {
+    "type": "P9_PEDAL3",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "P9 Pedal 3"
+  },
+  "P10_PEDAL3": {
+    "type": "P10_PEDAL3",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "P10 Pedal 3"
+  },
+  "P1_PADDLE": {
+    "type": "P1_PADDLE",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle"
+  },
+  "P2_PADDLE": {
+    "type": "P2_PADDLE",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle 2"
+  },
+  "P3_PADDLE": {
+    "type": "P3_PADDLE",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle 3"
+  },
+  "P4_PADDLE": {
+    "type": "P4_PADDLE",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle 4"
+  },
+  "P5_PADDLE": {
+    "type": "P5_PADDLE",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle 5"
+  },
+  "P6_PADDLE": {
+    "type": "P6_PADDLE",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle 6"
+  },
+  "P7_PADDLE": {
+    "type": "P7_PADDLE",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle 7"
+  },
+  "P8_PADDLE": {
+    "type": "P8_PADDLE",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle 8"
+  },
+  "P9_PADDLE": {
+    "type": "P9_PADDLE",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle 9"
+  },
+  "P10_PADDLE": {
+    "type": "P10_PADDLE",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle 10"
+  },
+  "P1_PADDLE_V": {
+    "type": "P1_PADDLE_V",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle V"
+  },
+  "P2_PADDLE_V": {
+    "type": "P2_PADDLE_V",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle V 2"
+  },
+  "P3_PADDLE_V": {
+    "type": "P3_PADDLE_V",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle V 3"
+  },
+  "P4_PADDLE_V": {
+    "type": "P4_PADDLE_V",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle V 4"
+  },
+  "P5_PADDLE_V": {
+    "type": "P5_PADDLE_V",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle V 5"
+  },
+  "P6_PADDLE_V": {
+    "type": "P6_PADDLE_V",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle V 6"
+  },
+  "P7_PADDLE_V": {
+    "type": "P7_PADDLE_V",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle V 7"
+  },
+  "P8_PADDLE_V": {
+    "type": "P8_PADDLE_V",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle V 8"
+  },
+  "P9_PADDLE_V": {
+    "type": "P9_PADDLE_V",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle V 9"
+  },
+  "P10_PADDLE_V": {
+    "type": "P10_PADDLE_V",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "Paddle V 10"
+  },
+  "P1_POSITIONAL": {
+    "type": "P1_POSITIONAL",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional"
+  },
+  "P2_POSITIONAL": {
+    "type": "P2_POSITIONAL",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional 2"
+  },
+  "P3_POSITIONAL": {
+    "type": "P3_POSITIONAL",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional 3"
+  },
+  "P4_POSITIONAL": {
+    "type": "P4_POSITIONAL",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional 4"
+  },
+  "P5_POSITIONAL": {
+    "type": "P5_POSITIONAL",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional 5"
+  },
+  "P6_POSITIONAL": {
+    "type": "P6_POSITIONAL",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional 6"
+  },
+  "P7_POSITIONAL": {
+    "type": "P7_POSITIONAL",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional 7"
+  },
+  "P8_POSITIONAL": {
+    "type": "P8_POSITIONAL",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional 8"
+  },
+  "P9_POSITIONAL": {
+    "type": "P9_POSITIONAL",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional 9"
+  },
+  "P10_POSITIONAL": {
+    "type": "P10_POSITIONAL",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional 10"
+  },
+  "P1_POSITIONAL_V": {
+    "type": "P1_POSITIONAL_V",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional V"
+  },
+  "P2_POSITIONAL_V": {
+    "type": "P2_POSITIONAL_V",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional V 2"
+  },
+  "P3_POSITIONAL_V": {
+    "type": "P3_POSITIONAL_V",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional V 3"
+  },
+  "P4_POSITIONAL_V": {
+    "type": "P4_POSITIONAL_V",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional V 4"
+  },
+  "P5_POSITIONAL_V": {
+    "type": "P5_POSITIONAL_V",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional V 5"
+  },
+  "P6_POSITIONAL_V": {
+    "type": "P6_POSITIONAL_V",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional V 6"
+  },
+  "P7_POSITIONAL_V": {
+    "type": "P7_POSITIONAL_V",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional V 7"
+  },
+  "P8_POSITIONAL_V": {
+    "type": "P8_POSITIONAL_V",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional V 8"
+  },
+  "P9_POSITIONAL_V": {
+    "type": "P9_POSITIONAL_V",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional V 9"
+  },
+  "P10_POSITIONAL_V": {
+    "type": "P10_POSITIONAL_V",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "Positional V 10"
+  },
+  "P1_DIAL": {
+    "type": "P1_DIAL",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial"
+  },
+  "P2_DIAL": {
+    "type": "P2_DIAL",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial 2"
+  },
+  "P3_DIAL": {
+    "type": "P3_DIAL",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial 3"
+  },
+  "P4_DIAL": {
+    "type": "P4_DIAL",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial 4"
+  },
+  "P5_DIAL": {
+    "type": "P5_DIAL",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial 5"
+  },
+  "P6_DIAL": {
+    "type": "P6_DIAL",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial 6"
+  },
+  "P7_DIAL": {
+    "type": "P7_DIAL",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial 7"
+  },
+  "P8_DIAL": {
+    "type": "P8_DIAL",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial 8"
+  },
+  "P9_DIAL": {
+    "type": "P9_DIAL",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial 9"
+  },
+  "P10_DIAL": {
+    "type": "P10_DIAL",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial 10"
+  },
+  "P1_DIAL_V": {
+    "type": "P1_DIAL_V",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial V"
+  },
+  "P2_DIAL_V": {
+    "type": "P2_DIAL_V",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial V 2"
+  },
+  "P3_DIAL_V": {
+    "type": "P3_DIAL_V",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial V 3"
+  },
+  "P4_DIAL_V": {
+    "type": "P4_DIAL_V",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial V 4"
+  },
+  "P5_DIAL_V": {
+    "type": "P5_DIAL_V",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial V 5"
+  },
+  "P6_DIAL_V": {
+    "type": "P6_DIAL_V",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial V 6"
+  },
+  "P7_DIAL_V": {
+    "type": "P7_DIAL_V",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial V 7"
+  },
+  "P8_DIAL_V": {
+    "type": "P8_DIAL_V",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial V 8"
+  },
+  "P9_DIAL_V": {
+    "type": "P9_DIAL_V",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial V 9"
+  },
+  "P10_DIAL_V": {
+    "type": "P10_DIAL_V",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "Dial V 10"
+  },
+  "P1_TRACKBALL_X": {
+    "type": "P1_TRACKBALL_X",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track X"
+  },
+  "P2_TRACKBALL_X": {
+    "type": "P2_TRACKBALL_X",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track X 2"
+  },
+  "P3_TRACKBALL_X": {
+    "type": "P3_TRACKBALL_X",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track X 3"
+  },
+  "P4_TRACKBALL_X": {
+    "type": "P4_TRACKBALL_X",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track X 4"
+  },
+  "P5_TRACKBALL_X": {
+    "type": "P5_TRACKBALL_X",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track X 5"
+  },
+  "P6_TRACKBALL_X": {
+    "type": "P6_TRACKBALL_X",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track X 6"
+  },
+  "P7_TRACKBALL_X": {
+    "type": "P7_TRACKBALL_X",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track X 7"
+  },
+  "P8_TRACKBALL_X": {
+    "type": "P8_TRACKBALL_X",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track X 8"
+  },
+  "P9_TRACKBALL_X": {
+    "type": "P9_TRACKBALL_X",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track X 9"
+  },
+  "P10_TRACKBALL_X": {
+    "type": "P10_TRACKBALL_X",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track X 10"
+  },
+  "P1_TRACKBALL_Y": {
+    "type": "P1_TRACKBALL_Y",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track Y"
+  },
+  "P2_TRACKBALL_Y": {
+    "type": "P2_TRACKBALL_Y",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track Y 2"
+  },
+  "P3_TRACKBALL_Y": {
+    "type": "P3_TRACKBALL_Y",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track Y 3"
+  },
+  "P4_TRACKBALL_Y": {
+    "type": "P4_TRACKBALL_Y",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track Y 4"
+  },
+  "P5_TRACKBALL_Y": {
+    "type": "P5_TRACKBALL_Y",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track Y 5"
+  },
+  "P6_TRACKBALL_Y": {
+    "type": "P6_TRACKBALL_Y",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track Y 6"
+  },
+  "P7_TRACKBALL_Y": {
+    "type": "P7_TRACKBALL_Y",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track Y 7"
+  },
+  "P8_TRACKBALL_Y": {
+    "type": "P8_TRACKBALL_Y",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track Y 8"
+  },
+  "P9_TRACKBALL_Y": {
+    "type": "P9_TRACKBALL_Y",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track Y 9"
+  },
+  "P10_TRACKBALL_Y": {
+    "type": "P10_TRACKBALL_Y",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "Track Y 10"
+  },
+  "P1_AD_STICK_X": {
+    "type": "P1_AD_STICK_X",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick X"
+  },
+  "P2_AD_STICK_X": {
+    "type": "P2_AD_STICK_X",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick X 2"
+  },
+  "P3_AD_STICK_X": {
+    "type": "P3_AD_STICK_X",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick X 3"
+  },
+  "P4_AD_STICK_X": {
+    "type": "P4_AD_STICK_X",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick X 4"
+  },
+  "P5_AD_STICK_X": {
+    "type": "P5_AD_STICK_X",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick X 5"
+  },
+  "P6_AD_STICK_X": {
+    "type": "P6_AD_STICK_X",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick X 6"
+  },
+  "P7_AD_STICK_X": {
+    "type": "P7_AD_STICK_X",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick X 7"
+  },
+  "P8_AD_STICK_X": {
+    "type": "P8_AD_STICK_X",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick X 8"
+  },
+  "P9_AD_STICK_X": {
+    "type": "P9_AD_STICK_X",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick X 9"
+  },
+  "P10_AD_STICK_X": {
+    "type": "P10_AD_STICK_X",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick X 10"
+  },
+  "P1_AD_STICK_Y": {
+    "type": "P1_AD_STICK_Y",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Y"
+  },
+  "P2_AD_STICK_Y": {
+    "type": "P2_AD_STICK_Y",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Y 2"
+  },
+  "P3_AD_STICK_Y": {
+    "type": "P3_AD_STICK_Y",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Y 3"
+  },
+  "P4_AD_STICK_Y": {
+    "type": "P4_AD_STICK_Y",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Y 4"
+  },
+  "P5_AD_STICK_Y": {
+    "type": "P5_AD_STICK_Y",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Y 5"
+  },
+  "P6_AD_STICK_Y": {
+    "type": "P6_AD_STICK_Y",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Y 6"
+  },
+  "P7_AD_STICK_Y": {
+    "type": "P7_AD_STICK_Y",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Y 7"
+  },
+  "P8_AD_STICK_Y": {
+    "type": "P8_AD_STICK_Y",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Y 8"
+  },
+  "P9_AD_STICK_Y": {
+    "type": "P9_AD_STICK_Y",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Y 9"
+  },
+  "P10_AD_STICK_Y": {
+    "type": "P10_AD_STICK_Y",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Y 10"
+  },
+  "P1_AD_STICK_Z": {
+    "type": "P1_AD_STICK_Z",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Z"
+  },
+  "P2_AD_STICK_Z": {
+    "type": "P2_AD_STICK_Z",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Z 2"
+  },
+  "P3_AD_STICK_Z": {
+    "type": "P3_AD_STICK_Z",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Z 3"
+  },
+  "P4_AD_STICK_Z": {
+    "type": "P4_AD_STICK_Z",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Z 4"
+  },
+  "P5_AD_STICK_Z": {
+    "type": "P5_AD_STICK_Z",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Z 5"
+  },
+  "P6_AD_STICK_Z": {
+    "type": "P6_AD_STICK_Z",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Z 6"
+  },
+  "P7_AD_STICK_Z": {
+    "type": "P7_AD_STICK_Z",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Z 7"
+  },
+  "P8_AD_STICK_Z": {
+    "type": "P8_AD_STICK_Z",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Z 8"
+  },
+  "P9_AD_STICK_Z": {
+    "type": "P9_AD_STICK_Z",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Z 9"
+  },
+  "P10_AD_STICK_Z": {
+    "type": "P10_AD_STICK_Z",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "AD Stick Z 10"
+  },
+  "P1_LIGHTGUN_X": {
+    "type": "P1_LIGHTGUN_X",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun X"
+  },
+  "P2_LIGHTGUN_X": {
+    "type": "P2_LIGHTGUN_X",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun X 2"
+  },
+  "P3_LIGHTGUN_X": {
+    "type": "P3_LIGHTGUN_X",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun X 3"
+  },
+  "P4_LIGHTGUN_X": {
+    "type": "P4_LIGHTGUN_X",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun X 4"
+  },
+  "P5_LIGHTGUN_X": {
+    "type": "P5_LIGHTGUN_X",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun X 5"
+  },
+  "P6_LIGHTGUN_X": {
+    "type": "P6_LIGHTGUN_X",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun X 6"
+  },
+  "P7_LIGHTGUN_X": {
+    "type": "P7_LIGHTGUN_X",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun X 7"
+  },
+  "P8_LIGHTGUN_X": {
+    "type": "P8_LIGHTGUN_X",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun X 8"
+  },
+  "P9_LIGHTGUN_X": {
+    "type": "P9_LIGHTGUN_X",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun X 9"
+  },
+  "P10_LIGHTGUN_X": {
+    "type": "P10_LIGHTGUN_X",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun X 10"
+  },
+  "P1_LIGHTGUN_Y": {
+    "type": "P1_LIGHTGUN_Y",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun Y"
+  },
+  "P2_LIGHTGUN_Y": {
+    "type": "P2_LIGHTGUN_Y",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun Y 2"
+  },
+  "P3_LIGHTGUN_Y": {
+    "type": "P3_LIGHTGUN_Y",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun Y 3"
+  },
+  "P4_LIGHTGUN_Y": {
+    "type": "P4_LIGHTGUN_Y",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun Y 4"
+  },
+  "P5_LIGHTGUN_Y": {
+    "type": "P5_LIGHTGUN_Y",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun Y 5"
+  },
+  "P6_LIGHTGUN_Y": {
+    "type": "P6_LIGHTGUN_Y",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun Y 6"
+  },
+  "P7_LIGHTGUN_Y": {
+    "type": "P7_LIGHTGUN_Y",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun Y 7"
+  },
+  "P8_LIGHTGUN_Y": {
+    "type": "P8_LIGHTGUN_Y",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun Y 8"
+  },
+  "P9_LIGHTGUN_Y": {
+    "type": "P9_LIGHTGUN_Y",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun Y 9"
+  },
+  "P10_LIGHTGUN_Y": {
+    "type": "P10_LIGHTGUN_Y",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "Lightgun Y 10"
+  },
+  "P1_MOUSE_X": {
+    "type": "P1_MOUSE_X",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse X"
+  },
+  "P2_MOUSE_X": {
+    "type": "P2_MOUSE_X",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse X 2"
+  },
+  "P3_MOUSE_X": {
+    "type": "P3_MOUSE_X",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse X 3"
+  },
+  "P4_MOUSE_X": {
+    "type": "P4_MOUSE_X",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse X 4"
+  },
+  "P5_MOUSE_X": {
+    "type": "P5_MOUSE_X",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse X 5"
+  },
+  "P6_MOUSE_X": {
+    "type": "P6_MOUSE_X",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse X 6"
+  },
+  "P7_MOUSE_X": {
+    "type": "P7_MOUSE_X",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse X 7"
+  },
+  "P8_MOUSE_X": {
+    "type": "P8_MOUSE_X",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse X 8"
+  },
+  "P9_MOUSE_X": {
+    "type": "P9_MOUSE_X",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse X 9"
+  },
+  "P10_MOUSE_X": {
+    "type": "P10_MOUSE_X",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse X 10"
+  },
+  "P1_MOUSE_Y": {
+    "type": "P1_MOUSE_Y",
+    "group": "PLAYER1",
+    "playerNum": 1,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse Y"
+  },
+  "P2_MOUSE_Y": {
+    "type": "P2_MOUSE_Y",
+    "group": "PLAYER2",
+    "playerNum": 2,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse Y 2"
+  },
+  "P3_MOUSE_Y": {
+    "type": "P3_MOUSE_Y",
+    "group": "PLAYER3",
+    "playerNum": 3,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse Y 3"
+  },
+  "P4_MOUSE_Y": {
+    "type": "P4_MOUSE_Y",
+    "group": "PLAYER4",
+    "playerNum": 4,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse Y 4"
+  },
+  "P5_MOUSE_Y": {
+    "type": "P5_MOUSE_Y",
+    "group": "PLAYER5",
+    "playerNum": 5,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse Y 5"
+  },
+  "P6_MOUSE_Y": {
+    "type": "P6_MOUSE_Y",
+    "group": "PLAYER6",
+    "playerNum": 6,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse Y 6"
+  },
+  "P7_MOUSE_Y": {
+    "type": "P7_MOUSE_Y",
+    "group": "PLAYER7",
+    "playerNum": 7,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse Y 7"
+  },
+  "P8_MOUSE_Y": {
+    "type": "P8_MOUSE_Y",
+    "group": "PLAYER8",
+    "playerNum": 8,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse Y 8"
+  },
+  "P9_MOUSE_Y": {
+    "type": "P9_MOUSE_Y",
+    "group": "PLAYER9",
+    "playerNum": 9,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse Y 9"
+  },
+  "P10_MOUSE_Y": {
+    "type": "P10_MOUSE_Y",
+    "group": "PLAYER10",
+    "playerNum": 10,
+    "iterfaceType": "analog",
+    "defaultLabel": "Mouse Y 10"
+  },
+  "KEYPAD": {
+    "type": "KEYPAD",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Keypad"
+  },
+  "KEYBOARD": {
+    "type": "KEYBOARD",
+    "group": "OTHER",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Keyboard"
+  },
+  "UI_ON_SCREEN_DISPLAY": {
+    "type": "UI_ON_SCREEN_DISPLAY",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "On Screen Display"
+  },
+  "UI_DEBUG_BREAK": {
+    "type": "UI_DEBUG_BREAK",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Break in Debugger"
+  },
+  "UI_CONFIGURE": {
+    "type": "UI_CONFIGURE",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Config Menu"
+  },
+  "UI_PAUSE": {
+    "type": "UI_PAUSE",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Pause"
+  },
+  "UI_PAUSE_SINGLE": {
+    "type": "UI_PAUSE_SINGLE",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Pause - Single Step"
+  },
+  "UI_RESET_MACHINE": {
+    "type": "UI_RESET_MACHINE",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Reset Machine"
+  },
+  "UI_SOFT_RESET": {
+    "type": "UI_SOFT_RESET",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Soft Reset"
+  },
+  "UI_SHOW_GFX": {
+    "type": "UI_SHOW_GFX",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Show Gfx"
+  },
+  "UI_FRAMESKIP_DEC": {
+    "type": "UI_FRAMESKIP_DEC",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Frameskip Dec"
+  },
+  "UI_FRAMESKIP_INC": {
+    "type": "UI_FRAMESKIP_INC",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Frameskip Inc"
+  },
+  "UI_THROTTLE": {
+    "type": "UI_THROTTLE",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Throttle"
+  },
+  "UI_FAST_FORWARD": {
+    "type": "UI_FAST_FORWARD",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Fast Forward"
+  },
+  "UI_SHOW_FPS": {
+    "type": "UI_SHOW_FPS",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Show FPS"
+  },
+  "UI_SNAPSHOT": {
+    "type": "UI_SNAPSHOT",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Save Snapshot"
+  },
+  "UI_TIMECODE": {
+    "type": "UI_TIMECODE",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Write current timecode"
+  },
+  "UI_RECORD_MOVIE": {
+    "type": "UI_RECORD_MOVIE",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Record Movie"
+  },
+  "UI_TOGGLE_CHEAT": {
+    "type": "UI_TOGGLE_CHEAT",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Toggle Cheat"
+  },
+  "UI_TOGGLE_AUTOFIRE": {
+    "type": "UI_TOGGLE_AUTOFIRE",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Toggle Autofire"
+  },
+  "UI_UP": {
+    "type": "UI_UP",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Up"
+  },
+  "UI_DOWN": {
+    "type": "UI_DOWN",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Down"
+  },
+  "UI_LEFT": {
+    "type": "UI_LEFT",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Left"
+  },
+  "UI_RIGHT": {
+    "type": "UI_RIGHT",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Right"
+  },
+  "UI_HOME": {
+    "type": "UI_HOME",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Home"
+  },
+  "UI_END": {
+    "type": "UI_END",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI End"
+  },
+  "UI_PAGE_UP": {
+    "type": "UI_PAGE_UP",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Page Up"
+  },
+  "UI_PAGE_DOWN": {
+    "type": "UI_PAGE_DOWN",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Page Down"
+  },
+  "UI_SELECT": {
+    "type": "UI_SELECT",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Select"
+  },
+  "UI_CANCEL": {
+    "type": "UI_CANCEL",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Cancel"
+  },
+  "UI_DISPLAY_COMMENT": {
+    "type": "UI_DISPLAY_COMMENT",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Display Comment"
+  },
+  "UI_CLEAR": {
+    "type": "UI_CLEAR",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Clear"
+  },
+  "UI_ZOOM_IN": {
+    "type": "UI_ZOOM_IN",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Zoom In"
+  },
+  "UI_ZOOM_OUT": {
+    "type": "UI_ZOOM_OUT",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Zoom Out"
+  },
+  "UI_PREV_GROUP": {
+    "type": "UI_PREV_GROUP",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Previous Group"
+  },
+  "UI_NEXT_GROUP": {
+    "type": "UI_NEXT_GROUP",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Next Group"
+  },
+  "UI_ROTATE": {
+    "type": "UI_ROTATE",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Rotate"
+  },
+  "UI_SHOW_PROFILER": {
+    "type": "UI_SHOW_PROFILER",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Show Profiler"
+  },
+  "UI_TOGGLE_UI": {
+    "type": "UI_TOGGLE_UI",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Toggle"
+  },
+  "UI_PASTE": {
+    "type": "UI_PASTE",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Paste Text"
+  },
+  "UI_TOGGLE_DEBUG": {
+    "type": "UI_TOGGLE_DEBUG",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Toggle Debugger"
+  },
+  "UI_SAVE_STATE": {
+    "type": "UI_SAVE_STATE",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Save State"
+  },
+  "UI_LOAD_STATE": {
+    "type": "UI_LOAD_STATE",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "Load State"
+  },
+  "UI_TAPE_START": {
+    "type": "UI_TAPE_START",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI (First) Tape Start"
+  },
+  "UI_TAPE_STOP": {
+    "type": "UI_TAPE_STOP",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI (First) Tape Stop"
+  },
+  "UI_DATS": {
+    "type": "UI_DATS",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI External DAT View"
+  },
+  "UI_FAVORITES": {
+    "type": "UI_FAVORITES",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Add/Remove favorites"
+  },
+  "UI_UP_FILTER": {
+    "type": "UI_UP_FILTER",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "UI_DOWN_FILTER": {
+    "type": "UI_DOWN_FILTER",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "UI_LEFT_PANEL": {
+    "type": "UI_LEFT_PANEL",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "UI_RIGHT_PANEL": {
+    "type": "UI_RIGHT_PANEL",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "UI_UP_PANEL": {
+    "type": "UI_UP_PANEL",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "UI_DOWN_PANEL": {
+    "type": "UI_DOWN_PANEL",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "UI_EXPORT": {
+    "type": "UI_EXPORT",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Export list"
+  },
+  "UI_AUDIT_FAST": {
+    "type": "UI_AUDIT_FAST",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Audit Unavailable"
+  },
+  "UI_AUDIT_ALL": {
+    "type": "UI_AUDIT_ALL",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": "UI Audit All"
+  },
+  "OSD_1": {
+    "type": "OSD_1",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "OSD_2": {
+    "type": "OSD_2",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "OSD_3": {
+    "type": "OSD_3",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "OSD_4": {
+    "type": "OSD_4",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "OSD_5": {
+    "type": "OSD_5",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "OSD_6": {
+    "type": "OSD_6",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "OSD_7": {
+    "type": "OSD_7",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "OSD_8": {
+    "type": "OSD_8",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "OSD_9": {
+    "type": "OSD_9",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "OSD_10": {
+    "type": "OSD_10",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "OSD_11": {
+    "type": "OSD_11",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "OSD_12": {
+    "type": "OSD_12",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "OSD_13": {
+    "type": "OSD_13",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "OSD_14": {
+    "type": "OSD_14",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "OSD_15": {
+    "type": "OSD_15",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "OSD_16": {
+    "type": "OSD_16",
+    "group": "UI",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "UNKNOWN": {
+    "type": "UNKNOWN",
+    "group": "INVALID",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "UNUSED": {
+    "type": "UNUSED",
+    "group": "INVALID",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "SPECIAL": {
+    "type": "SPECIAL",
+    "group": "INVALID",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "OTHER": {
+    "type": "OTHER",
+    "group": "INVALID",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "ADJUSTER": {
+    "type": "ADJUSTER",
+    "group": "INVALID",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "DIPSWITCH": {
+    "type": "DIPSWITCH",
+    "group": "INVALID",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  },
+  "CONFIG": {
+    "type": "CONFIG",
+    "group": "INVALID",
+    "playerNum": 0,
+    "iterfaceType": "digital",
+    "defaultLabel": ""
+  }
+}

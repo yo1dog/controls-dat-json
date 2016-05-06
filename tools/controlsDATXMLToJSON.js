@@ -2,6 +2,7 @@
  * Usage: node controlsDATXMLtoJSON.js [-min]
  * 
  * Converts the controls.dat XML format into a JSON format with a similar structure.
+ * 
  * You can download controls.xml from http://controls.arcadecontrols.com/
  * 
  * 
@@ -17,8 +18,8 @@
  */
 
 var xmldoc     = require('xmldoc');
-var cliWrapper = require('./helpers/cliWrapper');
-var wrapError  = require('./helpers/wrapError');
+var cliWrapper = require('../helpers/cliWrapper');
+var wrapError  = require('../helpers/wrapError');
 
 var usageExampleStr =
   'node controlsDATXMLtoJSON.js [-min]\n' +
