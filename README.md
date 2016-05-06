@@ -26,7 +26,7 @@ You can download the latest versions here:
    - [Button](#button)
    - [Input](#input)
  - [Errors](#errors)
-   - [controls.dat Data Errors](#controls.dat-data-errors)
+   - [controls.dat Data Errors](#controlsdat-data-errors)
    - [Restructurer Errors](#restructurer-errors)
 
 
@@ -114,22 +114,22 @@ You can get `inpttype.h` from https://github.com/mamedev/mame/blob/master/src/em
 
 ```
 node verifyControlDefMap.js
+```
 
 Verifies the integrity of [`/json/controlDefMap.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/controlDefMap.json). Should be used after making changes.
 
 Can also be `require()`d.
-```
 
 
 ### Restructured Controls JSON Verifier
 
 ```
 node verifyRestructuredControlsJSON.js
+```
 
 Verifies the integrity of [`/json/restructuredControls.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/restructuredControls.json). Should be used after making changes.
 
 Can also be `require()`d.
-```
 
 
 
