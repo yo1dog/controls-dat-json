@@ -174,10 +174,10 @@ property                | description
 `numPlayers`            | Max number of players the game supports.
 `alternatesTurns`       | If the players take turns (`true`) or play at the same time (`false`).
 `usesServiceButtons`    | If the game uses service buttons (to navigate menus, for example).
-`usesTilt`              | If the game supports tilt detection (bumping or hitting the physical cabinet - usually used by pinball games to prevent cheating my lifting the table).
-`hasCocktailDipswitch`  | If the game supports a switch the can toggle it between upright and cocktail mode. Sometimes this causes a change in control configurations.
+`usesTilt`              | If the game supports tilt detection (bumping or hitting the physical cabinet - usually used by pinball games to prevent cheating by lifting the table).
+`hasCocktailDipswitch`  | If the game supports a switch that can toggle it between upright and cocktail mode. Sometimes this causes a change in control configurations.
 `notes`                 | Notes about this game (not user friendly).
-`errors`                | Any errors that occurred while restructuring. See the (error descriptions)[#errors] below.
+`errors`                | Any errors that occurred while restructuring. See the [error descriptions](#errors) below.
 `controlConfigurations` | List of [control configurations](#controlConfiguration). Ordered from most preferred configuration to least. Note that this may be empty in a few cases. Check `errors` in these cases.
 
 
@@ -185,7 +185,7 @@ property                | description
 
 Defines a list of control sets that are used to play the game.
 
-There may be multiple per game if the game supports multiple control configurations. For example, a game that supports using a trackball or a joystick would have two control configurations: one with a trackball and one with a joystick. For another example, a game like Centipede that supports upright and cocktail modes would have two control configurations: one with a single control set for the upright mode and one with two control sets for the cocktail mode. For an example of this check out the `centiped` entry in [`/json/restructuredControls.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/restructuredControls.json).
+There may be multiple per game if the game supports multiple control configurations. For example, a game that supports using a trackball or a joystick would have two control configurations: one with a trackball and one with a joystick. For another example, a game like Centipede that supports upright and cocktail modes would have two control configurations: one with a single control set for the upright mode and one with two control sets for the cocktail mode.
 
 The `playerControlSetIndexes` helper array provides an easy way to look up the control set for any given player like so:
 
