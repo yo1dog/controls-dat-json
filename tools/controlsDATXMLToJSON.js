@@ -5,6 +5,8 @@
  * 
  * You can download controls.xml from http://controls.arcadecontrols.com/
  * 
+ * Generates /json/controls.json
+ * 
  * 
  * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  * !!         WARNING          !!

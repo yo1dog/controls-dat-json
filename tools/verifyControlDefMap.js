@@ -104,8 +104,13 @@ function verifyOutput(controlDefMap, controlDef, key, output) {
   // make sure the default MAME input port suffix is valid
   if (output.defaultMAMEInputPortSuffix !== 'BUTTON') {
     var mameInputPort = 'P1_' + output.defaultMAMEInputPortSuffix;
-    if (!mameInputPortDefMap[mameInputPort]) {
+    var mameInputPortDef = mameInputPortDefMap[mameInputPort];
+    if (!mameInputPortDef) {
       throw new Error('Default MAME input port suffix "' + output.defaultMAMEInputPortSuffix + '" is invalid.');
+    }
+    
+    if (mameInputPortDef.isAnalog !== output.isAnalog) {
+      throw new Error('Default MAME input port suffix "' + output.defaultMAMEInputPortSuffix + '" is ' + (mameInputPortDef.isAnalog? 'analog': 'digital') + ' but the output is ' + (output.isAnalog? 'analog': 'digital') + '.');
     }
   }
 }

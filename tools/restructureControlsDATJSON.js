@@ -9,6 +9,8 @@
  * 
  * You can generate controls.json with controlsDATXMLtoJSON.js
  * 
+ * Generates /json/restructuredControls.json
+ * 
  * 
  * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  * !!         WARNING          !!

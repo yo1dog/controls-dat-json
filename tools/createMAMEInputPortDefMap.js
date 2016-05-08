@@ -7,6 +7,8 @@
  * You can get inpttype.h from
  * https://github.com/mamedev/mame/blob/master/src/emu/inpttype.h
  * 
+ * Generates /json/mameInputPortDefMap.json
+ * 
  * 
  * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  * !!         WARNING          !!

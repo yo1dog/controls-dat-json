@@ -13,10 +13,16 @@ You can download the latest versions here:
    - [XML to JSON converter](#xml-to-json-converter)
    - [Restructurer](#restructurer)
    - [JSON Formater](#json-formater)
-   - [MAME Input Port Definitions Map Creator](#mame-input-port-definitions-map-creator)
+   - [MAME Input Port Definition Map Creator](#mame-input-port-definition-map-creator)
    - [Control Definition Map Verifier](#control-definition-map-verifier)
    - [Restructured Controls JSON Verifier](#restructured-controls-json-verifier)
  - [JSON Files](#json-files)
+   - [Control Definition Map](#control-definition-map)
+   - [controls.dat JSON](#controlsdat-json)
+   - [MAME Input Port Definition Map](#mame-input-port-definition-map)
+   - [Menu Button Descriptors](#menu-button-descriptors)
+   - [Old Control Name to New Type Map](#old-control-name-to-new-type-map)
+   - [Restructured Controls](#restructured-controls)
  - [New Structure](#new-structure)
    - [ControlsDat](#controlsdat)
    - [Game](#game)
@@ -64,6 +70,8 @@ Converts the controls.dat XML format into a JSON format with a similar structure
 
 You can download `controls.xml` from http://controls.arcadecontrols.com.
 
+Generates [controls.dat JSON](#controlsdat-json).
+
 
 ### Restructurer
 
@@ -83,6 +91,8 @@ Details about [errors](#errors) below.
 
 You can generate `controls.json` with [`/tools/controlsDATXMLtoJSON.js`](#xml-to-json-converter).
 
+Generates [Restructured Controls](#restructured-controls).
+
 
 ### JSON Formater
 
@@ -96,7 +106,7 @@ cat file.json | node formatJSON.js -min > file.min.json
 Pretty-prints or minifies JSON.
 
 
-### MAME Input Port Definitions Map Creator
+### MAME Input Port Definition Map Creator
 
 ```
 node createMAMEInputPortDefMap.js [-min]
@@ -109,6 +119,8 @@ Creates a JSON map of the MAME input ports defined in `inpttype.h` from MAME's s
 
 You can get `inpttype.h` from https://github.com/mamedev/mame/blob/master/src/emu/inpttype.h
 
+Generates the [MAME Input Port Definition Map](#mame-input-port-definition-map).
+
 
 ### Control Definition Map Verifier
 
@@ -116,7 +128,7 @@ You can get `inpttype.h` from https://github.com/mamedev/mame/blob/master/src/em
 node verifyControlDefMap.js
 ```
 
-Verifies the integrity of [`/json/controlDefMap.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/controlDefMap.json). Should be used after making changes.
+Verifies the integrity of the [Control Definition Map](#control-definition-map). Should be used after making changes.
 
 Can also be `require()`d.
 
@@ -127,7 +139,7 @@ Can also be `require()`d.
 node verifyRestructuredControlsJSON.js
 ```
 
-Verifies the integrity of [`/json/restructuredControls.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/restructuredControls.json). Should be used after making changes.
+Verifies the integrity of [Restructured Controls](#restructured-controls). Should be used after making changes.
 
 Can also be `require()`d.
 
@@ -135,7 +147,47 @@ Can also be `require()`d.
 
 ## JSON Files
 
-TODO
+### Control Definition Map
+
+[`/json/controlDefMap.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/controlDefMap.json)/[`/json/controlDefMapSchema.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/controlDefMapSchema.json)
+
+Defines all of the different control types and the outputs, buttons, and default labels for each control. Is a map from the control type to the definition.
+
+
+### controls.dat JSON
+
+[`/json/controls.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/controls.json)
+
+The controls.dat data in JSON format. Can be generated with the (XML to JSON converter tool)[#xml-to-json-converter].
+
+
+### MAME Input Port Definition Map
+
+[`/json/mameInputPortDefMap.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/mameInputPortDefMap.json)
+
+Defines all of the MAME input port types and some data about them. Is a map from the MAME input port type to the definition. Can be generated with the (MAME Input Port Definition Map Creator tool)[#mame-input-port-definition-map-creator].
+
+
+### Menu Button Descriptors
+
+[`/json/menuButtonDescriptors.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/menuButtonDescriptors.json)
+
+Defines all of the descriptors that can be used on buttons in [control configuration's](#controlconfiguration) `menuButtons` array.
+
+
+### Old Control Name to New Type Map
+
+[`/json/oldControlNameToNewTypeMap.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/oldControlNameToNewTypeMap.json)
+
+Maps how the old-structured control "names" should be mapped into the newly-structured control types. All types are defined in the (control definition map)[#control-definition-map] except for 2 special entries in this map: `pedal-analog___2` and `paddle___v`. These 2 types are not valid control types but are handled by the (Restructurer tool)[#restructurer].
+
+
+### Restructured Controls
+
+[`/json/restructuredControls.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/restructuredControls.json)/[`/json/restructuredControlsSchema.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/restructuredControlsSchema.json)
+
+The controls.dat data restructured and in JSON format. Can be generated with the (Restructurer tool)[#restructurer]. For more details on the contents see (#new-structure)[New Structure].
+
 
 
 
@@ -185,7 +237,7 @@ property                | description
 
 Defines a list of control sets that are used to play the game.
 
-There may be multiple per game if the game supports multiple control configurations. For example, a game that supports using a trackball or a joystick would have two control configurations: one with a trackball and one with a joystick. For another example, a game like Centipede that supports upright and cocktail modes would have two control configurations: one with a single control set for the upright mode and one with two control sets for the cocktail mode.
+There may be multiple per game if the game supports multiple control configurations. For example, a game that supports using a trackball or a joystick would have two control configurations: one with a trackball and one with a joystick. For another example, a game like Centipede that supports upright and cocktail modes would have two control configurations: one with a single control set for the upright mode and one with two control sets for the cocktail mode. For an example of this check out the `centiped` entry in [Restructured Controls](#restructured-controls).
 
 The `playerControlSetIndexes` helper array provides an easy way to look up the control set for any given player like so:
 
@@ -203,7 +255,7 @@ property                  | description
 `notes`                   | Notes about this control configuration (not user friendly).
 `playerControlSetIndexes`  | A helper array that contains the index of the control set that supports each player. For example, `playerControlSetIndexes[1]` is the index of the control set in `controlSets` that supports player 2.
 `controlSets`             | List of [control sets](#controlset) in this configuration.
-`menuButtons`             | List of buttons that are used to navigate or start the game. This is where you will find "start" and "select" buttons if they are separate from the players' control set. For the list of valid button descriptors see [`/json/menuButtonDescriptors.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/menuButtonDescriptors.json).
+`menuButtons`             | List of buttons that are used to navigate or start the game. This is where you will find "start" and "select" buttons if they are separate from the players' control set. For the list of valid button descriptors see [Menu Button Descriptors](#menu-button-descriptors).
 
 
 ### ControlSet
@@ -225,10 +277,10 @@ Describes a physical control that is used by the player and provides input to th
 
 property           | description
 -------------------|------------
-`type`             | The type of physical control (ex: `"joy-8way-rotary-mechanical"`). The value must be one of the types defined in the controls definitions map ([`/json/controlDefMap.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/controlDefMap.json)).
-`descriptor`       | *optional* A descriptor for the control. It describes any  special detail about where the control is/aspects of the control. The value must be one of the descriptors defined for this control's definition in the control definitions map ([`/json/controlDefMap.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/controlDefMap.json)).
+`type`             | The type of physical control (ex: `"joy-8way-rotary-mechanical"`). The value must be one of the types defined in the [Control Definition Map](#control-definition-map).
+`descriptor`       | *optional* A descriptor for the control. It describes any  special detail about where the control is/aspects of the control. The value must be one of the descriptors defined for this control's definition in the [Control Definition Map](#control-definition-map).
 `outputToInputMap` | A map from the control's outputs to [inputs](#input). The value may be `null` if the output is not bound it any MAME input port.
-`buttons`          | A list of [buttons](#button) that are physically attached to the control. Button descriptors must be one of the descriptors defined by the control definition in the control definitions map ([`/json/controlDefMap.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/controlDefMap.json)).
+`buttons`          | A list of [buttons](#button) that are physically attached to the control. Button descriptors must be one of the descriptors defined by the control definition in the [Control Definition Map](#control-definition-map).
 
 
 ### Button
@@ -250,7 +302,7 @@ It is important to remember that what happens when "`P1_BUTTON1` was pressed" is
 property        |description
 ----------------|-----------
 `isAnalog`      | If this input is an analog input (`true`) or digital (`false`).
-`mameInputPort` | This is the MAME input port that is sent data to. The value is a constant defined by MAME that represents a game input. The value must be one of the types defined in the MAME input ports definitions map ([`/json/mameInputPortDefMap.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/mameInputPortDefMap.json)) For example, if  "was pressed" data was sent to the P1_BUTTON1 input port, the ROM would receive "P1_BUTTON1 was pressed" and would cause your character to jump if you were playing Donkey Kong Jr or shoot if you were playing Centipede. Or maybe it would activate the left-arrow if you were playing Dance Dance Revolution.
+`mameInputPort` | This is the MAME input port that is sent data to. The value is a constant defined by MAME that represents a game input. The value must be one of the types defined in the [MAME Input Port Definition Map](#mame-input-port-definition-map). For example, if  "was pressed" data was sent to the P1_BUTTON1 input port, the ROM would receive "P1_BUTTON1 was pressed" and would cause your character to jump if you were playing Donkey Kong Jr or shoot if you were playing Centipede. Or maybe it would activate the left-arrow if you were playing Dance Dance Revolution.
 `label`         | The user friendly description of how the input effects the game. This is usually text from the game's instruction card (ex: "Jump", "Shoot", "High Kick", etc.). If this input is digital (isAnalog = false) then only `label` will be defined. If this input is analog (isAnalog = true) then only `negLabel` and `posLabel` will be defined.
 
 
@@ -294,7 +346,7 @@ The game defined a player which contained no controls and no buttons (`player.co
 
 > Unknown old control name "$oControlName".
 
-The game defined a control with a name that was not recognized (`oldControlNameToNewTypeMap[control.name] = null`). All control names must have an entry in the old-control-name-to-new-type map ([`/json/oldControlNameToNewTypeMap.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/oldControlNameToNewTypeMap.json)).
+The game defined a control with a name that was not recognized (`oldControlNameToNewTypeMap[control.name] = null`). All control names must have an entry in the [Old Control Name to New Type Map](#old-control-name-to-new-type-map).
 
 
 > No control outputs bound.
@@ -315,4 +367,4 @@ These errors are caused by problems with the [restructurer tool](#restructurer).
 
 > Old control name "$oControlName" exists in oldControlNameToNewTypeMap with the new type "$nControlType", but that type does not exist in controlDefMap. This most likely means an entry was added to the oldControlNameToNewTypeMap but the corresponding type was either mistyped or needs to be added to controlDefMap.
 
-A game defined a control with a type that has an entry in the old-control-name-to-new-type map ([`/json/oldControlNameToNewTypeMap.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/oldControlNameToNewTypeMap.json)) but the return control type from that map does not have an entry in the controls definitions map ([`/json/controlDefMap.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/controlDefMap.json)) (`(controlType = oldControlNameToNewTypeMap[control.name]) != null && controlDefMap[controlType] = null`). This means there is a disconnect between the old-control-name-to-new-type map and the controls definitions map. As stated in the error, this most likely means an entry was added to the old-control-name-to-new-type map but the corresponding type was either mistyped or needs to be added to controls definitions map.
+A game defined a control with a type that has an entry in the [Old Control Name to New Type Map](#old-control-name-to-new-type-map). but the return control type from that map does not have an entry in the [Control Definition Map](#control-definition-map) (`(controlType = oldControlNameToNewTypeMap[control.name]) != null && controlDefMap[controlType] = null`). This means there is a disconnect between the [Old Control Name to New Type Map](#old-control-name-to-new-type-map) and the [Control Definition Map](#control-definition-map). As stated in the error, this most likely means an entry was added to the [Old Control Name to New Type Map](#old-control-name-to-new-type-map) but the corresponding type was either mistyped or needs to be added to [Control Definition Map](#control-definition-map).
