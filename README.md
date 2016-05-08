@@ -18,12 +18,13 @@ You can download the latest versions here:
    - [Restructured Controls JSON Verifier](#restructured-controls-json-verifier)
  - [JSON Files](#json-files)
    - [Control Definition Map](#control-definition-map)
-   - [controls.dat JSON](#controlsdat-json)
+   - [controls.json](#controlsjson)
    - [MAME Input Port Definition Map](#mame-input-port-definition-map)
    - [Menu Button Descriptors](#menu-button-descriptors)
    - [Old Control Name to New Type Map](#old-control-name-to-new-type-map)
    - [Restructured Controls](#restructured-controls)
  - [New Structure](#new-structure)
+   - [Assumptions/Workarounds](#assumptionsworkarounds)
    - [ControlsDat](#controlsdat)
    - [Game](#game)
    - [ControlConfiguration](#controlconfiguration)
@@ -70,7 +71,7 @@ Converts the controls.dat XML format into a JSON format with a similar structure
 
 You can download `controls.xml` from http://controls.arcadecontrols.com.
 
-Generates [controls.dat JSON](#controlsdat-json).
+Generates [controls.json](#controlsjson).
 
 
 ### Restructurer
@@ -89,9 +90,11 @@ More information on this [new structure](#new-structure) below.
 
 Details about [errors](#errors) below.
 
-You can generate `controls.json` with [`/tools/controlsDATXMLtoJSON.js`](#xml-to-json-converter).
+You can generate `controls.json` with the [XML to JSON converter tool](#xml-to-json-converter).
 
 Generates [Restructured Controls](#restructured-controls).
+
+:warning: See [Assumptions/Workarounds](#assumptionsworkarounds) for possible data issues.
 
 
 ### JSON Formater
@@ -149,23 +152,24 @@ Can also be `require()`d.
 
 ### Control Definition Map
 
-[`/json/controlDefMap.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/controlDefMap.json)/[`/json/controlDefMapSchema.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/controlDefMapSchema.json)
+[`/json/controlDefMap.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/controlDefMap.json)<br />
+[`/json/controlDefMapSchema.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/controlDefMapSchema.json)
 
 Defines all of the different control types and the outputs, buttons, and default labels for each control. Is a map from the control type to the definition.
 
 
-### controls.dat JSON
+### controls.json
 
 [`/json/controls.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/controls.json)
 
-The controls.dat data in JSON format. Can be generated with the (XML to JSON converter tool)[#xml-to-json-converter].
+The controls.dat data in JSON format. Can be generated with the [XML to JSON converter tool](#xml-to-json-converter).
 
 
 ### MAME Input Port Definition Map
 
 [`/json/mameInputPortDefMap.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/mameInputPortDefMap.json)
 
-Defines all of the MAME input port types and some data about them. Is a map from the MAME input port type to the definition. Can be generated with the (MAME Input Port Definition Map Creator tool)[#mame-input-port-definition-map-creator].
+Defines all of the MAME input port types and some data about them. Is a map from the MAME input port type to the definition. Can be generated with the [MAME Input Port Definition Map Creator tool](#mame-input-port-definition-map-creator).
 
 
 ### Menu Button Descriptors
@@ -179,14 +183,17 @@ Defines all of the descriptors that can be used on buttons in [control configura
 
 [`/json/oldControlNameToNewTypeMap.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/oldControlNameToNewTypeMap.json)
 
-Maps how the old-structured control "names" should be mapped into the newly-structured control types. All types are defined in the (control definition map)[#control-definition-map] except for 2 special entries in this map: `pedal-analog___2` and `paddle___v`. These 2 types are not valid control types but are handled by the (Restructurer tool)[#restructurer].
+Maps how the old-structured control "names" should be mapped into the newly-structured control types. All types are defined in the [Control Definition Map](#control-definition-map) except for 2 special entries in this map: `pedal-analog___2` and `paddle___v`. These 2 types are not valid control types but are handled by the [Restructurer tool](#restructurer).
 
 
 ### Restructured Controls
 
-[`/json/restructuredControls.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/restructuredControls.json)/[`/json/restructuredControlsSchema.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/restructuredControlsSchema.json)
+[`/json/restructuredControls.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/restructuredControls.json)<br />
+[`/json/restructuredControlsSchema.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/restructuredControlsSchema.json)
 
-The controls.dat data restructured and in JSON format. Can be generated with the (Restructurer tool)[#restructurer]. For more details on the contents see (#new-structure)[New Structure].
+The controls.dat data restructured and in JSON format. Can be generated with the [Restructurer tool](#restructurer). For more details on the contents see (#new-structure](New Structure).
+
+:warning: See [Assumptions/Workarounds](#assumptionsworkarounds) for possible data issues.
 
 
 
@@ -198,6 +205,23 @@ The main reason I decided to change the structure is because I wanted something 
 The new structure also allows the details of a game's controls to be stored more precisely and in greater detail.
 
 For reference on the models in the new structure see bellow, [`/helpers/models.js`](https://github.com/yo1dog/controls-dat-json/blob/master/helpers/models.js), and [`/json/restructuredControlsSchema.json`](https://github.com/yo1dog/controls-dat-json/blob/master/json/restructuredControlsSchema.json).
+
+
+### Assumptions/Workarounds
+
+Because of the lack of data in controls.dat, the following assumptions/workarounds were made. These are correct a majority of the time (hopefully) but as of v0.0.1 they have not been addressed except for `centiped`.
+
+- All games only have 1 control configuration. Controls.dat does provide information about alternate control configurations so only 1 is created for each game. This may be incorrect for games that support multiple control configurations (ex: games that have an upright and cocktail cabinets like Pacman).
+- All control configurations are assumed to be for upright cabinets (not cocktail). This may be incorrect for cocktail-only games. This may be a safe assumption as I don't know of any cocktail-only games.
+- If players alternate turns, we assume there is only 1 set of physical controls that each player shares. Therefore, we create only 1 control set that supports all players. This may be incorrect as some games make players alternate turns but each player still has their own set of controls (ex: Pacman cocktail cabinet).
+- If players do not alternate turns, we assume each player should have their own set of physical controls so they can all play at the same time. Therefore, we create a control set for each player. This may be incorrect as there are some 4 player games were 2 players play at the same time and alternate turns with the other 2 players (ex: '88 Games).
+- Control panel buttons do not have descriptors. Controls.dat does not provide information to identify the locations of buttons.
+- Assume only the first control set is required. This may be incorrect as there are some multi-player games that require at least 2 players and, therefore, should require at least 2 control sets.
+- Assume all control sets are on the same side of the screen. This may be incorrect as cocktail games usually require the second player's controls to be on the opposite side of the screen. However, as stated above we assume that all control configurations are for upright cabinets so this assumption is just an extension of that.
+- If only 1 button is defined on a triggerstick or lightgun control, we assume that button is the trigger button.
+- If only 1 button is defined on a topfire joystick, we assume that button is the topfire button.
+- If neither of the two previous assumptions apply, buttons on controls do not have descriptors. Controls.dat does not provide information to identify the locations of buttons.
+- Assume there is a dedicated start button for each player. This may be incorrect has some games use one of the standard buttons and do not have dedicated start buttons.
 
 
 ### ControlsDat
@@ -230,7 +254,7 @@ property                | description
 `hasCocktailDipswitch`  | If the game supports a switch that can toggle it between upright and cocktail mode. Sometimes this causes a change in control configurations.
 `notes`                 | Notes about this game (not user friendly).
 `errors`                | Any errors that occurred while restructuring. See the [error descriptions](#errors) below.
-`controlConfigurations` | List of [control configurations](#controlConfiguration). Ordered from most preferred configuration to least. Note that this may be empty in a few cases. Check `errors` in these cases.
+`controlConfigurations` | List of [control configurations](#controlconfiguration). Ordered from most preferred configuration to least. Note that this may be empty in a few cases. Check `errors` in these cases.
 
 
 ### ControlConfiguration
@@ -289,7 +313,7 @@ A button. Could be either a simple button on the control panel or a button attac
 
 property     | description
 -------------|------------
-`descriptor` | *optional* A predefined value that describes where the button is/the type of button. Valid values are defined by the context where the button is defined. Can be null if no descriptor applies.
+`descriptor` | *optional* A predefined value that describes where the button is/the type of button. Valid values are defined by the context where the button is defined. Can be `null` if no descriptor applies.
 `input`      | The [input](#input) that the button is bound to.
 
 
@@ -311,49 +335,49 @@ property        |description
 
 ### controls.dat Data Errors
 
-These errors are caused by problems with the old-structured controls.dat JSON that is given to the [restructurer](#restructurer) tool.
+These errors are caused by problems with the old-structured controls.dat JSON that is given to the [Restructurer tool](#restructurer).
 
-
+-----
 > No players defined.
 
 The game did not define any players (`game.players.length = 0`).
 
-
+-----
 > Too many players defined.
 
 The game defined more players than its max number of players (`game.players.length > `game.numPlayers`). Example: A game has 2 max players but defines a player 3.
 
-
+-----
 > Old game is "mirrored" but multiple players are defined.
 
 The game is "mirrored" which should mean that all players have the same controls but multiple players were defined (`game.mirrored = true && game.players.length > 1`).
 
-
+-----
 > Old game is not "mirrored" and not all players are defined.
 
 The game is not "mirrored" which should mean that players have different controls. This requires all players to be defined but they were not (`game.mirrored = false && game.players.length < game.numPlayers`). Example: A game is not "mirrored" and has 4 max players but only players 1 and 2 are defined.
 
-
+-----
 > MAME input port "$mameInputPort" has a label defined but is not bound to any control.
 
 The game defined a label for a MAME input port but it is not used by any control. Example: the game specified a label for the `P1_TRACKBALL_X` MAME input port but no trackball control was defined for player 1.
 
-
+-----
 > No controls and no buttons defined for player $playerNum.
 
 The game defined a player which contained no controls and no buttons (`player.controls.length === 0 && player.labels.length === 0`).
 
-
+-----
 > Unknown old control name "$oControlName".
 
 The game defined a control with a name that was not recognized (`oldControlNameToNewTypeMap[control.name] = null`). All control names must have an entry in the [Old Control Name to New Type Map](#old-control-name-to-new-type-map).
 
-
+-----
 > No control outputs bound.
 
 The game defined a control but did not define a label for any of control's outputs. Example: the game specified a `joy4way` control for player 1, but neither `P1_JOYSTICK_UP`, `P1_JOYSTICK_DOWN`, `P1_JOYSTICK_LEFT`, nor `P1_JOYSTICK_RIGHT` have a label defined.
 
-
+-----
 > No label for button bound to MAME input port "$mameInputPort".
 
 The game defined a MAME input port for a button on a control but no label for that MAME input port was defined. Example: A control's `buttons` array contains `P1_BUTTON1` but the control's `labels` array has no entry for `P1_BUTTON1`.
@@ -362,9 +386,9 @@ The game defined a MAME input port for a button on a control but no label for th
 
 ### Restructurer Errors
 
-These errors are caused by problems with the [restructurer tool](#restructurer).
+These errors are caused by problems with the [Restructurer tool](#restructurer).
 
-
+-----
 > Old control name "$oControlName" exists in oldControlNameToNewTypeMap with the new type "$nControlType", but that type does not exist in controlDefMap. This most likely means an entry was added to the oldControlNameToNewTypeMap but the corresponding type was either mistyped or needs to be added to controlDefMap.
 
-A game defined a control with a type that has an entry in the [Old Control Name to New Type Map](#old-control-name-to-new-type-map). but the return control type from that map does not have an entry in the [Control Definition Map](#control-definition-map) (`(controlType = oldControlNameToNewTypeMap[control.name]) != null && controlDefMap[controlType] = null`). This means there is a disconnect between the [Old Control Name to New Type Map](#old-control-name-to-new-type-map) and the [Control Definition Map](#control-definition-map). As stated in the error, this most likely means an entry was added to the [Old Control Name to New Type Map](#old-control-name-to-new-type-map) but the corresponding type was either mistyped or needs to be added to [Control Definition Map](#control-definition-map).
+A game defined a control with a type that has an entry in the [Old Control Name to New Type Map](#old-control-name-to-new-type-map), but the returned control type from that map does not have an entry in the [Control Definition Map](#control-definition-map) (`(controlType = oldControlNameToNewTypeMap[control.name]) != null && controlDefMap[controlType] = null`). This means there is a disconnect between the [Old Control Name to New Type Map](#old-control-name-to-new-type-map) and the [Control Definition Map](#control-definition-map). As stated in the error, this most likely means an entry was added to the [Old Control Name to New Type Map](#old-control-name-to-new-type-map) but the corresponding type was either mistyped or needs to be added to [Control Definition Map](#control-definition-map).
