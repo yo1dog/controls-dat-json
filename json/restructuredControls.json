@@ -26332,10 +26332,115 @@
               ],
               "controlPanelButtons": [
                 {
-                  "descriptor": null,
+                  "descriptor": "main-0,0",
                   "input": {
                     "isAnalog": false,
                     "mameInputPort": "P1_BUTTON1",
+                    "label": "Fire"
+                  }
+                }
+              ]
+            }
+          ],
+          "menuButtons": [
+            {
+              "descriptor": "start-1",
+              "input": {
+                "isAnalog": false,
+                "mameInputPort": "P1_START",
+                "label": "Player 1 Start"
+              }
+            },
+            {
+              "descriptor": "start-2",
+              "input": {
+                "isAnalog": false,
+                "mameInputPort": "P2_START",
+                "label": "Player 2 Start"
+              }
+            }
+          ]
+        },
+        {
+          "targetCabinetType": "cocktail",
+          "requiresCocktailCabinet": false,
+          "notes": "",
+          "playerControlSetIndexes": [
+            0,
+            1
+          ],
+          "controlSets": [
+            {
+              "supportedPlayerNums": [
+                1
+              ],
+              "isRequired": true,
+              "isOnOppositeScreenSide": false,
+              "controls": [
+                {
+                  "type": "trackball",
+                  "descriptor": null,
+                  "outputToInputMap": {
+                    "y": {
+                      "isAnalog": true,
+                      "mameInputPort": "P1_TRACKBALL_Y",
+                      "negLabel": "Up",
+                      "posLabel": "Down"
+                    },
+                    "x": {
+                      "isAnalog": true,
+                      "mameInputPort": "P1_TRACKBALL_X",
+                      "negLabel": "Left",
+                      "posLabel": "Right"
+                    }
+                  },
+                  "buttons": []
+                }
+              ],
+              "controlPanelButtons": [
+                {
+                  "descriptor": "main-0,0",
+                  "input": {
+                    "isAnalog": false,
+                    "mameInputPort": "P1_BUTTON1",
+                    "label": "Fire"
+                  }
+                }
+              ]
+            },
+            {
+              "supportedPlayerNums": [
+                2
+              ],
+              "isRequired": false,
+              "isOnOppositeScreenSide": true,
+              "controls": [
+                {
+                  "type": "trackball",
+                  "descriptor": null,
+                  "outputToInputMap": {
+                    "y": {
+                      "isAnalog": true,
+                      "mameInputPort": "P2_TRACKBALL_Y",
+                      "negLabel": "Up",
+                      "posLabel": "Down"
+                    },
+                    "x": {
+                      "isAnalog": true,
+                      "mameInputPort": "P2_TRACKBALL_X",
+                      "negLabel": "Left",
+                      "posLabel": "Right"
+                    }
+                  },
+                  "buttons": []
+                }
+              ],
+              "controlPanelButtons": [
+                {
+                  "descriptor": "main-0,0",
+                  "input": {
+                    "isAnalog": false,
+                    "mameInputPort": "P2_BUTTON1",
                     "label": "Fire"
                   }
                 }
