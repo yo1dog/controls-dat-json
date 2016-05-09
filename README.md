@@ -59,7 +59,7 @@ You can not use the `>` operator to write the output JSON to a file as it will b
 
 ## Tools
 
-### XML to JSON converter
+### XML to JSON Converter
 ```
 node controlsDATXMLtoJSON.js [-min]
 
@@ -145,6 +145,21 @@ node verifyRestructuredControlsJSON.js
 Verifies the integrity of [Restructured Controls](#restructured-controls). Should be used after making changes.
 
 Can also be `require()`d.
+
+
+### MAME List XML to JSON Converter
+
+```
+node listXMLToJSON.js [-min] [-props prop1,prop2,...]
+
+mame.exe -listxml | node listXMLToJSON.js > mameList.json\n
+mame.exe -listxml | node listXMLToJSON.js -min > mameList.min.json
+mame.exe -listxml | node listXMLToJSON.js -props name,cloneof,ports -min > mameList.partial.min.json
+```
+
+Converts the `mame.exe -listxml` output into a JSON format.
+
+Use the `-props` param to specify a comma-separated whitelist of machine properties that should be printed. For example, if you specify `-props "name,cloneof,ports"` the machines in the JSON will only contain the `name`, `cloneof`, and `ports` properties. Can be used to keep the file size down if you only need a small subset of the properties.
 
 
 

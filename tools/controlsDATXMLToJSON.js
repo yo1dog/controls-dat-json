@@ -20,6 +20,7 @@
  */
 
 var xmldoc     = require('xmldoc');
+var xmlHelper  = require('../helpers/xmlHelper');
 var cliWrapper = require('../helpers/cliWrapper');
 var wrapError  = require('../helpers/wrapError');
 
@@ -56,94 +57,6 @@ cliWrapper(usageExampleStr, function controlsDATXMLtoJSON(stdinData) {
   return controlsDatObj;
 });
 
-function getXMLElemRequiredChild(xmlElem, childName) {
-  var childXMLElem = xmlElem.childNamed(childName);
-  
-  if (!childXMLElem) {
-    throw new Error('"' + childName + '" element is missing.');
-  }
-  
-  return childXMLElem;
-}
-function getXMLElemOptionalChildAttr(xmlElem, childName, attrKey) {
-  var childXMLElem = xmlElem.childNamed(childName);
-  
-  if (!childXMLElem) {
-    return null;
-  }
-  
-  var value = childXMLElem.attr[attrKey];
-  if (!value) {
-    return value;
-  }
-  
-  return value.trim();
-}
-function getXMLElemOptionalChildVal(xmlElem, childName) {
-  var childXMLElem = xmlElem.childNamed(childName);
-  
-  if (!childXMLElem) {
-    return null;
-  }
-  
-  return childXMLElem.val.trim();
-}
-function getXMLElemRequiredAttr(xmlElem, attrKey) {
-  var value = xmlElem.attr[attrKey];
-  
-  if (typeof value === 'undefined') {
-    throw new Error('"' + attrKey + '" attribute is missing.');
-  }
-  
-  value = value.trim();
-  
-  if (typeof value.length === 0) {
-    throw new Error('"' + attrKey + '" attribute is empty.');
-  }
-  
-  return value;
-}
-function getXMLElemRequiredAttrInt(xmlElem, attrKey) {
-  var valueStr = getXMLElemRequiredAttr(xmlElem, attrKey);
-  
-  if (!(/\-?^[0-9]+$/.test(valueStr))) {
-    throw new Error('"' + attrKey + '" attribute is not a valid integer.');
-  }
-  
-  var value = parseInt(valueStr);
-  return value;
-}
-function getXMLElemRequiredAttrIntMin(xmlElem, attrKey, minValue) {
-  var value = getXMLElemRequiredAttrInt(xmlElem, attrKey);
-  if (value < minValue) {
-    throw new Error('"' + attrKey + '" attribute is less than ' + minValue + '.');
-  }
-  
-  return value;
-}
-function getXMLElemRequiredAttrBool(xmlElem, attrKey) {
-  var valueStr = getXMLElemRequiredAttr(xmlElem, attrKey);
-  valueStr = valueStr.toLowerCase();
-  
-  var value;
-  if (valueStr === 'true' || valueStr === '1') {
-    value = true;
-  }
-  else if (valueStr === 'false' || valueStr === '0') {
-    value = false;
-  }
-  else {
-    throw new Error('"' + attrKey + '" attribute is not a valid boolean.');
-  }
-  
-  return value;
-}
-
-
-
-
-
-
 
 
 function convertControlsDatXML(controlsDatXMLDoc) {
@@ -169,14 +82,14 @@ function convertControlsDatXML(controlsDatXMLDoc) {
 }
 
 function formatMeta(controlsDatXMLDoc) {
-  var metaXMLElem = getXMLElemRequiredChild(controlsDatXMLDoc, 'meta');
+  var metaXMLElem = xmlHelper.getXMLElemRequiredChild(controlsDatXMLDoc, 'meta');
   var meta = formatMetaXMLElem(metaXMLElem);
   
   return meta;
 }
 function formatMetaXMLElem(metaXMLElem) {
   var date;
-  var timeStr = getXMLElemOptionalChildAttr(metaXMLElem, 'time', 'name');
+  var timeStr = xmlHelper.getXMLElemOptionalChildAttr(metaXMLElem, 'time', 'name');
   if (timeStr) {
     date = new Date(timeStr);
     
@@ -189,10 +102,10 @@ function formatMetaXMLElem(metaXMLElem) {
   }
   
   var meta = {
-    description: getXMLElemOptionalChildAttr(metaXMLElem, 'description', 'name') || '',
-    version    : getXMLElemOptionalChildAttr(metaXMLElem, 'version'    , 'name') || '',
+    description: xmlHelper.getXMLElemOptionalChildAttr(metaXMLElem, 'description', 'name') || '',
+    version    : xmlHelper.getXMLElemOptionalChildAttr(metaXMLElem, 'version'    , 'name') || '',
     time       : date,
-    generatedBy: getXMLElemOptionalChildAttr(metaXMLElem, 'generatedBy', 'name') || ''
+    generatedBy: xmlHelper.getXMLElemOptionalChildAttr(metaXMLElem, 'generatedBy', 'name') || ''
   };
   
   return meta;
@@ -234,15 +147,15 @@ function formatGames(controlsDatXMLDoc) {
 }
 function formatGameXMLElem(gameXMLElem) {
   var game = {
-    romname    : getXMLElemRequiredAttr      (gameXMLElem, 'romname'),
-    gamename   : getXMLElemRequiredAttr      (gameXMLElem, 'gamename'),
-    numPlayers : getXMLElemRequiredAttrIntMin(gameXMLElem, 'numPlayers' , 1),
-    alternating: getXMLElemRequiredAttrBool  (gameXMLElem, 'alternating'),
-    mirrored   : getXMLElemRequiredAttrBool  (gameXMLElem, 'mirrored'),
-    usesService: getXMLElemRequiredAttrBool  (gameXMLElem, 'usesService'),
-    tilt       : getXMLElemRequiredAttrBool  (gameXMLElem, 'tilt'),
-    cocktail   : getXMLElemRequiredAttrBool  (gameXMLElem, 'cocktail'),
-    miscDetails: getXMLElemOptionalChildVal  (gameXMLElem, 'miscDetails') || '',
+    romname    : xmlHelper.getXMLElemRequiredAttr      (gameXMLElem, 'romname'),
+    gamename   : xmlHelper.getXMLElemRequiredAttr      (gameXMLElem, 'gamename'),
+    numPlayers : xmlHelper.getXMLElemRequiredAttrIntMin(gameXMLElem, 'numPlayers' , 1),
+    alternating: xmlHelper.getXMLElemRequiredAttrBool  (gameXMLElem, 'alternating'),
+    mirrored   : xmlHelper.getXMLElemRequiredAttrBool  (gameXMLElem, 'mirrored'),
+    usesService: xmlHelper.getXMLElemRequiredAttrBool  (gameXMLElem, 'usesService'),
+    tilt       : xmlHelper.getXMLElemRequiredAttrBool  (gameXMLElem, 'tilt'),
+    cocktail   : xmlHelper.getXMLElemRequiredAttrBool  (gameXMLElem, 'cocktail'),
+    miscDetails: xmlHelper.getXMLElemOptionalChildVal  (gameXMLElem, 'miscDetails') || '',
     players    : formatGamePlayers(gameXMLElem)
   };
   
@@ -292,8 +205,8 @@ function formatGamePlayers(gameXMLElem) {
 }
 function formatPlayerXMLElem(playerXMLElem) {
   var player = {
-    number    : getXMLElemRequiredAttrIntMin(playerXMLElem, 'number', 1),
-    numButtons: getXMLElemRequiredAttrIntMin(playerXMLElem, 'numButtons', 0),
+    number    : xmlHelper.getXMLElemRequiredAttrIntMin(playerXMLElem, 'number', 1),
+    numButtons: xmlHelper.getXMLElemRequiredAttrIntMin(playerXMLElem, 'numButtons', 0),
     controls  : formatPlayerControls(playerXMLElem),
     labels    : formatPlayerLabels(playerXMLElem)
   };
@@ -302,7 +215,7 @@ function formatPlayerXMLElem(playerXMLElem) {
 }
 
 function formatPlayerControls(playerXMLElem) {
-  var controlsXMLElem = getXMLElemRequiredChild(playerXMLElem, 'controls');
+  var controlsXMLElem = xmlHelper.getXMLElemRequiredChild(playerXMLElem, 'controls');
   var controlXMLElems = controlsXMLElem.children;
   
   var controls = [];
@@ -327,7 +240,7 @@ function formatPlayerControls(playerXMLElem) {
 
 function formatControlXMLElem(controlXMLElem) {
   var control = {
-    name     : getXMLElemRequiredAttr(controlXMLElem, 'name'),
+    name     : xmlHelper.getXMLElemRequiredAttr(controlXMLElem, 'name'),
     constants: formatControlConstants(controlXMLElem),
     buttons  : formatControlButtons(controlXMLElem)
   };
@@ -356,7 +269,7 @@ function formatControlConstants(controlXMLElem) {
   return constants;
 }
 function formatConstantXMLElem(constantXMLElem) {
-  return getXMLElemRequiredAttr(constantXMLElem, 'name');
+  return xmlHelper.getXMLElemRequiredAttr(constantXMLElem, 'name');
 }
 
 function formatControlButtons(controlXMLElem) {
@@ -380,11 +293,11 @@ function formatControlButtons(controlXMLElem) {
   return buttons;
 }
 function formatButtonXMLElem(buttonXMLElem) {
-  return getXMLElemRequiredAttr(buttonXMLElem, 'name');
+  return xmlHelper.getXMLElemRequiredAttr(buttonXMLElem, 'name');
 }
 
 function formatPlayerLabels(playerXMLElem) {
-  var labelsXMLElem = getXMLElemRequiredChild(playerXMLElem, 'labels');
+  var labelsXMLElem = xmlHelper.getXMLElemRequiredChild(playerXMLElem, 'labels');
   var labelXMLElems = labelsXMLElem.children;
   
   var labels = [];
@@ -407,8 +320,8 @@ function formatPlayerLabels(playerXMLElem) {
 }
 function formatLabelXMLElem(labelXMLElem) {
   var label = {
-    name : getXMLElemRequiredAttr(labelXMLElem, 'name'),
-    value: getXMLElemRequiredAttr(labelXMLElem, 'value')
+    name : xmlHelper.getXMLElemRequiredAttr(labelXMLElem, 'name'),
+    value: xmlHelper.getXMLElemRequiredAttr(labelXMLElem, 'value')
   };
   
   return label;

@@ -1,18 +1,15 @@
 module.exports = function wrapper(usageExampleStr, buildObjFunc) {
   // parse args
   var prettyPrint = true;
-  if (process.argv[2]) {
-    if (process.argv[2].toLowerCase() === '-min') {
+  for (var i = 2; i < process.argv.length; ++i) {
+    if (process.argv[i].toLowerCase() === '-min') {
       prettyPrint = false;
-    }
-    else {
-      console.error('Unknown argument "' + process.argv[2] + '".');
-      console.error('Usage:\n' + usageExampleStr);
-      process.exit(1);
+      break;
     }
   }
   
   // read from stdin
+  console.error('Reading from stdin...');
   readStdin(function(err, stdinData) {
     try {
       if (err) {
@@ -25,9 +22,10 @@ module.exports = function wrapper(usageExampleStr, buildObjFunc) {
         process.exit(1);
       }
       
-      var obj = buildObjFunc(stdinData);
-      
-      console.log(JSON.stringify(obj, null, prettyPrint? '  ' : null));
+      var obj = buildObjFunc(stdinData, prettyPrint);
+      if (obj) {
+        console.log(JSON.stringify(obj, null, prettyPrint? '  ' : null));
+      }
     }
     catch(err) {
       console.error(err.stack);
