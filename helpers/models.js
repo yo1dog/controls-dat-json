@@ -102,9 +102,9 @@ module.exports = {
         targetCabinetType: options.targetCabinetType,
         
         // dictates if this control configuration can only be used on a cocktail
-        // cabinet. This will be true if one or more of the control sets in this
+        // cabinet. This will be true if one or more REQUIRED control sets in this
         // configuration are required to be on the opposite side of the screen
-        // (isOnOppositeScreenSide = true).
+        // (isRequired = true && isOnOppositeScreenSide = true).
         requiresCocktailCabinet: options.requiresCocktailCabinet,
         
         // notes about this control configuration (not user friendly)

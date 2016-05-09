@@ -275,7 +275,7 @@ Note that multiple players may use the same control set so multiple entries in `
 property                  | description
 --------------------------|------------
 `targetCabinetType`       | If this control configuration is meant for an upright cabinet ("upright") or a cocktail cabinet ("cocktail"). Note this does not dictate that this control configuration can only be used on this type of cabinet; A control configuration meant for an upright cabinet may still be playable on a cocktail cabinet and vice-versa.
-`requiresCocktailCabinet` | Dictates if this control configuration can only be used on a cocktail cabinet. This will be true if one or more of the control sets in this configuration are required to be on the opposite side of the screen (`isOnOppositeScreenSide` = true).
+`requiresCocktailCabinet` | Dictates if this control configuration can only be used on a cocktail cabinet. This will be true if one or more *required* control sets in this configuration are required to be on the opposite side of the screen (`isRequired = true && isOnOppositeScreenSide = true`).
 `notes`                   | Notes about this control configuration (not user friendly).
 `playerControlSetIndexes`  | A helper array that contains the index of the control set that supports each player. For example, `playerControlSetIndexes[1]` is the index of the control set in `controlSets` that supports player 2.
 `controlSets`             | List of [control sets](#controlset) in this configuration.
