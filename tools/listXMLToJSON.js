@@ -244,8 +244,16 @@ function formatMachines(listXMLStr, prettyPrint, propWhiteList) {
       throw wrapError(err, 'Error formating "' + machineName + '" machine (' + childNum + ordSuffix + ' machine).');
     }
     
+    if (propWhiteList) {
+      for (var key in machine) {
+        if (propWhiteList.indexOf(key) === -1) {
+          delete machine[key];
+        }
+      }
+    }
+    
     // convert machine object to JSON
-    var machineJSON = JSON.stringify(machine, propWhiteList, prettyPrint? '  ' : null);
+    var machineJSON = JSON.stringify(machine, null, prettyPrint? '  ' : null);
     
     // add comma
     if (numMachinesFormated < numMachines - 1) {
