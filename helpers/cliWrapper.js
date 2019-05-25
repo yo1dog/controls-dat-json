@@ -1,54 +1,41 @@
-module.exports = function wrapper(usageExampleStr, buildObjFunc) {
-  // parse args
-  var prettyPrint = true;
-  for (var i = 2; i < process.argv.length; ++i) {
-    if (process.argv[i].toLowerCase() === '-min') {
-      prettyPrint = false;
-      break;
-    }
-  }
-  
-  // read from stdin
-  console.error('Reading from stdin...');
-  readStdin(function(err, stdinData) {
-    try {
-      if (err) {
-        console.error('Error reading from stdin.');
-        throw err;
-      }
-      if (!stdinData) {
-        console.error('Nothing piped to stdin.');
-        console.error('Usage:\n' + usageExampleStr);
-        process.exit(1);
-      }
-      
-      var obj = buildObjFunc(stdinData, prettyPrint);
-      if (obj) {
-        console.log(JSON.stringify(obj, null, prettyPrint? '  ' : null));
-      }
-    }
-    catch(err) {
-      console.error(err.stack);
+module.exports = function cliWrapper(usageExampleStr, buildObjFunc) {
+  (async function run() {
+    // parse args
+    const prettyPrint = process.argv.find(arg => /-?-min/i.test(arg));
+    
+    // read from stdin
+    console.error('Reading from stdin...');
+    const stdinData = await readStdin();
+    
+    if (!stdinData) {
+      console.error('Nothing piped to stdin.');
+      console.error(`Usage:\n${usageExampleStr}`);
       process.exit(1);
     }
     
+    const obj = buildObjFunc(stdinData, prettyPrint);
+    if (obj) {
+      console.log(JSON.stringify(obj, null, prettyPrint? '  ' : null));
+    }
+  })()
+  .then(() => {
     process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
   });
 };
 
-
-function readStdin(cb) {
+async function readStdin() {
   if (process.stdin.isTTY) {
-    process.nextTick(cb);
+    return null;
   }
   
-  var stdinData = '';
-  
-  process.stdin.on('error', cb);
-  process.stdin.on('data', function(chunk) {
+  let stdinData = '';
+  for await (const chunk of process.stdin) {
     stdinData += chunk;
-  });
-  process.stdin.on('end', function() {
-    cb(null, stdinData);
-  });
+  }
+  
+  return stdinData;
 }

@@ -1,5 +1,5 @@
 /* 
- * Usage: node controlsDATXMLtoJSON.js [-min]
+ * Usage: node controlsDATXMLtoJSON.js [--min]
  * 
  * Converts the controls.dat XML format into a JSON format with a similar structure.
  * 
@@ -19,49 +19,48 @@
  * "| Out-File -Encoding utf8" instead solves this problem.
  */
 
-var xmldoc     = require('xmldoc');
-var xmlHelper  = require('../helpers/xmlHelper');
-var cliWrapper = require('../helpers/cliWrapper');
-var wrapError  = require('../helpers/wrapError');
+const xmldoc     = require('xmldoc');
+const xmlHelper  = require('../helpers/xmlHelper');
+const cliWrapper = require('../helpers/cliWrapper');
+const CError     = require('@yo1dog/cerror');
 
-var usageExampleStr =
-  'node controlsDATXMLtoJSON.js [-min]\n' +
-  '\n' +
-  'bash:\n' +
-  'cat controls.xml | node controlsDATXMLtoJSON.js > controls.json\n' +
-  '\n' +
-  'Windows Command Prompt:\n' +
-  'type controls.xml | node controlsDATXMLtoJSON.js > controls.json\n' +
-  '\n' +
-  '!! Windows PowerShell !!:\n' +
-  'cat controls.xml | node controlsDATXMLtoJSON.js | Out-File -Encoding utf8 controls.json';
+const usageExampleStr =
+`node controlsDATXMLtoJSON.js [--min]
+
+bash:
+cat controls.xml | node controlsDATXMLtoJSON.js > controls.json
+
+Windows Command Prompt:
+type controls.xml | node controlsDATXMLtoJSON.js > controls.json
+
+!! Windows PowerShell !!:
+cat controls.xml | node controlsDATXMLtoJSON.js | Out-File -Encoding utf8 controls.json`;
 
 
-cliWrapper(usageExampleStr, function controlsDATXMLtoJSON(stdinData) {
+cliWrapper(usageExampleStr, controlsDATXMLtoJSON);
+function controlsDATXMLtoJSON(stdinData) {
   ////////////////////////
   // Entry Point
   ////////////////////////
   
   // parse the data from stdin as XML
-  var xmlDoc;
+  let xmlDoc;
   try {
     xmlDoc = new xmldoc.XmlDocument(stdinData);
   }
   catch(err) {
-    throw wrapError(err, 'Error parsing data from stdin as XML.');
+    throw new CError(err, 'Error parsing data from stdin as XML.');
   }
   
   // format the controls.dat XML document as a readable object
-  var controlsDatObj = convertControlsDatXML(xmlDoc);
-  
+  const controlsDatObj = convertControlsDatXML(xmlDoc);
   return controlsDatObj;
-});
-
+}
 
 
 function convertControlsDatXML(controlsDatXMLDoc) {
   // first format the controls.dat XML document into an easy-to-use JavaScript object
-  var controlsDat = {
+  const controlsDat = {
     meta : formatMeta(controlsDatXMLDoc),
     games: formatGames(controlsDatXMLDoc)
   };
@@ -82,26 +81,26 @@ function convertControlsDatXML(controlsDatXMLDoc) {
 }
 
 function formatMeta(controlsDatXMLDoc) {
-  var metaXMLElem = xmlHelper.getXMLElemRequiredChild(controlsDatXMLDoc, 'meta');
-  var meta = formatMetaXMLElem(metaXMLElem);
+  const metaXMLElem = xmlHelper.getXMLElemRequiredChild(controlsDatXMLDoc, 'meta');
+  const meta = formatMetaXMLElem(metaXMLElem);
   
   return meta;
 }
 function formatMetaXMLElem(metaXMLElem) {
-  var date;
-  var timeStr = xmlHelper.getXMLElemOptionalChildAttr(metaXMLElem, 'time', 'name');
+  let date;
+  const timeStr = xmlHelper.getXMLElemOptionalChildAttr(metaXMLElem, 'time', 'name');
   if (timeStr) {
     date = new Date(timeStr);
     
     if (isNaN(date.getTime())) {
-      throw new Error('"time" element\'s "name" attribute is not a valid date.');
+      throw new Error(`'time' element's 'name' attribute is not a valid date.`);
     }
   }
   else {
     date = null;
   }
   
-  var meta = {
+  const meta = {
     description: xmlHelper.getXMLElemOptionalChildAttr(metaXMLElem, 'description', 'name') || '',
     version    : xmlHelper.getXMLElemOptionalChildAttr(metaXMLElem, 'version'    , 'name') || '',
     time       : date,
@@ -112,28 +111,22 @@ function formatMetaXMLElem(metaXMLElem) {
 }
 
 function formatGames(controlsDatXMLDoc) {
-  var gameXMLElems = controlsDatXMLDoc.childrenNamed('game');
-  var games = [];
+  const gameXMLElems = controlsDatXMLDoc.childrenNamed('game');
   
-  for (var i = 0; i < gameXMLElems.length; ++i) {
-    var gameXMLElem = gameXMLElems[i];
-    
-    var game;
+  const games = gameXMLElems.map(gameXMLElem => {
     try {
-      game = formatGameXMLElem(gameXMLElem);
+      return formatGameXMLElem(gameXMLElem);
     }
     catch(err) {
-      throw wrapError(err, 'Error formating game XML element at line ' + (gameXMLElem.line + 1) + ', column ' + (gameXMLElem.column + 1) + '.');
+      throw new CError(err, `Error formating game XML element at line ${gameXMLElem.line + 1}, column ${gameXMLElem.column + 1}.`);
     }
-    
-    games.push(game);
-  }
+  });
   
   // make sure there are not multiple games with the same romname
-  for (var j = 0; j < games.length - 1; ++j) {
-    for (var k = j + 1; k < games.length; ++k) {
+  for (let j = 0; j < games.length - 1; ++j) {
+    for (let k = j + 1; k < games.length; ++k) {
       if (games[j].romname === games[k].romname) {
-        throw new Error('Multiple games with same romname "' + games[k].romname + '".');
+        throw new Error(`Multiple games with same romname '${games[k].romname}'.`);
       }
     }
   }
@@ -146,7 +139,7 @@ function formatGames(controlsDatXMLDoc) {
   return games;
 }
 function formatGameXMLElem(gameXMLElem) {
-  var game = {
+  const game = {
     romname    : xmlHelper.getXMLElemRequiredAttr      (gameXMLElem, 'romname'),
     gamename   : xmlHelper.getXMLElemRequiredAttr      (gameXMLElem, 'gamename'),
     numPlayers : xmlHelper.getXMLElemRequiredAttrIntMin(gameXMLElem, 'numPlayers' , 1),
@@ -167,32 +160,24 @@ function formatGameXMLElem(gameXMLElem) {
 }
 
 function formatGamePlayers(gameXMLElem) {
-  var playerXMLElems = gameXMLElem.childrenNamed('player');
-  var players = [];
+  const playerXMLElems = gameXMLElem.childrenNamed('player');
   
-  for (var i = 0; i < playerXMLElems.length; ++i) {
-    var playerXMLElem = playerXMLElems[i];
-    
-    var player;
+  const players = playerXMLElems.map(playerXMLElem => {
     try {
-      player = formatPlayerXMLElem(playerXMLElem);
+      return formatPlayerXMLElem(playerXMLElem);
     }
     catch(err) {
-      throw wrapError(err, 'Error formating player XML element at line ' + (playerXMLElem.line + 1) + ', column ' + (playerXMLElem.column + 1) + '.');
+      throw new CError(err, `Error formating player XML element at line ${playerXMLElem.line + 1}, column ${playerXMLElem.column + 1}.`);
     }
-    
-    players.push(player);
-  }
-  
-  // sort the players so index 0 is player 1, index 1 is player 2, etc. (assuming there are no gaps)
-  players.sort(function(playerA, playerB) {
-    return playerA.number - playerB.number;
   });
   
+  // sort the players so index 0 is player 1, index 1 is player 2, etc. (assuming there are no gaps)
+  players.sort((playerA, playerB) => playerA.number - playerB.number);
+  
   // check for gaps (ex: players 1, 2, and 4 were defined but not 3, or player 2 was defined but not 1)
-  for (var j = 0; j < players.length; ++j) {
+  for (let j = 0; j < players.length; ++j) {
     if (players[j].number !== j + 1) {
-      throw new Error('Player ' + (j + 1) + ' is missing.');
+      throw new Error(`Player ${j + 1} is missing.`);
     }
   }
   
@@ -204,7 +189,7 @@ function formatGamePlayers(gameXMLElem) {
   return players;
 }
 function formatPlayerXMLElem(playerXMLElem) {
-  var player = {
+  const player = {
     number    : xmlHelper.getXMLElemRequiredAttrIntMin(playerXMLElem, 'number', 1),
     numButtons: xmlHelper.getXMLElemRequiredAttrIntMin(playerXMLElem, 'numButtons', 0),
     controls  : formatPlayerControls(playerXMLElem),
@@ -215,31 +200,23 @@ function formatPlayerXMLElem(playerXMLElem) {
 }
 
 function formatPlayerControls(playerXMLElem) {
-  var controlsXMLElem = xmlHelper.getXMLElemRequiredChild(playerXMLElem, 'controls');
-  var controlXMLElems = controlsXMLElem.children;
+  const controlsXMLElem = xmlHelper.getXMLElemRequiredChild(playerXMLElem, 'controls');
+  const controlXMLElems = controlsXMLElem.children;
   
-  var controls = [];
-  
-  // format controls for each control XML element
-  for (var i = 0; i < controlXMLElems.length; ++i) {
-   var controlXMLElem = controlXMLElems[i];
-    
-    var control;
+  const controls = controlXMLElems.map(controlXMLElem => {
     try {
-      control = formatControlXMLElem(controlXMLElem);
+      return formatControlXMLElem(controlXMLElem);
     }
     catch(err) {
-      throw wrapError(err, 'Error formating control XML element at line ' + (controlXMLElem.line + 1) + ', column ' + (controlXMLElem.column + 1) + '.');
+      throw new CError(err, `Error formating control XML element at line ${controlXMLElem.line + 1}, column ${controlXMLElem.column + 1}.`);
     }
-    
-    controls.push(control);
-  }
+  });
   
   return controls;
 }
 
 function formatControlXMLElem(controlXMLElem) {
-  var control = {
+  const control = {
     name     : xmlHelper.getXMLElemRequiredAttr(controlXMLElem, 'name'),
     constants: formatControlConstants(controlXMLElem),
     buttons  : formatControlButtons(controlXMLElem)
@@ -249,22 +226,16 @@ function formatControlXMLElem(controlXMLElem) {
 }
 
 function formatControlConstants(controlXMLElem) {
-  var constantXMLElems = controlXMLElem.childrenNamed('constant');
-  var constants = [];
+  const constantXMLElems = controlXMLElem.childrenNamed('constant');
   
-  for (var i = 0; i < constantXMLElems.length; ++i) {
-    var constantXMLElem = constantXMLElems[i];
-    
-    var constant;
+  const constants = constantXMLElems.map(constantXMLElem => {
     try {
-      constant = formatConstantXMLElem(constantXMLElem);
+      return formatConstantXMLElem(constantXMLElem);
     }
     catch(err) {
-      throw wrapError(err, 'Error formating constant XML element at line ' + (constantXMLElem.line + 1) + ', column ' + (constantXMLElem.column + 1) + '.');
+      throw new CError(err, `Error formating constant XML element at line ${constantXMLElem.line + 1}, column ${constantXMLElem.column + 1}.`);
     }
-    
-    constants.push(constant);
-  }
+  });
   
   return constants;
 }
@@ -273,22 +244,16 @@ function formatConstantXMLElem(constantXMLElem) {
 }
 
 function formatControlButtons(controlXMLElem) {
-  var buttonXMLElems = controlXMLElem.childrenNamed('button');
-  var buttons = [];
+  const buttonXMLElems = controlXMLElem.childrenNamed('button');
   
-  for (var i = 0; i < buttonXMLElems.length; ++i) {
-    var buttonXMLElem = buttonXMLElems[i];
-    
-    var button;
+  const buttons = buttonXMLElems.map(buttonXMLElem => {
     try {
-      button = formatButtonXMLElem(buttonXMLElem);
+      return formatButtonXMLElem(buttonXMLElem);
     }
     catch(err) {
-      throw wrapError(err, 'Error formating button XML element at line ' + (buttonXMLElem.line + 1) + ', column ' + (buttonXMLElem.column + 1) + '.');
+      throw new CError(err, `Error formating button XML element at line ${buttonXMLElem.line + 1}, column ${buttonXMLElem.column + 1}.`);
     }
-    
-    buttons.push(button);
-  }
+  });
   
   return buttons;
 }
@@ -297,29 +262,22 @@ function formatButtonXMLElem(buttonXMLElem) {
 }
 
 function formatPlayerLabels(playerXMLElem) {
-  var labelsXMLElem = xmlHelper.getXMLElemRequiredChild(playerXMLElem, 'labels');
-  var labelXMLElems = labelsXMLElem.children;
+  const labelsXMLElem = xmlHelper.getXMLElemRequiredChild(playerXMLElem, 'labels');
+  const labelXMLElems = labelsXMLElem.children;
   
-  var labels = [];
-  
-  for (var i = 0; i < labelXMLElems.length; ++i) {
-    var labelXMLElem = labelXMLElems[i];
-    
-    var label;
+  const labels = labelXMLElems.map(labelXMLElem => {
     try {
-      label = formatLabelXMLElem(labelXMLElem);
+      return formatLabelXMLElem(labelXMLElem);
     }
     catch(err) {
-      throw wrapError(err, 'Error formating label XML element at line ' + (labelXMLElem.line + 1) + ', column ' + (labelXMLElem.column + 1) + '.');
+      throw new CError(err, `Error formating label XML element at line ${labelXMLElem.line + 1}, column ${labelXMLElem.column + 1}.`);
     }
-    
-    labels.push(label);
-  }
+  });
   
   return labels;
 }
 function formatLabelXMLElem(labelXMLElem) {
-  var label = {
+  const label = {
     name : xmlHelper.getXMLElemRequiredAttr(labelXMLElem, 'name'),
     value: xmlHelper.getXMLElemRequiredAttr(labelXMLElem, 'value')
   };

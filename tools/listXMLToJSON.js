@@ -1,10 +1,10 @@
 /* 
- * Usage: node listXMLToJSON.js [-min] [-props prop1,prop2,...]
+ * Usage: node listXMLToJSON.js [--min] [--props prop1,prop2,...]
  * 
  * Converts the mame.exe -listxml output into a JSON format.
  * 
- * Use the -props param to specify a comma-separated whitelist of machine properties
- * that should be printed. For example, if you specify -props "name,cloneof,ports" the
+ * Use the --props param to specify a comma-separated whitelist of machine properties
+ * that should be printed. For example, if you specify --props "name,cloneof,ports" the
  * machines in the JSON will only contain the "name", "cloneof", and "ports" properties.
  * Can be used to keep the file size down if you only need a small subset of the
  * properties.
@@ -21,63 +21,64 @@
  * "| Out-File -Encoding utf8" instead solves this problem.
  */
 
-var fs         = require('fs');
-var os         = require('os');
-var xmldoc     = require('xmldoc');
-var xmlHelper  = require('../helpers/xmlHelper');
-var cliWrapper = require('../helpers/cliWrapper');
-var wrapError  = require('../helpers/wrapError');
+const fs         = require('fs');
+const os         = require('os');
+const xmldoc     = require('xmldoc');
+const xmlHelper  = require('../helpers/xmlHelper');
+const cliWrapper = require('../helpers/cliWrapper');
+const CError     = require('@yo1dog/cerror');
 
-var usageExampleStr =
-  'node listXMLToJSON.js [-min] [-props prop1,prop2,...]\n' +
-  '\n' +
-  'bash:\n' +
-  'mame.exe -listxml | node listXMLToJSON.js > mameList.json\n' +
-  'mame.exe -listxml | node listXMLToJSON.js -min > mameList.min.json\n' +
-  'mame.exe -listxml | node listXMLToJSON.js -props name,cloneof,ports -min > mameList.partial.min.json\n' +
-  '\n' +
-  'Windows Command Prompt:\n' +
-  'mame.exe -listxml | node listXMLToJSON.js > mameList.json\n' +
-  'mame.exe -listxml | node listXMLToJSON.js -min > mameList.min.json\n' +
-  'mame.exe -listxml | node listXMLToJSON.js -props name,cloneof,ports -min > mameList.partial.min.json\n' +
-  '\n' +
-  '!! Windows PowerShell !!:\n' +
-  'mame.exe -listxml | node listXMLToJSON.js | Out-File -Encoding utf8 mameList.json' +
-  'mame.exe -listxml | node listXMLToJSON.js -min | Out-File -Encoding utf8 mameList.min.json\n' +
-  'mame.exe -listxml | node listXMLToJSON.js -props name,cloneof,ports -min | Out-File -Encoding utf8 mameList.partial.min.json \n' +
+const usageExampleStr =
+`node listXMLToJSON.js [--min] [--props prop1,prop2,...]
+
+bash:
+mame.exe -listxml | node listXMLToJSON.js > mameList.json
+mame.exe -listxml | node listXMLToJSON.js --min > mameList.min.json
+mame.exe -listxml | node listXMLToJSON.js --props name,cloneof,ports --min > mameList.partial.min.json
+
+Windows Command Prompt:
+mame.exe -listxml | node listXMLToJSON.js > mameList.json
+mame.exe -listxml | node listXMLToJSON.js --min > mameList.min.json
+mame.exe -listxml | node listXMLToJSON.js --props name,cloneof,ports --min > mameList.partial.min.json
+
+!! Windows PowerShell !!:
+mame.exe -listxml | node listXMLToJSON.js | Out-File -Encoding utf8 mameList.json
+mame.exe -listxml | node listXMLToJSON.js --min | Out-File -Encoding utf8 mameList.min.json
+mame.exe -listxml | node listXMLToJSON.js --props name,cloneof,ports --min | Out-File -Encoding utf8 mameList.partial.min.json`;
 
 
-cliWrapper(usageExampleStr, function listXMLToJSON(stdinData, prettyPrint) {
+cliWrapper(usageExampleStr, listXMLToJSON);
+function listXMLToJSON(stdinData, prettyPrint) {
   ////////////////////////
   // Entry Point
   ////////////////////////
   
-  var listXMLStr = stdinData;
+  const listXMLStr = stdinData;
   
   // get the property whitelist
-  var propWhiteList = parsePropWhiteListParam();
+  const propWhiteList = parsePropWhiteListParam();
   
   // format the controls.dat XML document as a readable object
   console.error('Formating the data...');
-  var mameListObj = formatListXML(listXMLStr, prettyPrint, propWhiteList);
+  const mameListObj = formatListXML(listXMLStr, prettyPrint, propWhiteList);
   
   return mameListObj;
-});
+}
 
 function parsePropWhiteListParam() {
-  var hasPropsFlag = false;
-  var propWhiteListStr = null;
-  for (var i = 2; i < process.argv.length; ++i) {
-    if (process.argv[i].toLowerCase() === '-props') {
+  let hasPropsFlag = false;
+  let propWhiteListStr = null;
+  for (let i = 2; i < process.argv.length; ++i) {
+    if (process.argv[i].toLowerCase() === '--props') {
       hasPropsFlag = true;
       propWhiteListStr = process.argv[i + 1];
       break;
     }
   }
   
-  if (hasPropsFlag && (!propWhiteListStr || propWhiteListStr.toLowerCase() === '-min')) {
-    console.error('Missing property whitelist list after -props flag.');
-    console.error('Usage:\n' + usageExampleStr);
+  if (hasPropsFlag && (!propWhiteListStr || /-?-min/i.test(propWhiteListStr))) {
+    console.error('Missing property whitelist list after --props flag.');
+    console.error(`Usage: ${usageExampleStr}`);
     process.exit(1);
   }
   
@@ -85,9 +86,9 @@ function parsePropWhiteListParam() {
     return null;
   }
   
-  var propWhiteList = propWhiteListStr.split(',');
+  const propWhiteList = propWhiteListStr.split(',');
   
-  var validProps = [
+  const validProps = [
     'name',
     'sourcefile',
     'isbios',
@@ -119,17 +120,17 @@ function parsePropWhiteListParam() {
     'softwarelists',
     'ramoptions'
   ];
-  for (var j = 0; j < propWhiteList.length; ++j) {
-    if (validProps.indexOf(propWhiteList[j]) === -1) {
-      throw new Error('Unknown property "' + propWhiteList[j] + '".');
-    }
+  
+  const invalidProps = propWhiteList.filter(prop => !validProps.includes(prop));
+  if (invalidProps.length > 0) {
+    throw new Error(`Unknown properties '${invalidProps.join(`', '`)}'.`);
   }
   
   return propWhiteList;
 }
 
 function getOrdSuffix(num) {
-  var lastDigit = num % 10;
+  const lastDigit = num % 10;
   
   if (lastDigit === 1 && num !== 11) {
     return 'st';
@@ -146,20 +147,19 @@ function getOrdSuffix(num) {
 }
 
 function formatXMLElemChildren(xmlElem, childName, formatFn) {
-  var formatedChildren = [];
+  const childrenXMLElems = xmlElem.childrenNamed(childName);
   
-  var childrenXMLElems = xmlElem.childrenNamed(childName);
-  for (var i = 0; i < childrenXMLElems.length; ++i) {
+  const formatedChildren = childrenXMLElems.map((childrenXMLElem, i) => {
     try {
-      formatedChildren[i] = formatFn(childrenXMLElems[i]);
+      return formatFn(childrenXMLElem);
     }
     catch(err) {
-      var childNum = i + 1;
-      var ordSuffix = getOrdSuffix(childNum);
+      const childNum = i + 1;
+      const ordSuffix = getOrdSuffix(childNum);
       
-      throw wrapError(err, 'Error formating the ' + childNum + ordSuffix + ' "' + childName + '" XML child element.');
+      throw CError(err, `Error formating the ${childNum}${ordSuffix} '${childName}' XML child element.`);
     }
-  }
+  });
   
   return formatedChildren;
 }
@@ -170,16 +170,16 @@ function formatListXML(listXMLStr, prettyPrint, propWhiteList) {
   // the file is too large to parse as XML
   
   // pull out the "mame" opening tag
-  var index1 = listXMLStr.indexOf('<mame');
-  var index2 = listXMLStr.indexOf('>', index1);
+  const index1 = listXMLStr.indexOf('<mame');
+  const index2 = listXMLStr.indexOf('>', index1);
   if (index1 === -1 || index2 === -1 ) {
-    throw new Error('Unable to find "mame" tag in XML.');
+    throw new Error(`Unable to find 'mame' tag in XML.`);
   }
   
-  var mameXMLElemStr = listXMLStr.substring(index1, index2 + 1) + '</mame>';
-  var mameXMLElem = new xmldoc.XmlDocument(mameXMLElemStr);
+  const mameXMLElemStr = listXMLStr.substring(index1, index2 + 1) + '</mame>';
+  const mameXMLElem = new xmldoc.XmlDocument(mameXMLElemStr);
   
-  var mame = {
+  const mame = {
     build     : xmlHelper.getXMLElemRequiredAttr    (mameXMLElem, 'build'),
     debug     : xmlHelper.getXMLElemOptionalAttrBool(mameXMLElem, 'debug', false),
     mameconfig: xmlHelper.getXMLElemRequiredAttr    (mameXMLElem, 'mameconfig'),
@@ -187,7 +187,7 @@ function formatListXML(listXMLStr, prettyPrint, propWhiteList) {
   };
   
   // stringify the MAME object
-  var mameJSONStr = JSON.stringify(mame);
+  const mameJSONStr = JSON.stringify(mame);
   
   // write the MAME object JSON except for the ending ]}
   fs.writeSync(1, mameJSONStr.substring(0, mameJSONStr.length - 2) + (prettyPrint? os.EOL : ''));
@@ -201,51 +201,50 @@ function formatListXML(listXMLStr, prettyPrint, propWhiteList) {
 
 function formatMachines(listXMLStr, prettyPrint, propWhiteList) {
    // the file is too large to parse as XML
-  
-  var openTagToken  = '<machine';
-  var closeTagToken = '</machine>';
+  const openTagToken  = '<machine';
+  const closeTagToken = '</machine>';
   
   // count the number of machine tags
-  var numMachines = 0;
-  var index = 0;
+  let numMachines = 0;
+  let index = 0;
   while ((index = listXMLStr.indexOf(openTagToken, index)) > -1) {
     index += openTagToken.length;
     ++numMachines;
   }
   
   // for each machine tag...
-  var numMachinesFormated = 0;
-  var index1 = 0;
-  var index2 = 0;
+  let numMachinesFormated = 0;
+  let index1 = 0;
+  let index2 = 0;
   while ((index1 = listXMLStr.indexOf(openTagToken, index2)) > -1) {
     index2 = listXMLStr.indexOf(closeTagToken, index1);
     if (index2 === -1) {
-      throw new Error('Unable to find closing "machine" tag for opening tag.');
+      throw new Error(`Unable to find closing 'machine' tag for opening tag.`);
     }
     
     index2 += closeTagToken.length;
     
-    var machineXMLElemStr = listXMLStr.substring(index1, index2);
-    var machineXMLElem = new xmldoc.XmlDocument(machineXMLElemStr);
-    var machineName = machineXMLElem.attr.name;
+    const machineXMLElemStr = listXMLStr.substring(index1, index2);
+    const machineXMLElem = new xmldoc.XmlDocument(machineXMLElemStr);
+    const machineName = machineXMLElem.attr.name;
     
     if (numMachinesFormated % 1000 === 0) {
       console.error(numMachinesFormated + '/' + numMachines);
     }
     
-    var machine;
+    let machine;
     try {
       machine = formatMachine(machineXMLElem);
     }
     catch(err) {
-      var childNum = numMachinesFormated + 1;
-      var ordSuffix = getOrdSuffix(childNum);
+      const childNum = numMachinesFormated + 1;
+      const ordSuffix = getOrdSuffix(childNum);
       
-      throw wrapError(err, 'Error formating "' + machineName + '" machine (' + childNum + ordSuffix + ' machine).');
+      throw new CError(err, `Error formating '${machineName}' machine (${childNum}${ordSuffix} machine).`);
     }
     
     if (propWhiteList) {
-      for (var key in machine) {
+      for (let key in machine) {
         if (propWhiteList.indexOf(key) === -1) {
           delete machine[key];
         }
@@ -253,7 +252,7 @@ function formatMachines(listXMLStr, prettyPrint, propWhiteList) {
     }
     
     // convert machine object to JSON
-    var machineJSON = JSON.stringify(machine, null, prettyPrint? '  ' : null);
+    const machineJSON = JSON.stringify(machine, null, prettyPrint? '  ' : null);
     
     // add comma
     if (numMachinesFormated < numMachines - 1) {

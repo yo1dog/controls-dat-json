@@ -61,10 +61,10 @@ You can not use the `>` operator to write the output JSON to a file as it will b
 
 ### XML to JSON Converter
 ```
-node controlsDATXMLtoJSON.js [-min]
+node controlsDATXMLtoJSON.js [--min]
 
 cat controls.xml | node controlsDATXMLtoJSON.js > controls.json
-cat controls.xml | node controlsDATXMLtoJSON.js -min > controls.min.json
+cat controls.xml | node controlsDATXMLtoJSON.js --min > controls.min.json
 ```
 
 Converts the controls.dat XML format into a JSON format with a similar structure.
@@ -77,11 +77,11 @@ Generates [controls.json](#controlsjson).
 ### Restructurer
 
 ```
-node restructureControlsDATJSON.js [-min]
+node restructureControlsDATJSON.js [--min]
 
 cat controls.json | node restructureControlsDATJSON.js > restructuredControls.json
-cat controls.json | node restructureControlsDATJSON.js -min > restructuredControls.min.json
-cat controls.xml | node controlsDATXMLtoJSON.js -min | node restructureControlsDATJSON.js -min > restructuredControls.min.json
+cat controls.json | node restructureControlsDATJSON.js --min > restructuredControls.min.json
+cat controls.xml | node controlsDATXMLtoJSON.js --min | node restructureControlsDATJSON.js --min > restructuredControls.min.json
 ```
 
 I found the structure of the data in the controls.dat project a bit archaic, convoluted, and difficult to use. So I created a tool that will restructure the controls.dat JSON file in a way that (in my opinion) is much easier to work with. I think the JSON format makes this much easier compared to XML. I also expanded the structure so that more exact and meaningful information could be recorded. It also updates the way the MAME input ports are stored so it is compatible with the latest MAME (no more `_EXT` inputs).
@@ -100,10 +100,10 @@ Generates [Restructured Controls](#restructured-controls).
 ### JSON Formater
 
 ```
-node formatJSON.js [-min]
+node formatJSON.js [--min]
 
 cat file.min.json | node formatJSON.js > file.json
-cat file.json | node formatJSON.js -min > file.min.json
+cat file.json | node formatJSON.js --min > file.min.json
 ```
 
 Pretty-prints or minifies JSON.
@@ -112,10 +112,10 @@ Pretty-prints or minifies JSON.
 ### MAME Input Port Definition Map Creator
 
 ```
-node createMAMEInputPortDefMap.js [-min]
+node createMAMEInputPortDefMap.js [--min]
 
 cat inpttype.h | node createMAMEInputPortDefMap.js > mameInputPortDefMap.json
-cat inpttype.h | node createMAMEInputPortDefMap.js -min > mameInputPortDefMap.min.json
+cat inpttype.h | node createMAMEInputPortDefMap.js --min > mameInputPortDefMap.min.json
 ```
 
 Creates a JSON map of the MAME input ports defined in `inpttype.h` from MAME's source.
@@ -150,16 +150,16 @@ Can also be `require()`d.
 ### MAME List XML to JSON Converter
 
 ```
-node listXMLToJSON.js [-min] [-props prop1,prop2,...]
+node listXMLToJSON.js [--min] [--props prop1,prop2,...]
 
 mame.exe -listxml | node listXMLToJSON.js > mameList.json\n
-mame.exe -listxml | node listXMLToJSON.js -min > mameList.min.json
-mame.exe -listxml | node listXMLToJSON.js -props name,cloneof,ports -min > mameList.partial.min.json
+mame.exe -listxml | node listXMLToJSON.js --min > mameList.min.json
+mame.exe -listxml | node listXMLToJSON.js --props name,cloneof,ports --min > mameList.partial.min.json
 ```
 
 Converts the `mame.exe -listxml` output into a JSON format.
 
-Use the `-props` param to specify a comma-separated whitelist of machine properties that should be printed. For example, if you specify `-props "name,cloneof,ports"` the machines in the JSON will only contain the `name`, `cloneof`, and `ports` properties. Can be used to keep the file size down if you only need a small subset of the properties.
+Use the `--props` param to specify a comma-separated whitelist of machine properties that should be printed. For example, if you specify `--props "name,cloneof,ports"` the machines in the JSON will only contain the `name`, `cloneof`, and `ports` properties. Can be used to keep the file size down if you only need a small subset of the properties.
 
 
 

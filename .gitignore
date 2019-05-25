@@ -1,5 +1,4 @@
-/controls.json
-/controls.min.json
-/restructuredControls.json
-/restructuredControls.min.json
+.DS_Store
 /node_modules
+*.json
+*.xml

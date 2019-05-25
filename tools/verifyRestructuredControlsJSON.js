@@ -12,7 +12,6 @@ var controlsDatSchema     = require('../json/restructuredControlsSchema.json');
 var mameInputPortDefMap   = require('../json/mameInputPortDefMap.json');
 var controlDefMap         = require('../json/controlDefMap.json');
 var menuButtonDescriptors = require('../json/menuButtonDescriptors.json');
-var wrapError             = require('../helpers/wrapError');
 
 function verifyRestructuredControlsJSON(controlsDat) {
   // verify the restructured controls.dat JSON matches the schema

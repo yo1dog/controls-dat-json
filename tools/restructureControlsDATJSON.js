@@ -1,5 +1,5 @@
 /* 
- * Usage: node restructureControlsDATJSON.js [-min]
+ * Usage: node restructureControlsDATJSON.js [--min]
  * 
  * I found the structure of the data in the controls.dat project a bit archaic,
  * convoluted, and difficult to use. So I created a tool that will restructure the
@@ -30,10 +30,9 @@ var oldControlNameToNewTypeMap     = require('../json/oldControlNameToNewTypeMap
 var verifyRestructuredControlsJSON = require('./verifyRestructuredControlsJSON');
 var models                         = require('../helpers/models');
 var cliWrapper                     = require('../helpers/cliWrapper');
-var wrapError                      = require('../helpers/wrapError');
 
 var usageExampleStr =
-  'node restructureControlsDATJSON.js [-min]\n' +
+  'node restructureControlsDATJSON.js [--min]\n' +
   '\n' +
   'bash:\n' +
   'cat controls.json | node restructureControlsDATJSON.js > restructuredControls.json\n' +

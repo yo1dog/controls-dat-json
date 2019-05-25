@@ -1,6 +1,7 @@
 // attributes
 function getXMLElemOptionalAttr(xmlElem, attrKey) {
-  var value = xmlElem.attr[attrKey];
+  /** @type {string} */
+  let value = xmlElem.attr[attrKey];
   
   if (typeof value !== 'undefined') {
     value = value.trim();
@@ -9,13 +10,13 @@ function getXMLElemOptionalAttr(xmlElem, attrKey) {
   return value;
 }
 function getXMLElemRequiredAttr(xmlElem, attrKey) {
-  var value = getXMLElemOptionalAttr(xmlElem, attrKey);
+  let value = getXMLElemOptionalAttr(xmlElem, attrKey);
   
   if (typeof value === 'undefined') {
-    throw new Error('"' + attrKey + '" attribute is missing.');
+    throw new Error(`'${attrKey}' attribute is missing.`);
   }
-  if (typeof value.length === 0) {
-    throw new Error('"' + attrKey + '" attribute is empty.');
+  if (value.length === 0) {
+    throw new Error(`'${attrKey}' attribute is empty.`);
   }
   
   return value;
@@ -23,22 +24,22 @@ function getXMLElemRequiredAttr(xmlElem, attrKey) {
 
 // int
 function getXMLElemAttrInt(xmlElem, attrKey, required) {
-  var valueStr;
+  let valueStr;
   if (required) {
     valueStr = getXMLElemRequiredAttr(xmlElem, attrKey);
   }
   else {
     valueStr = getXMLElemOptionalAttr(xmlElem, attrKey);
     if (typeof valueStr === 'undefined') {
-      return undefined;
+      return;
     }
   }
   
-  if (!(/^\-?[0-9]+$/.test(valueStr))) {
-    throw new Error('"' + attrKey + '" attribute is not a valid integer.');
+  if (!(/^-?[0-9]+$/.test(valueStr))) {
+    throw new Error(`'${attrKey}' attribute is not a valid integer.`);
   }
   
-  var value = parseInt(valueStr);
+  const value = parseInt(valueStr, 10);
   return value;
 }
 function getXMLElemOptionalAttrInt(xmlElem, attrKey) {
@@ -47,36 +48,43 @@ function getXMLElemOptionalAttrInt(xmlElem, attrKey) {
 function getXMLElemRequiredAttrInt(xmlElem, attrKey) {
   return getXMLElemAttrInt(xmlElem, attrKey, true);
 }
+function getXMLElemRequiredAttrIntMin(xmlElem, attrKey, /** @type {number} */ minValue) {
+  const value = getXMLElemRequiredAttrInt(xmlElem, attrKey);
+  if (value < minValue) {
+    return minValue;
+  }
+  return value;
+}
 
 // float
 function getXMLElemRequiredAttrFloat(xmlElem, attrKey) {
-  var valueStr = getXMLElemRequiredAttr(xmlElem, attrKey);
+  const valueStr = getXMLElemRequiredAttr(xmlElem, attrKey);
   
-  if (!(/^\-?[0-9]+(\.[0-9]+)?$/.test(valueStr))) {
-    throw new Error('"' + attrKey + '" attribute is not a valid float.');
+  if (!(/^-?[0-9]+(\.[0-9]+)?$/.test(valueStr))) {
+    throw new Error(`'${attrKey}' attribute is not a valid float.`);
   }
   
-  var value = parseFloat(valueStr);
+  const value = parseFloat(valueStr);
   return value;
 }
 
 
 // boolean
 function getXMLElemAttrBool(xmlElem, attrKey, required) {
-  var valueStr;
+  let valueStr;
   if (required) {
     valueStr = getXMLElemRequiredAttr(xmlElem, attrKey);
   }
   else {
     valueStr = getXMLElemOptionalAttr(xmlElem, attrKey);
     if (typeof valueStr === 'undefined') {
-      return undefined;
+      return;
     }
   }
   
   valueStr = valueStr.toLowerCase();
   
-  var value;
+  let value;
   if (valueStr === 'true' || valueStr === '1' || valueStr === 'yes') {
     value = true;
   }
@@ -84,13 +92,13 @@ function getXMLElemAttrBool(xmlElem, attrKey, required) {
     value = false;
   }
   else {
-    throw new Error('"' + attrKey + '" attribute is not a valid boolean.');
+    throw new Error(`'${attrKey}' attribute is not a valid boolean.`);
   }
   
   return value;
 }
 function getXMLElemOptionalAttrBool(xmlElem, attrKey, defaultValue) {
-  var value = getXMLElemAttrBool(xmlElem, attrKey, false);
+  const value = getXMLElemAttrBool(xmlElem, attrKey, false);
   
   return typeof value === 'undefined'? defaultValue : value;
 }
@@ -100,23 +108,23 @@ function getXMLElemRequiredAttrBool(xmlElem, attrKey) {
 
 // enum
 function getXMLElemAttrEnum(xmlElem, attrKey, validValues, required) {
-  var value;
+  let value;
   if (required) {
     value = getXMLElemRequiredAttr(xmlElem, attrKey);
   }
   else {
     value = getXMLElemOptionalAttr(xmlElem, attrKey);
     if (typeof valueStr === 'undefined') {
-      return undefined;
+      return;
     }
   }
   
   if (validValues.indexOf(value) === -1) {
-    throw new Error('"' + attrKey + '" attribute must be one of "' + validValues.join('", "') + '".');
+    throw new Error(`'${attrKey}' attribute must be one of '${validValues.join(`', '`)}'.`);
   }
 }
 function getXMLElemOptionalAttrEnum(xmlElem, attrKey, validValues, defaultValue) {
-  var value = getXMLElemAttrEnum(xmlElem, attrKey, validValues, false);
+  const value = getXMLElemAttrEnum(xmlElem, attrKey, validValues, false);
   
   return typeof value === 'undefined'? defaultValue : value;
 }
@@ -127,70 +135,74 @@ function getXMLElemRequiredAttrEnum(xmlElem, attrKey, validValues) {
 
 // children
 function getXMLElemRequiredChild(xmlElem, childName) {
-  var childXMLElem = xmlElem.childNamed(childName);
+  const childXMLElem = xmlElem.childNamed(childName);
   
   if (!childXMLElem) {
-    throw new Error('"' + childName + '" element is missing.');
+    throw new Error(`'${childName}' element is missing.`);
   }
   
   return childXMLElem;
 }
 
 function getXMLElemOptionalChildAttr(xmlElem, childName, attrKey) {
-  var childXMLElem = xmlElem.childNamed(childName);
+  const childXMLElem = xmlElem.childNamed(childName);
   
   if (!childXMLElem) {
-    return undefined;
+    return;
   }
   
   return getXMLElemOptionalAttr(childXMLElem, attrKey);
 }
 
 function getXMLElemOptionalChildVal(xmlElem, childName) {
-  var childXMLElem = xmlElem.childNamed(childName);
+  const childXMLElem = xmlElem.childNamed(childName);
   
   if (!childXMLElem) {
-    return undefined;
+    return;
   }
   
-  return childXMLElem.val.trim();
+  /** @type {string} */
+  const value = childXMLElem.val.trim();
+  return value;
 }
 
 function getXMLElemRequiredChildVal(xmlElem, childName) {
-  var childXMLElem = xmlElem.childNamed(childName);
+  const childXMLElem = xmlElem.childNamed(childName);
   
   if (!childXMLElem) {
-    throw new Error('"' + childName + '" child XML element is missing.');
+    throw new Error(`'${childName}' child XML element is missing.`);
   }
   
-  var value = childXMLElem.val.trim();
+  /** @type {string} */
+  const value = childXMLElem.val.trim();
   
-  if (typeof value.length === 0) {
-    throw new Error('"' + childName + '" child XML element is empty.');
+  if (value.length === 0) {
+    throw new Error(`'${childName}' child XML element is empty.`);
   }
   
   return value;
 }
 
 module.exports = {
-  getXMLElemOptionalAttr: getXMLElemOptionalAttr,
-  getXMLElemRequiredAttr: getXMLElemRequiredAttr,
+  getXMLElemOptionalAttr,
+  getXMLElemRequiredAttr,
   
-  getXMLElemOptionalAttrInt: getXMLElemOptionalAttrInt,
-  getXMLElemRequiredAttrInt: getXMLElemRequiredAttrInt,
+  getXMLElemOptionalAttrInt,
+  getXMLElemRequiredAttrInt,
+  getXMLElemRequiredAttrIntMin,
   
-  getXMLElemRequiredAttrFloat: getXMLElemRequiredAttrFloat,
+  getXMLElemRequiredAttrFloat,
   
-  getXMLElemOptionalAttrBool: getXMLElemOptionalAttrBool,
-  getXMLElemRequiredAttrBool: getXMLElemRequiredAttrBool,
+  getXMLElemOptionalAttrBool,
+  getXMLElemRequiredAttrBool,
   
-  getXMLElemOptionalAttrEnum: getXMLElemOptionalAttrEnum,
-  getXMLElemRequiredAttrEnum: getXMLElemRequiredAttrEnum,
+  getXMLElemOptionalAttrEnum,
+  getXMLElemRequiredAttrEnum,
   
-  getXMLElemRequiredChild: getXMLElemRequiredChild,
+  getXMLElemRequiredChild,
   
-  getXMLElemOptionalChildAttr: getXMLElemOptionalChildAttr,
+  getXMLElemOptionalChildAttr,
   
-  getXMLElemOptionalChildVal : getXMLElemOptionalChildVal,
-  getXMLElemRequiredChildVal : getXMLElemRequiredChildVal
+  getXMLElemOptionalChildVal,
+  getXMLElemRequiredChildVal
 };

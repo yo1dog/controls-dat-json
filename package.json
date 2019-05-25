@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git@github.com:yo1dog/controls-dat-json.git"
   },
+  "engines": {
+    "node": ">=12.2.0",
+    "npm": ">=6.9.0"
+  },
   "author": "Michael Moore (yo1dog)",
   "license": "ISC",
   "bugs": {
@@ -17,6 +21,7 @@
   },
   "homepage": "https://github.com/yo1dog/controls-dat-json#readme",
   "dependencies": {
+    "@yo1dog/cerror": "^1.0.0",
     "clone": "^1.0.2",
     "jsonschema": "^1.1.0",
     "xmldoc": "^0.4.0"

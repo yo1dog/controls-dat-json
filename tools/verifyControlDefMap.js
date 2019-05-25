@@ -9,7 +9,6 @@
 var jsonschema          = require('jsonschema');
 var controlDefMapSchema = require('../json/controlDefMapSchema.json');
 var mameInputPortDefMap = require('../json/mameInputPortDefMap.json');
-var wrapError           = require('../helpers/wrapError');
 
 
 function verifyControlDefMap(controlDefMap) {
