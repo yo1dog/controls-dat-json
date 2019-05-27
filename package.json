@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/yo1dog/controls-dat-json#readme",
   "dependencies": {
+    "@yo1dog/cerror": "^1.0.0",
     "clone": "^1.0.2",
     "jsonschema": "^1.1.0",
     "xmldoc": "^0.4.0"
