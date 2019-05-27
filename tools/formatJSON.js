@@ -1,3 +1,4 @@
+/* eslint-disable */
 /* 
  * Usage: node formatJSON.js
  * 

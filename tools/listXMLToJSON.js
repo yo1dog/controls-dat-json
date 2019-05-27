@@ -1,3 +1,4 @@
+/* eslint-disable */
 /* 
  * Usage: node listXMLToJSON.js [-min] [-props prop1,prop2,...]
  * 

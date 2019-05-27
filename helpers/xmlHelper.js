@@ -1,3 +1,4 @@
+/* eslint-disable */
 // attributes
 function getXMLElemOptionalAttr(xmlElem, attrKey) {
   var value = xmlElem.attr[attrKey];

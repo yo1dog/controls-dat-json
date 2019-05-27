@@ -15,6 +15,10 @@
   "bugs": {
     "url": "https://github.com/yo1dog/controls-dat-json/issues"
   },
+  "engines": {
+    "node": "12.2.0",
+    "npm": "6.9.0"
+  },
   "homepage": "https://github.com/yo1dog/controls-dat-json#readme",
   "dependencies": {
     "clone": "^1.0.2",

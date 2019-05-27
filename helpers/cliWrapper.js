@@ -1,3 +1,4 @@
+/* eslint-disable */
 module.exports = function wrapper(usageExampleStr, buildObjFunc) {
   // parse args
   var prettyPrint = true;
