@@ -45,7 +45,7 @@ var usageExampleStr =
   '!! Windows PowerShell !!:\n' +
   'mame.exe -listxml | node listXMLToJSON.js | Out-File -Encoding utf8 mameList.json' +
   'mame.exe -listxml | node listXMLToJSON.js -min | Out-File -Encoding utf8 mameList.min.json\n' +
-  'mame.exe -listxml | node listXMLToJSON.js -props name,cloneof,ports -min | Out-File -Encoding utf8 mameList.partial.min.json \n' +
+  'mame.exe -listxml | node listXMLToJSON.js -props name,cloneof,ports -min | Out-File -Encoding utf8 mameList.partial.min.json';
 
 
 cliWrapper(usageExampleStr, function listXMLToJSON(stdinData, prettyPrint) {
