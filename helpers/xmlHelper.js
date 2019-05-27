@@ -115,6 +115,8 @@ function getXMLElemAttrEnum(xmlElem, attrKey, validValues, required) {
   if (validValues.indexOf(value) === -1) {
     throw new Error('"' + attrKey + '" attribute must be one of "' + validValues.join('", "') + '".');
   }
+  
+  return value;
 }
 function getXMLElemOptionalAttrEnum(xmlElem, attrKey, validValues, defaultValue) {
   var value = getXMLElemAttrEnum(xmlElem, attrKey, validValues, false);
